@@ -1,0 +1,158 @@
+.ft-300 {
+    font-weight: 300;
+}
+
+.ft-400 {
+    font-weight: 400;
+}
+
+.ft-500 {
+    font-weight: 500;
+}
+
+.ft-700 {
+    font-weight: 700;
+}
+
+.ft-900 {
+    font-weight: 900;
+}
+
+/* colors */
+
+.dark-primary-bg-color {
+    background: #1976d2;
+}
+
+.dark-primary-color {
+    color: #1976d2;
+}
+
+.default-primary-bg-color {
+    background: #2196f3;
+}
+
+.default-primary-color {
+    color: #2196f3;
+}
+
+.light-primary-color {
+    background: #bbdefb;
+}
+
+.text-primary-color {
+    color: #ffffff;
+}
+
+.accent-color {
+    color: #ffc107;
+}
+
+.accent-bg-color {
+    background: #ffc107 !important;
+}
+
+.primary-text-color {
+    color: #212121;
+}
+
+.secondary-text-color {
+    color: #757575;
+}
+
+.divider-color {
+    border-color: #bdbdbd;
+}
+
+.orange-bg-color {
+    background-color: #ff9800;
+}
+
+.gray-section-color {
+    background-color: #f2f2f2;
+}
+
+.white-bg-color {
+    background-color: #ffffff;
+}
+
+/* shadows */
+
+.text-shadow-sm {
+    text-shadow: 0px 1px 3px #000000;
+}
+
+/* font size */
+
+.font-sm {
+    font-size: 0.8rem;
+}
+
+.font-md {
+    font-size: 0.9rem;
+}
+
+/* spacing */
+
+.top-m-10 {
+    margin-top: 10px;
+}
+
+.top-m-20 {
+    margin-top: 20px;
+}
+
+.top-m-40 {
+    margin-top: 40px;
+}
+
+.bottom-m-20 {
+    margin-bottom: 20px;
+}
+
+.card-deck .card {
+    margin: 20px 10px !important;
+}
+
+.margin-top-bottom-20 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.padding-sm {
+    padding: 15px;
+}
+
+/* alignment */
+
+.text-justify {
+    text-align: justify;
+}
+
+/* borders */
+.border-bottom-dark-gray {
+    border-bottom: 1px solid #ff9800;
+}
+
+.no-border-radius {
+    border-radius: 0px !important;
+}
+
+.no-border {
+    border: none !important;
+}
+
+/* images */
+
+.img-sm {
+    width: 120px;
+    max-width: 100%;
+    margin: 0;
+}
+
+/* dividers */
+
+.divider-sm {
+    display: block;
+    height: 20px;
+}
