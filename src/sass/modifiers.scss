@@ -41,7 +41,7 @@
 }
 
 .text-primary-color {
-    color: #ffffff;
+    color: #ffffff !important;
 }
 
 .accent-color {
@@ -76,6 +76,10 @@
     background-color: #ffffff;
 }
 
+.no-bg-color {
+    background: none !important;
+}
+
 /* shadows */
 
 .text-shadow-sm {
@@ -83,6 +87,10 @@
 }
 
 /* font size */
+
+.font-xs {
+    font-size: 0.75rem;
+}
 
 .font-sm {
     font-size: 0.8rem;
@@ -155,4 +163,23 @@
 .divider-sm {
     display: block;
     height: 20px;
+}
+
+.divider-md {
+    display: block;
+    height: 30px;
+}
+
+/* Bootsrap */
+.tab-pane {
+    padding: 20px;
+}
+
+.nav-tabs {
+    border: none !important;
+}
+
+.nav-item {
+    border: none !important;
+    border-radius: 0 !important;
 }
