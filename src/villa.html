@@ -1,334 +1,333 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Villa Thea</title>
+        <title>Prestige Bookings</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&amp;subset=cyrillic" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="assets/css/uikit.css">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="assets/js/bootstrap.js"></script>
+        <script src="assets/js/uikit.js"></script>
     </head>
     <body>
         <!-- Start Header --> 
-        <div class="top-bar">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="top-bar-support">We're always here to help +357 26 621 862</div>
+        <div class=" white-bg-color">
+            <div class="uk-container margin-tb-20">
+                <nav class="uk-navbar">
+                    <div class="uk-navbar-left">
+                        <div class="uk-flex-middle font-sm">We're always here to help +357 26 621 862</div>
+                        <ul class="uk-navbar-nav font-xs">
+                            <li><a href="#">Email Us</a></li>
+                        </ul>
                     </div>
-                    <div class="col-md-8">
-                        <ul class="nav nav-sm justify-content-end">
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">FLIGHTS</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">WEATHER</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">CAR HIRE</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">TRAVEL INSURANCE</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">BLOG</a>
-                            </li>
-                          </ul>
+                    <div class="uk-navbar-center">
+                        <img class="logo" src="/assets/images/gerry-logo-HD-web-sm.png">
+                    </div>
+                    <div class="uk-navbar-right"></div>
+                    <ul class="uk-navbar-nav font-xs">
+                        <li><a href="#">Car Hire</a></li>
+                        <li><a href="#">Airport Transfers</a></li>
+                        <li><a href="#">Travel Insurances</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!--Main Nav-->
+        <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky white-bg-color uk-box-shadow-large">
+            <div class="uk-container bottom-m-10 top-m-10">
+                <div class="uk-grid-small uk-width-4-5 uk-align-center" uk grid>    
+                    <button class="ft-600 font-sm uk-button uk-text-uppercase btn-check button-default">Home</button>
+                    <button class="ft-600 font-sm uk-button uk-text-uppercase btn-check button-default">3 Bedroom </button>
+                    <div uk-dropdown>
+                        <ul class="uk-nav uk-dropdown-nav uk-text-uppercase">
+                            <li><a href="#">Elite Villa</a></li>
+                            <li><a href="#">Villa Thea</a></li>
+                            <li><a href="#">Agios Ilias 1</a></li>
+                            <li><a href="#">Agios Ilias 2</a></li>
+                        </ul>
+                    </div>
+                    <button class="ft-600 font-sm uk-button uk-text-uppercase btn-check button-default">4 Bedroom </button>
+                    <div uk-dropdown>
+                        <ul class="uk-nav uk-dropdown-nav uk-text-uppercase">
+                            <li><a href="#">Villa Bella Katerina</a></li>
+                            <li><a href="#">Oniros Villa</a></li>
+                            <li><a href="#">Castle Rock Villa</a></li>
+                            <li><a href="#">Chronas Villa</a></li>
+                            <li><a href="#">Ocean Bay Villa</a></li>
+                            <li><a href="#">Villa Atlantos</a></li>
+                            <li><a href="#">Villa Stalo</a></li>
+                            <li><a href="#">Stefenia Villa</a></li>
+                            <li><a href="#">Villa Estia</a></li>
+                        </ul>
+                    </div>
+                    <button class="ft-600 font-sm uk-button uk-text-uppercase btn-check button-default">5 Bedroom </button>
+                    <div uk-dropdown>
+                        <ul class="uk-nav uk-dropdown-nav uk-text-uppercase">
+                            <li><a href="#">Dionysos Villa</a></li>
+                            <li><a href="#">Villa Nicholas</a></li>
+                            <li><a href="#">Luxor Villa</a></li>
+                        </ul>
+                    </div>
+                    <button class="ft-600 font-sm uk-button uk-text-uppercase btn-check button-default">6 Bedroom </button>
+                    <div uk-dropdown>
+                        <ul class="uk-nav uk-dropdown-nav uk-text-uppercase">
+                            <li><a href="#">Waters Edge Villa</a></li>
+                            <li><a href="#">Villa Mia</a></li>
+                        </ul>
+                    </div>
+                    <button class="ft-600 font-sm uk-button uk-text-uppercase btn-check button-default">Book Online</button>
+                    <button class="ft-600 font-sm uk-button uk-text-uppercase btn-check button-default">About Cyprus</button>
+                    <div uk-dropdown>
+                        <ul class="uk-nav uk-dropdown-nav uk-text-uppercase">
+                            <li><a href="#">Atractions</a></li>
+                            <li><a href="#">Activities</a></li>
+                            <li><a href="#">Paphos Weather</a></li>
+                            <li><a href="#">Flights</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="header-nav shadow-sm">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-2 text-center">
-                        <img class="logo" src="assets/images/PB-logo-HD.jpg">
+        <!--End Main Nav-->
+        <!--End Start Header -->
+            <!--Villa Section 1-->
+        <div class="gray-section-color uk-section">
+            <div class="uk-container">
+                <div class="uk-child-width-expand" uk-grid>
+                    <div class="uk-width-3-4">
+                        <h1 class="">Luxor Villa</h1>
+                        <h4 class="ft-300 no-margin">Paphos, Sea Caves, 5 Bedrooms, 4 Bathrooms</h4>
                     </div>
-                    <div class="col-md-10">
-                        <nav class="navbar navbar-expand-lg navbar-light top-m-10">
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                                <ul class="navbar-nav">
-                                <li class="nav-item active">
-                                    <a class="nav-link text-uppercase font-sm ft-500" href="#">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-uppercase font-sm ft-500" href="#">Platinium Villas</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-uppercase font-sm ft-500" href="#">Prestige Villas</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle text-uppercase font-sm ft-500" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    About Cyprus
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item text-uppercase font-sm ft-500" href="#">Action</a>
-                                    <a class="dropdown-item text-uppercase font-sm ft-500" href="#">Another action</a>
-                                    <a class="dropdown-item text-uppercase font-sm ft-500" href="#">Something else here</a>
-                                    </div>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-uppercase font-sm ft-500" href="#">Book Online</a>
-                                </li>
-                                </ul>
-                            </div>
-                        </nav>
+                    <div class="uk-responsive-width-1-4 uk-text-center">
+                        <img class="img-sm" src="assets/images/exclusive.png">
                     </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Header -->
-        
+                </div>   
+                <div class="uk-grid-medium" uk-grid>
+                    <div class="uk-width-3-4@m">
+                        <div class="villa-image-container" style="background-image: url('assets/images/luxor-villa/1.jpg'); background-size: cover; background-position: center;">
+                        </div>
+                        <div class="divider-sm"></div>
+                        <div>
+                            <ul class="uk-thumbnav uk-thumbnav-horizontal" uk-margin>
+                                <li class="uk-active"><a href="#"><img src="assets/images/luxor-villa/2.jpg" width="112" alt=""></a></li>
+                                <li><a href="#"><img src="assets/images/luxor-villa/3.jpg" width="112" alt=""></a></li>
+                                <li><a href="#"><img src="assets/images/luxor-villa/4.jpg" width="112" alt=""></a></li>
+                                <li><a href="#"><img src="assets/images/luxor-villa/5.jpg" width="112" alt=""></a></li>
+                                <li><a href="#"><img src="assets/images/luxor-villa/6.jpg" width="112" alt=""></a></li>
+                                <li><a href="#"><img src="assets/images/luxor-villa/7.jpg" width="112" alt=""></a></li>
+                                <li><a href="#"><img src="assets/images/luxor-villa/8.jpg" width="112" alt=""></a></li>
+                            </ul>
+                        </div>
+                        <h3 class="ft-300">Description</h3>
+                        <p>Surrounded by pomegranate trees, citrus groves and banana plantations, Luxor villa is a charming 5-bedroom villa is an oasis of tranquility and privacy, yet it is only a short drive from a bustling resort of Coral Bay. Situated only 350 m from the seafront in the prestigious Sea Caves area, the whole property is encircled with established greenery, and boasts spacious interior and outdoor areas with a large swimming pool as well as views of the clear blue waters of the Mediterranean Sea. <a href="#villa-description">Read more...</a></p>
+                        <div class="divider-md"></div>
+                        <!--- swtcher -->
 
-        <!--Section 1-->
-        <div class="villa-section-1 gray-section-color">
-            <div class="container">
-                <div class="villa-title">
-                    <div class="row align-items-end">
-                        <div class="col-9">
-                            <h1 class="">Villa Thea</h1>
-                            <h4 class="ft-300 ">Peyia, Coral Bay, 3 Bedrooms, 2 Bathrooms</h4>
+                        <div uk-switcher="animation: uk-animation-fade; toggle: > *">
+                            <button class="uk-button uk-button-primary btn-check" type="button">Inside</button>
+                            <button class="uk-button uk-button-primary btn-check" type="button">Outside</button>
+                            <button class="uk-button uk-button-primary btn-check" type="button">Distances</button>
                         </div>
-                        <div class="col-3 text-center">
-                            <img class="img-sm" src="assets/images/exclusive.png">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <!--Villa Images-->
-                    <div class="col-9">
-                        <div class="row">
-                            <div class="col-10">
-                                <div class="villa-image-container" style="background-image: url('assets/images/villa-mia.jpg'); background-size: cover; background-position: center;"></div>
-                            </div>
-                            <div class="col-2">
-                                <div class="villa-thumbs-container">
-                                    <img src="assets/images/villa-thea.jpg">
-                                    <img src="assets/images/castle-rock-villa.jpg">
-                                    <img src="assets/images/elite-villa.jpg">
-                                    <img src="assets/images/villa-nikolas.jpg">
-                                    <img src="assets/images/villa-mia.jpg">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <div class="divider-md"></div>
-                                <h3 class="ft-300">Description</h3>
-                                <p>This stunning Deluxe 6 bedroom villa sits directly above the Mediterranean sea, yet is a mere 800m from the centre of Coral Bay resort. Surrounded by manicured gardens that lead directly to your sun garden on-top of the sea. this stunningly beautiful villa will ensure a quality time holiday spent with family & friends. <a href="#villa-description">Read more...</a></p>
-                                <div class="divider-md"></div>
-                                <nav>
-                                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                        <a class="nav-item nav-link active" id="nav-inside-tab" data-toggle="tab" href="#nav-inside" role="tab" aria-controls="nav-inside" aria-selected="true">Inside</a>
-                                        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Outside</a>
-                                        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Distances</a>
+                        <ul class="uk-switcher uk-margin">
+                            <li>
+                                <div class="uk-grid-small uk-child-width-expand@m" uk-grid>
+                                    <div>
+                                        <ul class="feature-list">
+                                            <li>Cooker</li>
+                                            <li>Fridge</li>
+                                            <li>Freezer</li>
+                                            <li>Microwave</li>
+                                            <li>Toaster</li>
+                                            <li>Kettle</li>
+                                        </ul>
                                     </div>
-                                </nav>
-                                    <div class="tab-content white-bg-color" id="nav-tabContent"> 
-                                        <div class="tab-pane fade show active" id="nav-inside" role="tabpanel" aria-labelledby="nav-inside-tab">
-                                            <div class="row">
-                                                <div class="col-md-3">
-                                                    <ul class="feature-list">
-                                                        <li>Cooker</li>
-                                                        <li>Fridge</li>
-                                                        <li>Freezer</li>
-                                                        <li>Microwave</li>
-                                                        <li>Toaster</li>
-                                                        <li>Kettle</li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <ul class="feature-list">
-                                                        <li>Washing machine</li>
-                                                        <li>Iron</li>
-                                                        <li>Free Internet TV</li>
-                                                        <li>DVD player</li>
-                                                        <li>TFree Wifi</li>
-                                                        <li>Free High chair (if required)</li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-md-5">
-                                                    <ul class="feature-list">
-                                                        <li>Free Infant Cot (if required)</li>
-                                                        <li>Hair dryer</li>
-                                                        <li>Safe</li>
-                                                        <li>Air conditioning (charged extra)</li>
-                                                        <li>Linen provided</li>
-                                                        <li>Towels provided</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <ul class="feature-list">
-                                                        <li>Private outdoor pool 8 x 4 (unheated)</li>
-                                                        <li>Private Garden</li>
-                                                        <li>BBQ area</li>
-                                                        <li>Balcony or terrace</li>
-                                                        <li>Boat Hire available</li>
-                                                        <li>Bicycle Hire available</li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <ul class="feature-list">
-                                                        <li>Secure parking</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                                        <div class="row">
-                                            <div class="col">
-                                                <ul class="feature-list">
-                                                    <li>Beach: 3.5Km</li>
-                                                    <li>Resort Centre: 2.7km</li>
-                                                    <li>Restaurants: 100m</li>
-                                                    <li>Shops: 100m</li>
-                                                    <li>Supermarket: 2.5Km</li>
-                                                    <li>Car Hire: Recommended</li>
-                                                </ul>
-                                            </div>
-                                        </div>
+                                    <div>
+                                        <ul class="feature-list">
+                                            <li>Washing machine</li>
+                                            <li>Iron</li>
+                                            <li>Free Internet TV</li>
+                                            <li>Free Wifi</li>
+                                            <li>Free High chair (if required)</li>
+                                            <li>Free Infant Cot (if required)</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul class="feature-list">
+                                            <li>Jacuzzi Bath</li>
+                                            <li>Hair dryer</li>
+                                            <li>Safe</li>
+                                            <li>Air conditioning (charged extra)</li>
+                                            <li>Linen provided</li>
+                                            <li>Towels provided</li>
+                                        </ul> 
                                     </div>
                                 </div>
+                            </li>
+                            <li>
+                                <div class="uk-grid-small uk-child-width-expand@m" uk-grid>
+                                    <div>
+                                        <ul class="feature-list">
+                                            <li>Private pool (heated extra charge)</li>
+                                            <li>Large Private Gardens</li>
+                                            <li>Cypriot style Barbeque</li>
+                                            <li>Private terrace</li>
+                                            <li>Secure covered parking</li>
+                                            <li>Baby sitting service (extra charge)</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul class="feature-list">
+                                            <li>Boat hire available</li>
+                                            <li>Bicycle hire available</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="uk-grid-small uk-child-width-expand@m" uk-grid>
+                                    <div>
+                                        <ul class="feature-list">
+                                            <li>Beach: 1.8Km</li>
+                                            <li>Sea: 300m</li>
+                                            <li>Restaurants: 300m</li>
+                                            <li>Bar: 300m</li>
+                                            <li>Shops: 2.1km</li>
+                                            <li>Car Hire: Recommended</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul class="feature-list">
+                                            <li>Boat hire available</li>
+                                            <li>Bicycle hire available</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    <!-- ./ switcher -->
+                    </div>
+                <!--Villa Sidebar--> 
+                <div class="uk-width-1-4@m">
+                    <div class="sidebar-box white-bg-color">
+                        <h4 class="ft-500">Luxor Villa</h4>
+                        <div class="font-md ft-500">
+                            <div>City: Paphos</div>
+                            <div>Area: Sea Caves</div>
+                        </div>
+                        <div class="font-md ft-500">
+                            <div>5 Bedrooms</div>
+                            <div>4 Bathrooms</div>
+                        </div>
+                        <div class="font-md ft-500">
+                            <div>2 Veranda</div>
+                            <div>390 m2 Covered Area</div>
+                        </div>
+                        <div class="uk-margin">
+                            <input class="uk-input uk-border-rounded uk-form-width-medium" type="text" placeholder="Check In">
+                        </div>
+                        <div class="uk-margin">
+                            <input class="uk-input uk-border-rounded uk-form-width-medium" type="text" placeholder="Check Out">
+                        </div>                        
+                        <div class="uk-margin">
+                            <label class="uk-form-label" for="form-vertical-select"></label>
+                            <div class="uk-form-control uk-form-width-medium">
+                                <select class="uk-select  uk-border-rounded" id="form-horizontal-select">
+                                    <option>Adults</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                </select>
+                            </div>
+                        </div>         
+                        <div class="uk-margin">
+                            <label class="uk-form-label" for="form-horizontal-select"></label>
+                            <div class="uk-form-controls uk-form-width-medium">
+                                <select class="uk-select  uk-border-rounded" id="form-vertical-select">
+                                    <option>Children</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                </select>
                             </div>
                         </div>
-                    </div>    
-                    <!--Villa Sidebar-->
-                    <div class="col-3">
-                        <div class="sidebar-box white-bg-color">
-                            <h4 class="ft-500">Villa Thea</h4>
-                            <div class="row font-md ft-500">
-                                <div class="col-md-6">
-                                    City: Paphos
-                                </div>
-                                <div class="col-md-6">
-                                    Area: Peyia
-                                </div>
-                            </div>
-                            <div class="row font-md ft-500">
-                                <div class="col-md-6">
-                                    3 Bedrooms
-                                </div>
-                                <div class="col-md-6">
-                                    2 Bathrooms
-                                </div>
-                            </div>
-                            <div class="row font-md ft-500">
-                                <div class="col-md-6">
-                                    1 Guest WC
-                                </div>
-                                <div class="col-md-6">
-                                    1 Veranda
-                                </div>
-                            </div>
-                            <p class="font-md ft-500">150 m2 Covered Area</p>
-                            
-                            <form>
-                                <div class="form-group">
-                                    <input type="text" class="form-control gray-section-color no-border-radius no-border" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Check In">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control gray-section-color no-border-radius no-border" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Check Out">
-                                </div>
-                                <div class="form-group">
-                                    <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-                                    <select class="custom-select mr-sm-2 gray-section-color no-border-radius no-border" id="inlineFormCustomSelect">
-                                        <option selected>Adults</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-                                    <select class="custom-select mr-sm-2 gray-section-color no-border-radius no-border" id="inlineFormCustomSelect">
-                                        <option selected>Children</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                    </select>
-                                </div>
-                                <button type="submit" class="btn btn-check btn-block text-uppercase ft-500 font-md">Check Availability</button>
-                            </form>
-                        </div>
-                        <div class="sidebar-box white-bg-color">
-                            <img src="http://prestigebookings.com/wp-content/uploads/2018/01/1421135-300x300.png" alt="" title="1421135" itemprop="contentURL" scale="0">
-                        </div>
-                        <div class="sidebar-box white-bg-color">
-                            <a href="http://www.tripadvisor.co.uk/RentalPropertyManager-a_manager.182704" target="_blank" rel="noopener noreferrer"><img src="http://prestigebookings.com/wp-content/uploads/2014/07/Tripadvisor6.jpg" alt="" title="Tripadvisor6" itemprop="contentURL" scale="0"></a>
+                        <div class="uk-margin">
+                            <button class="ft-500 uk-button uk-text-uppercase btn-check uk-border-rounded uk-form-width-default button-default">Check Availability</button>
                         </div>
                     </div>
-                </div>                    
-            </div>
-        </div>
-        <!-- End Villa section 1 -->
-        <!-- Villa section 2 Ddescription -->
-        <div class="divider-md"></div>
-        <div id="villa-description" class="">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <h3>Ground Floor</h3>
-                        <p>On entering the villa you will immediately sense the cool luxurious surrounding of the open plan living, dining, and kitchen areas. The living area is fitted with comfortable furniture, large flat screen TV, and ceiling fans to keep you cool on those hot summer days. Opening directly onto your private pool, you will also find free Wi-Fi and internet TV, allowing you to keep in touch with the modern world, should you so wish. The kitchen area has been fitted out with quality appliances, and all the utensils and crockery required, for up to 6 people. The ground floor also benefits from a guest WC, as well as direct access to your private pool and sunbathing areas..</p>
-                        <h3>First Floor</h3>
-                        <p>The 1st floor consists of 3 good size air-conditioned bedrooms, as well as a family bathroom with full size bath and overhead shower. The master bedroom is large and spacious with built-in wardrobes, en-suite, double bed, and direct access to a shared balcony overlooking your private pool. Next door you will find a good sized twin room, with built-in wardrobes and direct access to shared balcony. Next door again there is another good sized twin room with built-in wardrobes.. All balconies offer views over your private pool, and directly to the sea. The 1st floor is completed by a family bathroom.</p>
-                        <h3>Outside area</h3>
-                        <p>The outside area of the villa consists of a private swimming pool, surrounded by a sun terrace and gardens. Here you will find sunbeds for up to 7, an outdoor seating area, and alfresco dining for 6. The area is also equipped with a Cypriot style barbecue. The garden and sun terrace offer views to the sea.</p>
-                        <p>Designed with your comfort and living needs in mind, this exceptional villa promises to fulfil all of your expectations, and provide you with an exceptional, and unforgettable holiday experience.</p>
-                        <h3>Accessibility</h3>
-                        <p>The villa is accessible by a number of steps and would be suitable&nbsp;for people with mild mobility difficulties. The doors are normal doors and would not pass a wheelchair. All bedrooms are located on the 1st floor.</p>
-                        <h3>Coast/Beach</h3>
-                        <p>The beautiful beach resort of Coral Bay is often described as the best bay on the west of the island. And it’s no surprise, when you consider the calm turquoise sea, dipping gently into some of the clearest off shore diving space in the Mediterranean, the scattered palm trees, the 600 meters of soft white sand and, in summertime, the almost cloudless blue skies. Coral Bay is a 5 minute drive from the villa.<br>
-                        Fishing, water sports, scuba diving, go-karting , cycling and golf (Minthis Hills Golf Course, Tsada Golf Course, Secret Valley Golf Course, Aphrodite Hills Golf Course and Elea Golf Course ).<br>
-                        The town of Paphos, just 20 minutes drive away offers modern shopping facilities, waterpark, Paphos Zoo</p>
-                        <h3>Golf</h3>
-                        <p>4 Championship golf courses within a 30 min drive.</p>
-                        <h3>Skiing</h3>
-                        <p>Skiing is possible in Troodos during January to March</p>
-                        <div class="divider-md"></div>
-                        <h2>Special Interest Holidays</h2>
-                        <div class="divider-md"></div>
-                        <h3>Akamas National Park</h3>
-                        <p>Located in the west of Cyprus the Akamas National Park is possibly the most picturesque corner of the island. Covering approximately 230 square kilometers the Akamas peninsula is where you will find wild landscape, amazing natural beauty, deep gorges, and wide sandy bays. The diversity of wildlife is of outstanding ecological importance for the Mediterranean and the wide variety of fauna is certainly impressive. Here you can find 168 different varieties of birds, 12 different mammals, 20 different reptiles and 16 different species of butterfly.<br>
-                        The importance of the Akamas Peninsula is recognized far beyond the shores of Cyprus. The European Council has included the Akamas Peninsula within its Mediterranean protection programme and within Cyprus; Friends of the Earth and Greenpeace are campaigning hard for the Akamas Peninsula to be declared a National Park.</p>
+                    <div class="sidebar-box white-bg-color">
+                        <img src="http://prestigebookings.com/wp-content/uploads/2018/01/1421135-300x300.png" alt="" title="1421135" itemprop="contentURL" scale="0">
+                    </div>
+                    <div class="sidebar-box white-bg-color">
+                        <a href="http://www.tripadvisor.co.uk/RentalPropertyManager-a_manager.182704" target="_blank" rel="noopener noreferrer"><img src="http://prestigebookings.com/wp-content/uploads/2014/07/Tripadvisor6.jpg" alt="" title="Tripadvisor6" itemprop="contentURL" scale="0"></a>
                     </div>
                 </div>
+            </div>      
+        </div>
+    </div>
+    <!--End Villa Section 1-->
+    <!-- Villa section 2 Ddescription -->
+    <div id="villa-description" class="uk-section white-bg-color">
+        <div class="uk-container">
+            <div class="uk-text-center">
+                <h2 class="ft-500 uk-text-left">Ground Floor</h2>
+                <p class="text-justify">The ground floor offers an exceptionally spacious living area featuring a working fireplace, ample sofa seating, coffee tables and a small library with book collection.
+                For your entertainment there is a Flat screen internet TV, DVD player and wireless internet connection.
+                Separated by an archway is a generously sized kitchen, fully equipped with an electric oven and hob, fridge/freezer, microwave, coffee machine, toaster dishwasher and dining table seating 6. The utility room housing the washing machine is joined to the kitchen by a connecting door.
+                Adjacent to the living room is a dining area with patio doors leading to a swimming pool terrace.
+                The first of the bedrooms is located on the ground floor. A couple of steps lead you to the spacious double bedroom suite with a wardrobe, large and modern en-suite bathroom, bay windows and patio doors with direct access to the terrace.
+                A small corridor leading to a shower room and a separate entrance from the parking area complete this floor.</p>
+                <h2 class="ft-500 uk-text-left">First Floor</h2>
+                <p class="text-justify">Stairs take you to the first floor’s corridor and remaining bedrooms (there is a child safety gate at the top of the stairs).
+                The spacious master double bedroom features a walk-in wardrobe, grand bathroom with Jacuzzi bath tub, ‘his and her’ sinks, bay windows and patio doors with access to balcony boasting lovely views over the swimming pool area, sea and green surroundings.
+                The remaining three bedrooms on this level comprise of two twin bedrooms and a double bedroom,sharing a family bathroom with bathtub, toilet, and ‘his and her’ sinks.
+                One of the twin bedrooms offers patio doors leading to a balcony. A practical kitchenette equipped with a small fridge and sink is located along the hallway, very useful to have your cold drinks handy.
+                The villa has air-conditioning throughout. Baby cot and high chair can be provided on request.</p>
+                <h2 class="ft-500 uk-text-left">Outside area</h2>
+                <p class="text-justify">Outside the 12m x 6m private heated swimming pool (see rental rates) with walk-in steps is surrounded by a substantial sunbathing terrace equipped with sunbeds, umbrellas and a poolside shower.
+                There is purpose built barbecue area with built in barbecue and additional sink unit as well as a shaded seating area, perfect for al fresco dining.
+                Immediately surrounding the villa are carefully manicured green areas abundant with trees, herbs and shrubbery.
+                With its lovely private location; this is a wonderful venue for hosting small family celebrations, retreats or weddings etc (please contact us for details).
+                The villa offers a shaded parking space for up to 2 vehicles with additional parking space available along the driveway.</p>
+                <h2 class="ft-500 uk-text-left">Restaurant</h2>
+                <p class="text-justify">Families will appreciate a nice snack bar/restaurant located 420 m from the villa, offering a playground and grass area as well as nice seating providing beautiful views of the sea and amazing sea caves formations. There is also a path at the sea front leading to another restaurant (operating in summer months) nearby – 1.2 km.
+                For a taste of the more traditional, the Church at St George overlooks the modest fishing harbour from where you can enjoy some of the islands most memorable sunset views and enjoy a traditional Cypriot meze meal at one of the small selection of family run tavernas.
+                </p>
+                <h2 class="ft-500 uk-text-left">Coast/Beach</h2>
+                <p class="text-justify">The Sea Caves area is situated in a peaceful location between the popular resort of Coral Bay and the tiny fishing hamlet of St Georges. The coastline in this area is full of natural rock caves making it ideal snorkeling territory, however if you prefer an organised beach then the family oriented resort of Corallia & Coral Bay is less than 10 minutes drive away.
+                Coral Bay is the well known beach resort for the Paphos district and has become a lively resort with plenty to offer in terms of amenities and activities. The centre of the resort features a wide selection of restaurants offering both Cypriot and International Cuisines, cafes, bars, shops, a choice of supermarkets, several banks, a chemist and a laundry.
+                The resort boasts two sandy beaches, the closest one to the villa being Corallia Bay, the quieter of the two. A little further along the coast is the, the popular and busy Coral Bay Beach, a sandy horseshoe shaped bay honoured with a Blue Flag of the European Union. Sunbeds and umbrellas are available for hire, watersports are on offer and there are two beach cafés providing refreshments.
+                <h2 class="ft-500 uk-text-left">Activities</h2>
+                <p class="text-justify">Mini golf, watersports and go-karting are all activities available in the resort of Coral Bay and if you extend your exploring to encompass the town of Paphos, the list of available activities expands to include a bowling alley, waterpark, several Heritage sites, attractive harbour area and modern shopping facilities. For the golf enthusiasts, there are 4 golf courses; Tsada Golf Course, Secret Valley Golf Course, Aphrodite Hills Golf Course and Elea Golf Course all within approximately a 30 minute drive.
+                </p>
+                <h2 class="ft-500 uk-text-left">Attraction</h2>
+                <p class="text-justify">The Paphos Zoo and the Horse Riding Stables which cater for all ages are both within the Sea Caves area and only a few minutes drive away.
+                For nature lovers the start of the protected Akamas Peninsula is just to the north of the village. Paphos Town approximately 13 kilometres away, was once the capital of the island is now included in the official UNESCO list of cultural and natural treasures of the world’s heritage. The remains of villas, palaces, theatres, fortresses and tombs mean that the town is of exceptional architectural and historic value. The well preserved mosaics and the Tombs of the Kings are probably the biggest cultural draw with further archeological discoveries continually being made. Ano Pafos on the cliff is the main administrative centre and residential district while Kato Pafos, by the sea, is the main tourist area built around the harbour and medieval port.
+                </p>
             </div>
         </div>
-        <!-- Villa section 3 Map -->
-        <div id="villa-location" class="">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="divider-md"></div>
-                        <h3>Location</h3>
-                        <div class="divider-md"></div>
+    </div>
+        <!---Footer-->
+        <div class="uk-container">
+            <div class="uk-child-width-expand@m justify-content-center" uk-grid>
+                <nav class="uk-navbar-container no-bg-color" uk-navbar>
+                    <div class="uk-navbar-center">
+                        <ul class="uk-navbar-nav">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Platinum Partners</a></li>
+                            <li><a href="#">Your Privacy</a></li>
+                            <li><a href="#">Terms and Conditions</a></li>
+                        </ul>
                     </div>
-                </div>
+                </nav>
             </div>
-            <iframe src="https://maps.google.ie/maps?q=34.87616,32.38143&amp;num=1&amp;t=h&amp;hl=en&amp;ie=UTF8&amp;z=14&amp;output=embed" width="100%" height="550" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
-        </div>
-        <!-- Villa section 2 -->
-        <div class="footer section-bg-color">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-
-                    </div>
-                </div>
-            </div>
-        </div>
+                <p class="font-xs uk-text-center uk-margin-remove">Copyright © 2019 Prestige Bookings  All Rights Reserved <br>By Draxs</p>
+        </div>   
+    </body>
+</html>  

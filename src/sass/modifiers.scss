@@ -10,6 +10,10 @@
     font-weight: 500;
 }
 
+.ft-600 {
+    font-weight: 600;
+}
+
 .ft-700 {
     font-weight: 700;
 }
@@ -88,8 +92,17 @@
 
 /* font size */
 
-.font-xs {
-    font-size: 0.75rem;
+.font-xs, a.font-xs {
+    font-size: 0.75rem !important;
+}
+
+.uk-navbar-nav > li > a {
+    font-size: 0.75rem !important;
+    color: #1976d2;
+}
+
+.uk-dropdown-nav > li > a {
+    color: #1976d2;
 }
 
 .font-sm {
@@ -101,6 +114,10 @@
 }
 
 /* spacing */
+
+.no-margin {
+    margin: 0 !important;
+}
 
 .top-m-10 {
     margin-top: 10px;
@@ -114,8 +131,20 @@
     margin-top: 40px;
 }
 
+.top-m-60 {
+    margin-top: 60px;
+}
+
+.bottom-m-10 {
+    margin-bottom: 10px;
+}
+
 .bottom-m-20 {
     margin-bottom: 20px;
+}
+
+.bottom-m-40 {
+    margin-bottom: 40px;
 }
 
 .card-deck .card {
@@ -127,8 +156,21 @@
     margin-bottom: 20px;
 }
 
+.margin-tb-20 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .padding-sm {
     padding: 15px;
+}
+
+.padding-md {
+    padding: 20px;
+}
+
+.padding-lg {
+    padding: 30px;
 }
 
 /* alignment */
@@ -160,6 +202,11 @@
 
 /* dividers */
 
+.divider-xsm {
+    display: block;
+    height: 0.5px;
+}
+
 .divider-sm {
     display: block;
     height: 20px;
@@ -170,16 +217,20 @@
     height: 30px;
 }
 
-/* Bootsrap */
-.tab-pane {
-    padding: 20px;
+.divider-lg {
+    display: block;
+    height: 50px;
 }
 
-.nav-tabs {
-    border: none !important;
+.divider-xl {
+    display: block;
+    height: 100px;
 }
 
-.nav-item {
-    border: none !important;
-    border-radius: 0 !important;
+.divider-vertical {
+    width: 1px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-left: 1px solid #ff9800;
 }
