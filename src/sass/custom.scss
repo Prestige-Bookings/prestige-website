@@ -74,6 +74,14 @@ nav .navbar-nav li a:hover {
     margin-bottom: 15px;
 }
 
+.uk-sticky .main-nav a {
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+.uk-button {
+    padding: 0 20px;
+}
+
 .btn-check {
     background-color: #ff9800;
     color: #ffffff;
@@ -150,27 +158,3 @@ ul.feature-list li:before {
 }
 
 /* social share */
-
-.Share {
-    text-align: center;
-    margin: 0;
-    margin-bottom: 20px;
-}
-
-.Share ul {
-    margin: 0;
-    padding: 0;
-    display: block;
-    text-align: center;
-}
-
-.Share ul li {
-    display: inline-block;
-    margin: 0;
-    padding: 0 3px;
-}
-
-.Share img {
-    width: 17px;
-    height: 17px;
-}
