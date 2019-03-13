@@ -1,0 +1,296 @@
+---
+layout: default
+type: villa
+bedrooms: 4
+language: en
+title: Bella Katerina
+description: ""
+permalink: villa-bella-katerina-coral-bay-paphos-cyprus
+---
+<!-- section -->
+<div class="section gray-bg-color">
+    <div class="container">
+        <div class="villa-title">
+            <div class="row align-items-end">
+                <div class="col-md-9">
+                    <h1 class="">Villa Bella Katerina</h1>
+                    <h4 class="ft-300 ">Coral Bay, 4 Bedrooms, 3 Bathrooms</h4>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img class="img-sm" src="assets/images/exclusive.png">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-9">
+                <!-- slider -->
+                <div class="row">
+                    <div class="col">
+                        <div class="owl-carousel carousel-large">
+                            {% for image in site.static_files %}
+                                {% if image.path contains 'gallery/bella-katerina' %}
+                                {% assign myhash = image.path | remove_first:'/assets/gallery/' %}
+                                <div class="item" data-hash="{{ myhash }}">
+                                    <div class="villa-slide" style="background-image: url('{{ image.path }}');"></div>
+                                </div>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="villa-thumbs-container">
+                            <div class="owl-carousel carousel-thumbs">
+                                {% for thumb in site.static_files %}
+                                    {% if thumb.path contains 'thumbs/bella-katerina' %}
+                                    {% assign tt = thumb.path | remove_first:'/assets/thumbs/' %}
+                                    <div class="item">
+                                        <a class="button secondary url" href="#{{ tt }}">
+                                            <div class="villa-thumb" style="background-image: url('{{ thumb.path }}');"></div>
+                                        </a>
+                                    </div>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./slider -->
+                <!-- short description -->
+                <div class="row">
+                    <div class="col">
+                        <p>Villa Bella Katerina is accessed via double entrance gates leading onto a large tiled driveway that has a turning island and substantial parking area. The villa design takes full advantage of the beautiful sea views enabling them to be seen from first floor bedrooms and the open aspect ground floor kitchen and lounge areas. This 4 bedroom villa also benefits from WiFi and air conditioned/heated bedrooms if required.<a href="#villa-description">Read more...</a></p>
+                        <div class="divider-md"></div>
+                    </div>
+                </div>
+                <!-- ./short description -->
+                <!-- tabs -->
+                <div class="row">
+                    <div class="col">
+                        <div class="divider-md"></div>
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active" id="nav-inside-tab" data-toggle="tab" href="#nav-inside" role="tab" aria-controls="nav-inside" aria-selected="true">Inside</a>
+                                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Outside</a>
+                                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Distances</a>
+                            </div>
+                        </nav>
+                        <div class="tab-content white-bg-color" id="nav-tabContent"> 
+                            <div class="tab-pane fade show active" id="nav-inside" role="tabpanel" aria-labelledby="nav-inside-tab">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <ul class="feature-list">
+                                            <li>Cooker</li>
+                                            <li>Fridge</li>
+                                            <li>Freezer</li>
+                                            <li>Microwave</li>
+                                            <li>Toaster</li>
+                                            <li>Kettle</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <ul class="feature-list">
+                                            <li>Washing machine</li>
+                                            <li>Iron</li>
+                                            <li>Free Internet TV</li>
+                                            <li>DVD player</li>
+                                            <li>Free Wifi</li>
+                                            <li>Free High chair (if required)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <ul class="feature-list">
+                                            <li>Free Infant Cot (if required)</li>
+                                            <li>Hair dryer</li>
+                                            <li>Safe</li>
+                                            <li>Air conditioning (charged extra)</li>
+                                            <li>Linen provided</li>
+                                            <li>Towels provided</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul class="feature-list">
+                                            <li>Private outdoor pool (unheated)</li>
+                                            <li>Huge Private Garden</li>
+                                            <li>BBQ area</li>
+                                            <li>Balcony or terrace</li>
+                                            <li>Boat Hire available</li>
+                                            <li>Bicycle Hire available</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul class="feature-list">
+                                            <li>Table Tennis</li>
+                                            <li>Secure parking</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                <div class="row">
+                                    <div class="col">
+                                        <ul class="feature-list">
+                                            <li>Beach: 1.5km</li>
+                                            <li>Restaurants: 1km</li>
+                                            <li>Shops: 1.5km</li>
+                                            <li>Car Hire: Recommended</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- tabs -->
+            </div>
+            <!-- booking Sidebar -->
+            <div class="col-lg-3">
+                <div class="sidebar-box white-bg-color">
+                    <h4 class="ft-500">Villa Bella Katerina</h4>
+                    <div class="row font-md ft-500">
+                        <div class="col-md-6">
+                            City: Paphos
+                        </div>
+                        <div class="col-md-6">
+                            Area: Coral Bay
+                        </div>
+                    </div>
+                    <div class="row font-md ft-500">
+                        <div class="col-md-6">
+                            4 Bedrooms
+                        </div>
+                        <div class="col-md-6">
+                            3 Bathrooms
+                        </div>
+                    </div>
+                    <div class="row font-md ft-500">
+                        <div class="col-md-6">
+                            1 Verandas
+                        </div>
+                        <div class="col-md-6">
+                            Family Games area
+                        </div>
+                    </div>
+                    <p class="font-md ft-500">250 m2 Covered Area</p>
+                    
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Check In">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Check Out">
+                        </div>
+                        <div class="form-group">
+                            <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                <option selected>Adults</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                <option selected>Children</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-check btn-block text-uppercase ft-500 font-md">Check Availability</button>
+                    </form>
+                </div>
+                <div class="sidebar-box white-bg-color">
+                    <img src="http://prestigebookings.com/wp-content/uploads/2018/01/1421135-300x300.png" alt="" title="1421135" itemprop="contentURL" scale="0">
+                </div>
+                <div class="sidebar-box white-bg-color">
+                    <a href="http://www.tripadvisor.co.uk/RentalPropertyManager-a_manager.182704" target="_blank" rel="noopener noreferrer"><img src="http://prestigebookings.com/wp-content/uploads/2014/07/Tripadvisor6.jpg" alt="" title="Tripadvisor6" itemprop="contentURL" scale="0"></a>
+                </div>
+            </div>
+            <!-- /booking -->
+        </div>
+    </div>
+</div>
+<!-- ./section -->
+
+<!-- section full description -->
+<div class="section" id="villa-description">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>Ground Floor</h3>
+                <p>Double entrance doors lead into the large, bright, open plan lounge and dining area with patio doors opening to a full length covered terrace. A small hall to the left leads to a shower room and a twin bedroom complete with fitted wardrobes. Also to the left is the large kitchen which offers extended living space comprising another lounge and dining area. The utility room leads from the kitchen and has a door leading to the outside terrace and barbecue area at the side of the property.</p>
+                <h3>First Floor</h3>
+                <p>A marble staircase leads to the first floor and the double bedroom with walk-in dressing room and en-suite shower room, and two further twin bedrooms, both with fitted wardrobes, and share a spacious bathroom.
+                All the upstairs bedrooms have access to a large shared balcony providing another area to relax and enjoy the sun setting over the sea. All bedrooms are air conditioned/heated payable locally if required.</p>
+                <h3>Outside area</h3>
+                <p>Patio doors from the lounge/ dining areas lead to a covered terrace, private pool and garden area. This area is surrounded by gardens and panoramic views over the sea and the Peyia foothills. There is a lawn with borders, fruit trees and a perimeter hedge for complete privacy. The large private pool takes center stage amongst this perfect setting – a perfect ingredient for a fabulous Cyprus holiday.<br>
+                The famous blue flag award Coral Bay Beach, is found just 1.5km distance from the villa. We highly recommend the hiring of a car, which will greatly enhance the options available on your holiday. Should you wish to opt for airport transfers, we can sort this for you also.
+                <p>Designed with your comfort and living needs in mind, Villa Bella Katerina is fully equipped and promises to fulfil all of your expectations, and provide you with an exceptional, and unforgettable holiday experience.</p>
+                <h3>Accessibility</h3>
+                <p>There are a couple of steps for entry to the villa, but a twin bedroom and bathroom are located on the ground floor. Villa Bella Katerina is suitable for people with mild mobility difficulties. The doors are normal doors and would not pass a wheelchair.</p>
+                <h3>Coast/Beach</h3>
+                <p>The beautiful beach resort of Coral Bay is often described as the best bay on the west of the island. And it’s no surprise, when you consider the calm turquoise sea, dipping gently into some of the clearest off shore diving space in the Mediterranean, the scattered palm trees, the 600 meters of soft white sand and, in summertime, the almost cloudless blue skies. Coral Bay is a 5 minute drive from the villa.</p>
+                <h3>Golf</h3>
+                <p>4 Championship golf courses within a 30 min drive.</p>
+                <h3>Skiing</h3>
+                <p>Skiing is possible in Troodos during January to March</p>
+                <h3>Akamas National Park</h3>
+                <p>Located in the west of Cyprus the Akamas National Park is possibly the most picturesque corner of the island. Covering approximately 230 square kilometers the Akamas peninsula is where you will find wild landscape, amazing natural beauty, deep gorges, and wide sandy bays. The diversity of wildlife is of outstanding ecological importance for the Mediterranean and the wide variety of fauna is certainly impressive. Here you can find 168 different varieties of birds, 12 different mammals, 20 different reptiles and 16 different species of butterfly.<br>
+                The importance of the Akamas Peninsula is recognized far beyond the shores of Cyprus. The European Council has included the Akamas Peninsula within its Mediterranean protection programme and within Cyprus; Friends of the Earth and Greenpeace are campaigning hard for the Akamas Peninsula to be declared a National Park.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ./section full description -->  
+
+<!-- section map -->
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>Location</h3>
+                <div class="divider-md"></div>
+            </div>
+        </div>
+    </div>
+    <iframe src="https://maps.google.ie/maps?q=34.87065,32.36776&amp;num=1&amp;t=h&amp;hl=en&amp;ie=UTF8&amp;z=14&amp;output=embed" width="100%" height="550" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+</div>
+<!-- ./section map --> 
+
+<script>
+    $('.carousel-large').owlCarousel({
+        items: 1,
+        loop: true,
+        center: true,
+        margin: 5,
+        nav: false,
+        callbacks: true,
+        URLhashListener: true,
+        autoplayHoverPause: true,
+        startPosition: 'URLHash'
+        });
+        $('.carousel-thumbs').owlCarousel({
+        loop:true,
+        items: 10,
+        margin:5,
+        nav: true,
+        navText: ['<span class="carousel-nav carousel-nav-left"></span>', '<span class="carousel-nav carousel-nav-right"></span>'],
+    })
+    $('.owl-carousel').find('.owl-nav').removeClass('disabled');
+    $('.owl-carousel').on('changed.owl.carousel', function(event) {
+        $(this).find('.owl-nav').removeClass('disabled');
+    });
+    </script>

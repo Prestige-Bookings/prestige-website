@@ -1,0 +1,71 @@
+{% if page.layout == "page" %}
+{% if siteLang == "en" %}
+    {% assign engPosts = site.posts | where: "language", "en" %}
+        {% for post in engPosts limit:1 %}
+        {% assign seotitle = post.subtitle %}
+            {% assign seoimage = post.image %}
+            {% assign seodescription = post.summary %}
+        {% endfor %}
+{% elsif siteLang == "id" %}
+    {% assign idPosts = site.posts | where: "language", "id" %}
+        {% for post in idPosts limit:1 %}
+            {% assign seotitle = post.subtitle %}
+            {% assign seoimage = post.image %}
+            {% assign seodescription = post.summary %}
+        {% endfor %}
+{% elsif siteLang == "ru" %}
+    {% assign ruPosts = site.posts | where: "language", "ru" %}
+        {% for post in ruPosts limit:1 %}
+            {% assign seotitle = post.subtitle %}
+            {% assign seoimage = post.image %}
+            {% assign seodescription = post.summary %}
+        {% endfor %}
+{% else %}
+    {% assign myPosts = site.posts | where: "language", "en" %}
+    {% for post in myPosts limit:1 %}
+        {% assign seotitle = post.subtitle %}
+        {% assign seoimage = post.image %}
+        {% assign seodescription = post.summary %}
+    {% endfor %}
+{% endif %}
+{% else %}
+    {% assign seotitle = page.subtitle %}
+    {% assign seoimage = page.image %}
+    {% assign seodescription = page.summary %}
+{% endif %}
+<title>PrestigeBookings.com - {{ seotitle | truncatewords: 30 }}</title>
+<meta name="description" content="{{ seodescription | truncatewords: 30 }}">
+<meta property="og:title" content="PrestigeBookings.com - {{ seotitle }}" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="{{ seodescription | truncatewords: 30 }}" />
+<meta property="og:url" content="{{ page.url | replace:'index.html' | prepend: site.url }}" />
+<meta property="og:image" content="{{ seoimage | prepend: site.url }}" />
+<script type="application/ld+json">
+    {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ page.url | replace:'index.html' | prepend: site.url }}"
+    },
+    "headline": "PrestigeBookings.com - {{ seotitle }}",
+    "image": [
+        "{{ page.image | prepend: site.url  }}"
+    ],
+    "datePublished": "{{ site.time | date_to_xmlschema }}",
+    "dateModified": "{{ site.time | date_to_xmlschema }}",
+    "author": {
+    "@type": "Organization",
+    "name": "PrestigeBookings.com"
+    },
+    "publisher": {
+    "@type": "Organization",
+    "name": "PrestigeBookings.com",
+    "logo": {
+    "@type": "ImageObject",
+    "url": "https://prestigebookings.com/images/icon.png"
+    }
+},
+    "description": "{{ seodescription }}"
+}
+</script>

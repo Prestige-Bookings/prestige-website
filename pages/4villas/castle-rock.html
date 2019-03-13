@@ -1,0 +1,294 @@
+---
+layout: default
+type: villa
+bedrooms: 4
+language: en
+title: Castle Rock
+description: ""
+permalink: villa-castle-rock-coral-bay-paphos-cyprus
+---
+<!-- section -->
+<div class="section gray-bg-color">
+    <div class="container">
+        <div class="villa-title">
+            <div class="row align-items-end">
+                <div class="col-md-9">
+                    <h1 class="">Villa Castle Rock</h1>
+                    <h4 class="ft-300 ">Coral Bay, 4 Bedrooms, 4 Bathrooms</h4>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img class="img-sm" src="assets/images/exclusive.png">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-9">
+                <!-- slider -->
+                <div class="row">
+                    <div class="col">
+                        <div class="owl-carousel carousel-large">
+                            {% for image in site.static_files %}
+                                {% if image.path contains 'gallery/castle-rock' %}
+                                {% assign myhash = image.path | remove_first:'/assets/gallery/' %}
+                                <div class="item" data-hash="{{ myhash }}">
+                                    <div class="villa-slide" style="background-image: url('{{ image.path }}');"></div>
+                                </div>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="villa-thumbs-container">
+                            <div class="owl-carousel carousel-thumbs">
+                                {% for thumb in site.static_files %}
+                                    {% if thumb.path contains 'thumbs/castle-rock' %}
+                                    {% assign tt = thumb.path | remove_first:'/assets/thumbs/' %}
+                                    <div class="item">
+                                        <a class="button secondary url" href="#{{ tt }}">
+                                            <div class="villa-thumb" style="background-image: url('{{ thumb.path }}');"></div>
+                                        </a>
+                                    </div>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./slider -->
+                <!-- short description -->
+                <div class="row">
+                    <div class="col">
+                        <p>An amazing Cypriot style rustic villa set in Coral Bay with dramatic gardens cut out of the rock. Villa Castle Rock is the perfect place to spend long evenings in the sheltered gardens as well as sunny days round the pool, looking down to the sea. Villa Castle Rock has recently had a refurbishment in April 2013.
+                        It’s very private and peaceful here. The house is surrounded by the different tiers of a rocky garden and is hidden away down a long drive decorated with mosaics. The house itself is in two parts – a main house and 2 separate poolside studios.<a href="#villa-description">Read more...</a></p>
+                        <div class="divider-md"></div>
+                    </div>
+                </div>
+                <!-- ./short description -->
+                <!-- tabs -->
+                <div class="row">
+                    <div class="col">
+                        <div class="divider-md"></div>
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active" id="nav-inside-tab" data-toggle="tab" href="#nav-inside" role="tab" aria-controls="nav-inside" aria-selected="true">Inside</a>
+                                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Outside</a>
+                                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Distances</a>
+                            </div>
+                        </nav>
+                        <div class="tab-content white-bg-color" id="nav-tabContent"> 
+                            <div class="tab-pane fade show active" id="nav-inside" role="tabpanel" aria-labelledby="nav-inside-tab">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <ul class="feature-list">
+                                            <li>Cooker</li>
+                                            <li>Fridge</li>
+                                            <li>Freezer</li>
+                                            <li>Microwave</li>
+                                            <li>Toaster</li>
+                                            <li>Kettle</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <ul class="feature-list">
+                                            <li>Washing machine</li>
+                                            <li>Iron</li>
+                                            <li>Free Internet TV</li>
+                                            <li>DVD player</li>
+                                            <li>Free Wifi</li>
+                                            <li>Free High chair (if required)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <ul class="feature-list">
+                                            <li>Free Infant Cot (if required)</li>
+                                            <li>Hair dryer</li>
+                                            <li>Safe</li>
+                                            <li>Air conditioning (charged extra)</li>
+                                            <li>Linen provided</li>
+                                            <li>Towels provided</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul class="feature-list">
+                                            <li>Private outdoor (unheated)</li>
+                                            <li>Large Private Garden</li>
+                                            <li>Stunning BBQ area</li>
+                                            <li>Balcony or terrace</li>
+                                            <li>Boat Hire available</li>
+                                            <li>Bicycle Hire available</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul class="feature-list">
+                                            <li>Secure parking</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                <div class="row">
+                                    <div class="col">
+                                        <ul class="feature-list">
+                                            <li>Beach: 1.2km</li>
+                                            <li>Restaurants: 1.5km</li>
+                                            <li>Shops: 1.5km</li>
+                                            <li>Car Hire: Essential</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- tabs -->
+            </div>
+            <!-- booking Sidebar -->
+            <div class="col-lg-3">
+                <div class="sidebar-box white-bg-color">
+                    <h4 class="ft-500">Villa Castle Rock</h4>
+                    <div class="row font-md ft-500">
+                        <div class="col-md-6">
+                            City: Paphos
+                        </div>
+                        <div class="col-md-6">
+                            Area: Coral Bay
+                        </div>
+                    </div>
+                    <div class="row font-md ft-500">
+                        <div class="col-md-6">
+                            4 Bedrooms
+                        </div>
+                        <div class="col-md-6">
+                            4 Bathrooms
+                        </div>
+                    </div>
+                    <div class="row font-md ft-500">
+                        <div class="col-md-6">
+                            1 Verandas
+                        </div>
+                    </div>
+                    <p class="font-md ft-500">250 m2 Covered Area</p>
+                    
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Check In">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Check Out">
+                        </div>
+                        <div class="form-group">
+                            <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                <option selected>Adults</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                <option selected>Children</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-check btn-block text-uppercase ft-500 font-md">Check Availability</button>
+                    </form>
+                </div>
+                <div class="sidebar-box white-bg-color">
+                    <img src="http://prestigebookings.com/wp-content/uploads/2018/01/1421135-300x300.png" alt="" title="1421135" itemprop="contentURL" scale="0">
+                </div>
+                <div class="sidebar-box white-bg-color">
+                    <a href="http://www.tripadvisor.co.uk/RentalPropertyManager-a_manager.182704" target="_blank" rel="noopener noreferrer"><img src="http://prestigebookings.com/wp-content/uploads/2014/07/Tripadvisor6.jpg" alt="" title="Tripadvisor6" itemprop="contentURL" scale="0"></a>
+                </div>
+            </div>
+            <!-- /booking -->
+        </div>
+    </div>
+</div>
+<!-- ./section -->
+
+<!-- section full description -->
+<div class="section" id="villa-description">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>Main House</h3>
+                <p>In the main house the rooms are cool and bright with terracotta-tiled floors, a mixture of white walls and some exposed rock walls, and simple country furniture. There’s a really comfortable double lounge with TV, a DVD player and playstation 2. The kitchen has lots of storage space and counter surface and a long dining table and chairs. Appliances here include a dishwasher and a microwave.<br>
+                Next to the kitchen there’s another seating area cut out of the ancient rock of the hillside – where you might even spot a few fossils! There are two bedrooms in this part of the house – a master double room with a lovely balcony with views down to the sea, and a twin bedroom with its own reading area, again cut out of the rock, and another balcony. Both bedrooms are air-conditioned. There’s also a family bathroom here with a bath and a shower, and in addition a separate wc-cloakroom. </p>
+                <h3>Pool Studio’s</h3>
+                <p>The pool house is across the garden. There are two double bedrooms with en-suite shower rooms and doors leading out to the garden. Both bedrooms are air-conditioned. There’s also a mini-kitchen here with a hob and a fridge.</p>
+                <h3>Outside area</h3>
+                <p>The rocky gardens are an amazing place to spend all day right through into the evening – it can be lit with candles at night and there are even special outside speakers here too for filling the garden with music. There’s a sheltered seating area cut right out of the rock, with a stone barbecue, a pizza and bread oven, and lots of dining furniture. The pool has views over fields down to the sea. A table-tennis table is provided, and lots of twisting paths through different areas of Mediterranean plants and trees – olives, cypresses, hibiscus and palms.<br>
+                Villa Castle Rock is a relaxing and dramatic house. Its separate pool house makes it a great base for two families or groups of friends. It’s in a peaceful and private place but it’s still just a very short drive from the lovely seaside town of Coral Bay, beaches and restaurants – and there’s a taverna and bar a short walk away.
+                <p>The famous blue flag award Coral Bay Beach, is found just 1.5km distance from the villa, and the center of the resort is approx. 2km from the villa. We highly recommend the hiring of a car which will greatly enhance the options available on your holiday. Should you wish to opt for airport transfers, we can sort this for you also.<br>
+                Designed with your comfort and living needs in mind, this exceptional villa of distinction promises to fulfil all of your expectations, and provide you with an exceptional, and unforgettable holiday experience.</p>
+                <h3>Accessibility</h3>
+                <p>The villas are accessible by a number of steps and are not suitable for people with mobility difficulties. The doors are normal doors and would not pass a wheelchair.</p>
+                <h3>Coast/Beach</h3>
+                <p>The beautiful beach resort of Coral Bay is often described as the best bay on the west of the island. And it’s no surprise, when you consider the calm turquoise sea, dipping gently into some of the clearest off shore diving space in the Mediterranean, the scattered palm trees, the 600 meters of soft white sand and, in summertime, the almost cloudless blue skies. Coral Bay is a 20 minute walk from the villa.
+                <h3>Golf</h3>
+                <p>4 Championship golf courses within a 30 min drive.</p>
+                <h3>Skiing</h3>
+                <p>Skiing is possible in Troodos during January to March</p>
+                <h3>Akamas National Park</h3>
+                <p>Located in the west of Cyprus the Akamas National Park is possibly the most picturesque corner of the island. Covering approximately 230 square kilometers the Akamas peninsula is where you will find wild landscape, amazing natural beauty, deep gorges, and wide sandy bays. The diversity of wildlife is of outstanding ecological importance for the Mediterranean and the wide variety of fauna is certainly impressive. Here you can find 168 different varieties of birds, 12 different mammals, 20 different reptiles and 16 different species of butterfly.<br>
+                The importance of the Akamas Peninsula is recognized far beyond the shores of Cyprus. The European Council has included the Akamas Peninsula within its Mediterranean protection programme and within Cyprus; Friends of the Earth and Greenpeace are campaigning hard for the Akamas Peninsula to be declared a National Park.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ./section full description -->  
+
+<!-- section map -->
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>Location</h3>
+                <div class="divider-md"></div>
+            </div>
+        </div>
+    </div>
+    <iframe src="https://maps.google.ie/maps?q=34.86826,32.35503&amp;num=1&amp;t=h&amp;hl=en&amp;ie=UTF8&amp;z=14&amp;output=embed" height="550" width="100%" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+</div>
+<!-- ./section map --> 
+
+<script>
+    $('.carousel-large').owlCarousel({
+        items: 1,
+        loop: true,
+        center: true,
+        margin: 5,
+        nav: false,
+        callbacks: true,
+        URLhashListener: true,
+        autoplayHoverPause: true,
+        startPosition: 'URLHash'
+        });
+        $('.carousel-thumbs').owlCarousel({
+        loop:true,
+        items: 10,
+        margin:5,
+        nav: true,
+        navText: ['<span class="carousel-nav carousel-nav-left"></span>', '<span class="carousel-nav carousel-nav-right"></span>'],
+    })
+    $('.owl-carousel').find('.owl-nav').removeClass('disabled');
+    $('.owl-carousel').on('changed.owl.carousel', function(event) {
+        $(this).find('.owl-nav').removeClass('disabled');
+    });
+    </script>

@@ -1,0 +1,299 @@
+---
+layout: default
+type: villa
+bedrooms: 4
+language: en
+title: Chronas
+description: ""
+permalink: villa-chronas-coral-bay-paphos-cyprus
+---
+<!-- section -->
+<div class="section gray-bg-color">
+    <div class="container">
+        <div class="villa-title">
+            <div class="row align-items-end">
+                <div class="col-md-9">
+                    <h1 class="">Villa Chronas</h1>
+                    <h4 class="ft-300 ">Coral Bay, 4 Bedrooms, 3 Bathrooms</h4>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img class="img-sm" src="assets/images/exclusive.png">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-9">
+                <!-- slider -->
+                <div class="row">
+                    <div class="col">
+                        <div class="owl-carousel carousel-large">
+                            {% for image in site.static_files %}
+                                {% if image.path contains 'gallery/chronas' %}
+                                {% assign myhash = image.path | remove_first:'/assets/gallery/' %}
+                                <div class="item" data-hash="{{ myhash }}">
+                                    <div class="villa-slide" style="background-image: url('{{ image.path }}');"></div>
+                                </div>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="villa-thumbs-container">
+                            <div class="owl-carousel carousel-thumbs">
+                                {% for thumb in site.static_files %}
+                                    {% if thumb.path contains 'thumbs/chronas' %}
+                                    {% assign tt = thumb.path | remove_first:'/assets/thumbs/' %}
+                                    <div class="item">
+                                        <a class="button secondary url" href="#{{ tt }}">
+                                            <div class="villa-thumb" style="background-image: url('{{ thumb.path }}');"></div>
+                                        </a>
+                                    </div>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./slider -->
+                <!-- short description -->
+                <div class="row">
+                    <div class="col">
+                        <p>Located a mere 30m from the award winning blue flag beach of Coral Bay, and just 750m from the centre of the resort, Chronas villa is sure to be a beach lovers paradise. Having just completed a €25,000 refurbishment, this stunning villa offers everything you need for a quality time holiday with family and friends. Chronas the god of “endless time” will ensure you have a holiday where lasting memories are made forever.<a href="#villa-description">Read more...</a></p>
+                        <div class="divider-md"></div>
+                    </div>
+                </div>
+                <!-- ./short description -->
+                <!-- tabs -->
+                <div class="row">
+                    <div class="col">
+                        <div class="divider-md"></div>
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active" id="nav-inside-tab" data-toggle="tab" href="#nav-inside" role="tab" aria-controls="nav-inside" aria-selected="true">Inside</a>
+                                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Outside</a>
+                                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Distances</a>
+                            </div>
+                        </nav>
+                        <div class="tab-content white-bg-color" id="nav-tabContent"> 
+                            <div class="tab-pane fade show active" id="nav-inside" role="tabpanel" aria-labelledby="nav-inside-tab">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <ul class="feature-list">
+                                            <li>Cooker</li>
+                                            <li>Fridge</li>
+                                            <li>Freezer</li>
+                                            <li>Microwave</li>
+                                            <li>Toaster</li>
+                                            <li>Kettle</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <ul class="feature-list">
+                                            <li>Washing machine</li>
+                                            <li>Iron</li>
+                                            <li>Free Internet TV</li>
+                                            <li>DVD player</li>
+                                            <li>Free Wifi</li>
+                                            <li>Free High chair (if required)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <ul class="feature-list">
+                                            <li>Free Infant Cot (if required)</li>
+                                            <li>Hair dryer</li>
+                                            <li>Safe</li>
+                                            <li>Air conditioning (charged extra)</li>
+                                            <li>Linen provided</li>
+                                            <li>Towels provided</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul class="feature-list">
+                                            <li>Private outdoor pool 10 x 6 (unheated)</li>
+                                            <li>Private Garden</li>
+                                            <li>BBQ area</li>
+                                            <li>Balcony or terrace</li>
+                                            <li>Boat Hire available</li>
+                                            <li>Bicycle Hire available</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul class="feature-list">
+                                            <li>Secure parking</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                <div class="row">
+                                    <div class="col">
+                                        <ul class="feature-list">
+                                            <li>Beach: 30m</li>
+                                            <li>Restaurants: 100m</li>
+                                            <li>Resort Centre: 750m</li>
+                                            <li>Local bus service 100m</li>
+                                            <li>Car Hire: Not Required</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- tabs -->
+            </div>
+            <!-- booking Sidebar -->
+            <div class="col-lg-3">
+                <div class="sidebar-box white-bg-color">
+                    <h4 class="ft-500">Villa Chronas</h4>
+                    <div class="row font-md ft-500">
+                        <div class="col-md-6">
+                            City: Paphos
+                        </div>
+                        <div class="col-md-6">
+                            Area: Coral Bay
+                        </div>
+                    </div>
+                    <div class="row font-md ft-500">
+                        <div class="col-md-6">
+                            4 Bedrooms
+                        </div>
+                        <div class="col-md-6">
+                            3 Bathrooms
+                        </div>
+                        <div class="col-md-6">
+                            1 Guest WC
+                        </div>
+                        <div class="col-md-6">
+                            Security cameras and alarm
+                        </div>
+                    </div>
+                    <div class="row font-md ft-500">
+                        <div class="col-md-6">
+                            1 Verandas
+                        </div>
+                        <div class="col-md-6">
+                            Electronic gates
+                        </div>
+                    </div>   
+                    <p class="font-md ft-500">160 m2 Covered Area</p>
+                    
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Check In">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Check Out">
+                        </div>
+                        <div class="form-group">
+                            <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                <option selected>Adults</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                <option selected>Children</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-check btn-block text-uppercase ft-500 font-md">Check Availability</button>
+                    </form>
+                </div>
+                <div class="sidebar-box white-bg-color">
+                    <img src="http://prestigebookings.com/wp-content/uploads/2018/01/1421135-300x300.png" alt="" title="1421135" itemprop="contentURL" scale="0">
+                </div>
+                <div class="sidebar-box white-bg-color">
+                    <a href="http://www.tripadvisor.co.uk/RentalPropertyManager-a_manager.182704" target="_blank" rel="noopener noreferrer"><img src="http://prestigebookings.com/wp-content/uploads/2014/07/Tripadvisor6.jpg" alt="" title="Tripadvisor6" itemprop="contentURL" scale="0"></a>
+                </div>
+            </div>
+            <!-- ./booking -->
+        </div>
+    </div>
+</div>
+<!-- ./section -->
+
+<!-- section full description -->
+<div class="section" id="villa-description">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>Bungalow</h3>
+                <p>Approached via a gated driveway this 4 bedroom bungalow is located within 30 metres of the steps leading directly to Coral Bay Beach and also located a few minutes walk of the local amenities. The centre of the Coral Bay resort is located within a 10 minute walk of the villa.</p>
+                <p>As you enter the villa you will find the open plan living area featuring comfortable sofas, internet TV, DVD and CD player, wireless internet connection and a dining table seating 8. Adjacent to the living area is the fully equipped kitchen with oven, hob, fridge freezer, microwave, dishwasher, coffee machine and washing machine.<br>
+                From the kitchen a hallway leads you to where the bedrooms are located. The master bedroom has an en-suite shower room and the remaining double bedroom and 2 twin bedrooms share the separate bathroom and further separate shower room. The master bedroom, a double bedroom and the twin bedroom have patio doors leading out to the verandah overlooking the pool area.</p>
+                <p>Moving to the outside area you will find the barbecue area and outdoor dining table located under the pergola allowing for you to enjoy al fresco dining. The kidney shaped private swimming pool provides the ideal area for relaxation after enjoying a day on the beach.<br>
+                A baby cot and highchair are available upon request.<br>
+                Air conditioning is available throughout the villa (Charged extra)</p>
+                <h3>Local Area</h3>
+                <p>Coral Bay is the well known beach resort for the Paphos district and private gated steps from the villa lead directly down to the beach.<br>
+                This family oriented area has become a lively resort with plenty to offer in terms of amenities and activities. A small complex consisting of a supermarket, a small collection of restaurants and a couple of bars is within a few minutes walk of the villa. The centre of the resort which features a wide selection of restaurants offering both Cypriot and International Cuisines, cafes, bars, shops, a choice of supermarkets, several banks, a chemist and a laundry within 1km of the villa.</p>
+                <p>The resort boasts two sandy beaches, the busier of the two being the popular Coral Bay Beach, a sandy horseshoe shaped bay honoured with a Blue Flag of the European Union. Sunbeds and umbrellas are available for hire, watersports are on offer and there are two beach cafés providing refreshments.<br>
+                A little further along the coast you reach the natural rock caves of the area known locally as Sea Caves, an area which provides ideal snorkelling territory and is popular with local scuba diving schools.</p>
+                <p>For a taste of the more traditional head to the tiny fishing hamlet of St Georges from where you can enjoy some of the islands most memorable sunset views and dine at one of the small collection of family run tavernas. For nature lovers the start of the protected Akamas Peninsula is just to the north of the village. Or you can head to the hillside village of Peyia, located just a few kilometres inland from Coral Bay to sample a traditional Cypriot meze meal at one of its small selection of long established tavernas and village coffee shops.</p>
+                <p>Paphos Town approximately 15 kilometres away, was once the capital of the island is now included in the official UNESCO list of cultural and natural treasures of the world’s heritage. The remains of villas, palaces, theatres, fortresses and tombs mean that the town is of exceptional architectural and historic value. The well preserved mosaics and the Tombs of the Kings are probably the biggest cultural draw with further archaeological discoveries continually being made. Pano Pafos on the cliff is the main administrative centre and residential district while Kato Pafos, by the sea, is the main tourist area built around the harbour and medieval port.</p>
+                <p>Mini golf, watersports and go-karting are all activities available in the immediate Coral Bay area. The Paphos Zoo and the Horse Riding Stables which cater for all ages are both within a 10 minute drive of the villa.<br>
+                Extend your exploring to encompass the town of Paphos and the list of available activities expands to include a bowling alley, waterpark, several Heritage sites, attractive harbour area and modern shopping facilities.<br>
+                There are 4 golf courses; Tsada Golf Course, Secret Valley Golf Course, Aphrodite Hills Golf Course and Elea Golf Course all within approximately a 30 minute drive.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ./section full description -->  
+
+<!-- section map -->
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>Location</h3>
+                <div class="divider-md"></div>
+            </div>
+        </div>
+    </div>
+    <iframe src="https://maps.google.ie/maps?q=34.855753,32.367624&amp;num=1&amp;t=h&amp;hl=en&amp;ie=UTF8&amp;z=14&amp;output=embed" width="100%" height="550" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+</div>
+<!-- ./section map --> 
+
+<script>
+    $('.carousel-large').owlCarousel({
+        items: 1,
+        loop: true,
+        center: true,
+        margin: 5,
+        nav: false,
+        callbacks: true,
+        URLhashListener: true,
+        autoplayHoverPause: true,
+        startPosition: 'URLHash'
+        });
+        $('.carousel-thumbs').owlCarousel({
+        loop:true,
+        items: 10,
+        margin:5,
+        nav: true,
+        navText: ['<span class="carousel-nav carousel-nav-left"></span>', '<span class="carousel-nav carousel-nav-right"></span>'],
+    })
+    $('.owl-carousel').find('.owl-nav').removeClass('disabled');
+    $('.owl-carousel').on('changed.owl.carousel', function(event) {
+        $(this).find('.owl-nav').removeClass('disabled');
+    });
+    </script>

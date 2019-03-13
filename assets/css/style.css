@@ -1,0 +1,488 @@
+* {
+  font-family: 'Montserrat', sans-serif !important; }
+
+img {
+  max-width: 100%; }
+
+.logo {
+  width: 200px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+.pushy-logo {
+    width: 150px;
+    max-width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+
+.top-bar {
+  border-bottom: 1px solid #eeeeee; }
+
+.top-bar-support {
+  font-size: 0.75rem;
+  margin-top: 7px;
+  color: #000000;
+  font-weight: 500; }
+
+.nav-sm .nav-item a {
+  font-size: 0.65rem;
+  color: #303f9f;
+  font-weight: 500; }
+
+.nav {
+  color: #303f9f !important; }
+
+.nav:hover {
+  color: #000000 !important; }
+
+@media screen and (min-width: 768px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; }
+  .dropdown-toggle:after {
+    display: none; } }
+
+.sticky {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 9990; }
+
+.sticky + .content {
+  padding-top: 60px; }
+
+.hero-home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 70vh;
+  padding: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("https://draxs.github.io/prestige-website/assets/images/hero-1.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.hero-villa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 35vh;
+  padding: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("assets/images/hero-villa.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.section {
+  padding: 50px 0; }
+
+.villa-image-container {
+  height: 500px;
+  max-height: 100%; }
+
+.villa-thumbs-container img {
+  margin-bottom: 15px; }
+.btn {
+  padding: 15px 10px;
+}
+
+.btn-sm {
+  padding: 9px;
+}
+
+.btn-nav {
+  color: #ffffff; }
+
+.btn-nav:hover {
+  background-color: #2196f3;
+  color: #ffffff; }
+
+.btn-check {
+  background-color: #ff9800;
+  color: #ffffff; }
+
+.btn-check:hover {
+  background-color: #2196f3;
+  color: #ffffff; }
+
+.header-booking-form {
+  padding: 40px;
+  background-color: #ffffff;
+  margin-top: -50px; }
+
+.intro-text {
+  margin: 50px 0; }
+
+.prestige-card-footer-cta {
+  background-color: #ff9800;
+  color: #ffffff;
+  cursor: pointer; }
+
+.prestige-card-footer-cta:hover {
+  background-color: #2196f3;
+  color: #ffffff; }
+
+.sidebar-box {
+  padding: 20px;
+  margin-bottom: 22px; }
+
+.villa-title {
+  padding: 30px 0; }
+
+ul.feature-list {
+  list-style: none;
+  padding-left: 0; }
+
+ul.feature-list li {
+  position: relative;
+  padding-left: 25px; }
+
+ul.feature-list li:before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  background-image: url("https://draxs.github.io/prestige-website/assets/svg/square.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
+
+/* Line */
+.vl {
+  border-left: 2px solid #ff9800;
+  height: 1340px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 0; }
+
+.vl-2 {
+  border-left: 2px solid #ff9800;
+  height: 1000px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 0; }
+
+.line-list {
+  list-style-type: none;
+  padding: 0; }
+  .line-list li {
+    padding: 15px 0;
+    border-bottom: 1px solid #bdbdbd; }
+
+ul.blank {
+  padding: 0; }
+  ul.blank li {
+    list-style-type: none;
+    padding: 5px 0; }
+
+.center-list li {
+  text-align: center; }
+
+/* carousel */
+.owl-carousel {
+  margin-bottom: -20px !important;
+  padding-bottom: 0 !important;
+}
+.owl-carousel div {
+  z-index: -1; }
+.carousel-large .owl-nav {
+  display: none;
+}
+.owl-nav {
+  z-index: 9999 !important;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+
+.carousel-nav {
+  display: block;
+  height: 20px;
+  width: 20px;
+  margin: 20px;
+  z-index: 999 !important;
+  text-align: center;
+  border-radius: 5px; }
+
+button, button:active {
+  outline: none !important;
+  border: none !important; }
+
+.carousel-nav-left {
+  background-image: url("/assets/svg/left-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  outline: none; }
+
+.carousel-nav-right {
+  background-image: url("/assets/svg/right-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center; }
+
+.villa-slide {
+  height: 450px;
+  max-height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+@media screen and (min-width: 980px) {
+    .villa-slide {
+      height: 500px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+  .villa-slide {
+    height: 550px;
+  }
+}
+
+@media screen and (min-width: 1580px) {
+    .villa-slide {
+      height: 600px;
+    }
+} 
+
+@media screen and (min-width: 1900px) {
+  .villa-slide {
+    height: 680px;
+  }
+}
+
+.villa-thumb {
+  height: 80px;
+  max-height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+@media screen and (max-width: 768px) {
+    .villa-thumb, .carousel-nav, .owl-nav {
+      display: none;
+    }
+}
+.footer-nav {
+  text-align: center;
+  margin-top: 30px; }
+
+.footer-nav a {
+  color: #000000;
+  margin: 5px 15px;
+  font-size: 14px; }
+
+.footer-arrow {
+  display: block;
+  width: 15px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.ft-300 {
+  font-weight: 300; }
+
+.ft-400 {
+  font-weight: 400; }
+
+.ft-500 {
+  font-weight: 500; }
+
+.ft-700 {
+  font-weight: 700; }
+
+.ft-900 {
+  font-weight: 900; }
+
+/* colors */
+.dark-primary-bg-color {
+  background: #1976d2; }
+
+.dark-primary-color {
+  color: #1976d2; }
+
+.default-primary-bg-color {
+  background: #2196f3; }
+
+.default-primary-color {
+  color: #2196f3; }
+
+.light-primary-color {
+  background: #bbdefb; }
+
+.white-color {
+  color: #ffffff !important; }
+
+.accent-color {
+  color: #ffc107; }
+
+.accent-bg-color {
+  background: #ffc107 !important; }
+
+.primary-text-color {
+  color: #212121; }
+
+.secondary-text-color {
+  color: #757575; }
+
+.divider-color {
+  border-color: #bdbdbd; }
+
+.orange-color {
+  color: #ff9800; }
+
+.orange-bg-color {
+  background-color: #ff9800; }
+
+.gray-bg-color {
+  background-color: #f2f2f2; }
+
+.white-bg-color {
+  background-color: #ffffff; }
+
+.no-bg-color {
+  background: none !important; }
+
+/* shadows */
+.text-shadow-sm {
+  text-shadow: 0px 1px 3px #000000; }
+
+/* font size */
+.font-xs {
+  font-size: 0.75rem; }
+
+.font-sm {
+  font-size: 0.8rem; }
+
+.font-md {
+  font-size: 0.9rem; }
+
+/* spacing */
+.top-m-10 {
+  margin-top: 10px; }
+
+.top-m-20 {
+  margin-top: 20px; }
+
+.top-m-30 {
+  margin-top: 30px; }
+
+.top-m-40 {
+  margin-top: 40px; }
+
+.bottom-m-10 {
+  margin-bottom: 10px; }
+
+.bottom-m-20 {
+  margin-bottom: 20px; }
+
+.bottom-m-30 {
+  margin-bottom: 30px; }
+
+.bottom-m-40 {
+  margin-bottom: 40px; }
+
+.bottom-m-50 {
+  margin-bottom: 50px; }
+
+.right-m-20 {
+  margin-right: 20px; }
+
+.card-deck .card {
+  margin: 20px 10px !important; }
+
+.margin-top-bottom-10 {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.margin-top-bottom-20 {
+  margin-top: 30px;
+  margin-bottom: 20px; }
+
+.margin-tb-20 {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.margin-tb-30 {
+  margin-top: 20px;
+  margin-bottom: 30px; }
+
+.padding-sm {
+  padding: 15px; }
+
+.padding-md {
+  padding: 20px; }
+
+.padding-lg {
+  padding: 30px; }
+
+.border-bottom-orange {
+  border-bottom: 1px solid #ff9800; }
+
+/* alignment */
+.text-justify {
+  text-align: justify; }
+
+/* borders */
+.border-bottom-dark-gray {
+  border-bottom: 1px solid #ff9800; }
+
+.no-border-radius {
+  border-radius: 0px !important; }
+
+.no-border {
+  border: none !important; }
+
+/* images */
+.img-sm {
+  width: 120px;
+  max-width: 100%;
+  margin: 0; }
+
+/* dividers */
+.divider-sm {
+  display: block;
+  height: 20px; }
+
+.divider-md {
+  display: block;
+  height: 30px; }
+
+.divider-lg {
+  display: block;
+  height: 50px; }
+
+/* Bootsrap */
+.tab-pane {
+  padding: 20px; }
+
+.nav-tabs {
+  border: none !important; }
+
+.nav-item {
+  border: none !important;
+  border-radius: 0 !important; }
+
+.test {
+  background-color: #eeeeee;
+  border: 1px solid #dedede;
+  height: 100px; }
