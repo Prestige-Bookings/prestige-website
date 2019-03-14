@@ -156,7 +156,7 @@ ul.feature-list li:before {
   width: 5px;
   height: 5px;
   position: absolute;
-  background-image: url("https://draxs.github.io/prestige-website/assets/svg/square.svg");
+  background-image: url("assets/svg/square.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -228,14 +228,14 @@ button, button:active {
   border: none !important; }
 
 .carousel-nav-left {
-  background-image: url("/assets/svg/left-arrow.svg");
+  background-image: url("assets/svg/left-arrow.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   outline: none; }
 
 .carousel-nav-right {
-  background-image: url("/assets/svg/right-arrow.svg");
+  background-image: url("assets/svg/right-arrow.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center; }
