@@ -46,7 +46,7 @@ permalink: /villa-agios-ilias-1-coral-bay-paphos-cyprus
                                 {% for thumb in site.static_files %}
                                     {% if thumb.path contains 'thumbs/agios-ilias-1' %}
                                     {% assign tt = thumb.path | remove_first:'/assets/thumbs/' %}
-                                    {% assign tmb = image.path | remove_first:'/' %}
+                                    {% assign tmb = thumb.path | remove_first:'/' %}
                                     <div class="item">
                                         <a class="button secondary url" href="#{{ tt }}">
                                             <div class="villa-thumb" style="background-image: url('{{ tmb | prepend: SourceUrl }}');"></div>
