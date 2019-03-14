@@ -32,7 +32,7 @@ permalink: /villa-thea-coral-bay-paphos-cyprus
                                 {% assign myhash = image.path | remove_first:'/assets/gallery/' %}
                                 {% assign img = image.path | remove_first:'/' %}
                                 <div class="item" data-hash="{{ myhash }}">
-                                    <div class="villa-slide" style="background-image: url('{{ image.path | prepend: SourceUrl }}');"></div>
+                                    <div class="villa-slide" style="background-image: url('{{ img | prepend: SourceUrl }}');"></div>
                                 </div>
                                 {% endif %}
                             {% endfor %}
