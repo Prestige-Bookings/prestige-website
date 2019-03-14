@@ -46,9 +46,10 @@ permalink: /villa-thea-coral-bay-paphos-cyprus
                                 {% for thumb in site.static_files %}
                                     {% if thumb.path contains 'thumbs/thea' %}
                                     {% assign tt = thumb.path | remove_first:'/assets/thumbs/' %}
+                                    {% assign tmb = thumb.path | remove_first:'/' %}
                                     <div class="item">
                                         <a class="button secondary url" href="#{{ tt }}">
-                                            <div class="villa-thumb" style="background-image: url('{{ thumb.path | prepend: SourceUrl }}');"></div>
+                                            <div class="villa-thumb" style="background-image: url('{{ tmb | prepend: SourceUrl }}');"></div>
                                         </a>
                                     </div>
                                     {% endif %}
