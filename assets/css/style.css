@@ -67,7 +67,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url("https://draxs.github.io/prestige-website/assets/images/hero-1.jpg");
+  background-image: url("assets/images/hero-1.jpg");
   background-size: cover;
   background-position: center; }
 
@@ -156,7 +156,7 @@ ul.feature-list li:before {
   width: 5px;
   height: 5px;
   position: absolute;
-  background-image: url("../assets/svg/square.svg");
+  background-image: url("../svg/square.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -228,14 +228,14 @@ button, button:active {
   border: none !important; }
 
 .carousel-nav-left {
-  background-image: url("assets/svg/left-arrow.svg");
+  background-image: url("../svg/left-arrow.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   outline: none; }
 
 .carousel-nav-right {
-  background-image: url("assets/svg/right-arrow.svg");
+  background-image: url("../svg/right-arrow.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center; }

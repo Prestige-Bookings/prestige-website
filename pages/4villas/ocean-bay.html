@@ -30,8 +30,9 @@ permalink: /villa-ocean-bay-coral-bay-paphos-cyprus
                             {% for image in site.static_files %}
                                 {% if image.path contains 'gallery/ocean-bay' %}
                                 {% assign myhash = image.path | remove_first:'/assets/gallery/' %}
+                                {% assign img = image.path | remove_first:'/' %}
                                 <div class="item" data-hash="{{ myhash }}">
-                                    <div class="villa-slide" style="background-image: url('{{ image.path }}');"></div>
+                                    <div class="villa-slide" style="background-image: url('{{ img | prepend: SourceUrl }}');"></div>
                                 </div>
                                 {% endif %}
                             {% endfor %}
@@ -45,9 +46,10 @@ permalink: /villa-ocean-bay-coral-bay-paphos-cyprus
                                 {% for thumb in site.static_files %}
                                     {% if thumb.path contains 'thumbs/ocean-bay' %}
                                     {% assign tt = thumb.path | remove_first:'/assets/thumbs/' %}
+                                    {% assign tmb = image.path | remove_first:'/' %}
                                     <div class="item">
                                         <a class="button secondary url" href="#{{ tt }}">
-                                            <div class="villa-thumb" style="background-image: url('{{ thumb.path }}');"></div>
+                                            <div class="villa-thumb" style="background-image: url('{{ tmb | prepend: SourceUrl }}');"></div>
                                         </a>
                                     </div>
                                     {% endif %}
