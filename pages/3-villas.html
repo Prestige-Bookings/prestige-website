@@ -6,4 +6,25 @@ title: Paphos 3 Bedroom Villas
 description: ""
 permalink: /paphos-3-bedroom-villas
 ---
-
+<div class="container">
+    <div class="row sm-gutters">
+            {% for page in site.pages %}
+                {% if page.bedrooms == 3 %}	
+                {% if page.title %}
+                <div class="col-lg-3 col-md-4">
+                    <div class="card card-test">
+                        <img src="{{ page.image | prepend: SourceUrl }}" class="card-img-top" alt="elite-villa.jpg">
+                            <div class="card-body">
+                            <h5 class="card-title">{{ page.title }}</h5>
+                            <p class="card-text font-sm">{{ page.description | truncatewords: 20 }}</p>
+                        </div>
+                        <div class="card-footer3 text-center">
+                            <a href="{{ page.permalink | prepend: SourceUrl }}" class="btn btn-check btn-block text-uppercase ft-500 font-md">View This Villa</a>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+                {% endif %}				
+            {% endfor %}
+    </div>
+</div>
