@@ -67,7 +67,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url("assets/images/hero-1.jpg");
+  background-image: url("../images/hero-1.jpg");
   background-size: cover;
   background-position: center; }
 
@@ -78,11 +78,11 @@ img {
   min-height: 35vh;
   padding: 20px;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-image: url("assets/images/hero-villa.jpg");
   background-size: cover;
   background-position: center; }
