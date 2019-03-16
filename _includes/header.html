@@ -3,21 +3,75 @@
 <!-- Pushy Menu -->
 <nav class="pushy pushy-left shadow">
     <div class="pushy-content">
-			<div class="pushy-logo">
-				<img class="logo" src="assets/images/gerry-logo-HD-web-sm.png">
+			<div class="pushy-header orange-bg-color">
+				A selection of Luxury Villas with private pools in Coral Bay & Peyia, Paphos - Cyprus
 			</div>
         <ul class="pushy-main">
             <!-- Submenu -->
             <li class="pushy-submenu">
-                <button type="button" class="btn">Submenu</button>
+                <button type="button" class="btn">3 Bedrooms</button>
                 <ul>
-                    <li class="pushy-link"><a href="#">Item 1</a></li>
-                    <li class="pushy-link"><a href="#">Item 2</a></li>
-                    <li class="pushy-link"><a href="#">Item 3</a></li>
+					{% for page in site.pages %}
+						{% if page.bedrooms == 3 %}	
+						{% if page.title %}
+						<li class="pushy-link"><a href="{{ page.permalink | prepend: SourceUrl }}">{{ page.title }}</a></li>
+						{% endif %}
+						{% endif %}				
+					{% endfor %}
                 </ul>
-            </li>
-            <li class="pushy-link"><a href="#">Item 1</a></li>
-            <li class="pushy-link"><a href="#">Item 2</a></li>
+			</li>
+			<li class="pushy-submenu">
+				<button type="button" class="btn">4 Bedrooms</button>
+				<ul>
+					{% for page in site.pages %}
+						{% if page.bedrooms == 4 %}	
+						{% if page.title %}
+						<li class="pushy-link"><a href="{{ page.permalink | prepend: SourceUrl }}">{{ page.title }}</a></li>
+						{% endif %}
+						{% endif %}				
+					{% endfor %}
+				</ul>
+			</li>
+			<li class="pushy-submenu">
+				<button type="button" class="btn">5 Bedrooms</button>
+				<ul>
+					{% for page in site.pages %}
+						{% if page.bedrooms == 5 %}	
+						{% if page.title %}
+						<li class="pushy-link"><a href="{{ page.permalink | prepend: SourceUrl }}">{{ page.title }}</a></li>
+						{% endif %}
+						{% endif %}				
+					{% endfor %}
+				</ul>
+			</li>
+			<li class="pushy-submenu">
+				<button type="button" class="btn">6 Bedrooms</button>
+				<ul>
+					{% for page in site.pages %}
+						{% if page.bedrooms == 6 %}	
+						{% if page.title %}
+						<li class="pushy-link"><a href="{{ page.permalink | prepend: SourceUrl }}">{{ page.title }}</a></li>
+						{% endif %}
+						{% endif %}				
+					{% endfor %}
+				</ul>
+			</li>
+			<li class="pushy-link"><a href="#">Book Online</a></li>
+			<li class="pushy-submenu">
+				<button type="button" class="btn">About Cyprus</button>
+				<ul>
+					{% for page in site.pages %}
+						{% if page.type == "cyprus" %}	
+						{% if page.title %}
+						<li class="pushy-link"><a href="{{ page.permalink | prepend: SourceUrl }}">{{ page.title }}</a></li>
+						{% endif %}
+						{% endif %}				
+					{% endfor %}
+				</ul>
+			</li>
+			<li class="pushy-link"><a href="{{ '/cyprus-car-hire' | prepend: SourceUrl }}">Car Hire</a></li>
+			<li class="pushy-link"><a href="{{ '/cyprus-travel-insurance' | prepend: SourceUrl }}">Travel Insurance</a></li>
+			<li class="pushy-link"><a href="{{ '/contact-us' | prepend: SourceUrl }}">Contact us</a></li>
         </ul>
     </div>
 </nav>
@@ -131,7 +185,15 @@
 </div>
 <!-- End Header -->
 <div class="header-stack orange-bg-color shadow">
-		<span class="mob-site-title">Prestige Bookings</span>
-	<button type="button" class="btn menu-btn">&#9776; Menu</button>
+	<div class="container-fluid">
+		<div class="row align-items-center">
+			<div class="col-8">
+				<img class="mobile-logo shadow" src="{{ '/assets/images/gerry-logo-HD-web-sm.png' | prepend: SourceUrl }}">
+			</div>
+			<div class="col-4 text-right">
+				<button type="button" class="menu-btn">&#9776; Menu</button>
+			</div>
+		</div>
+	</div>
 </div>
 <div class="stack-separator"></div>

@@ -152,7 +152,7 @@ sup {
 }
 
 a {
-  color: #007bff;
+  color: #0067FF;
   text-decoration: none;
   background-color: transparent;
 }
@@ -576,12 +576,6 @@ pre code {
 @media (min-width: 1580px) {
   .container {
     max-width: 1440px;
-  }
-}
-
-@media (min-width: 1900px) {
-  .container {
-    max-width: 1680px;
   }
 }
 
