@@ -233,6 +233,10 @@
   outline: none;
   border: none;
 }
+.menu-btn img {
+  width: 30px;
+  margin-top: -3px;
+}
 .header-stack {
   position: fixed;
   top: 0;
