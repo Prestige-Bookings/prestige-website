@@ -11,15 +11,16 @@ permalink: /paphos-4-bedroom-villas
         {% for page in site.pages %}
             {% if page.bedrooms == 4 %}	
             {% if page.title %}
+            {% assign img = page.image | remove_first:'/' %}
             <div class="col-lg-3 col-md-6">
                 <div class="villa-card">
-                    <img src="{{ page.image | prepend: SourceUrl }}" class="card-img-top" alt="elite-villa.jpg">
+                    <img src="{{ img | prepend: SourceUrl }}" class="card-img-top" alt="">
                     <div class="villa-card-body">
                         <h5 class="villa-card-title">{{ page.title }}</h5>
                         <p class="villa-card-text font-sm">{{ page.description | truncatewords: 20 }}</p>
                     </div>
                     <div class="villa-card-footer text-center">
-                        <a href="{{ page.permalink | prepend: SourceUrl }}" class="btn btn-check btn-block text-uppercase ft-500 font-md card-btn">View This Villa</a>
+                        <a href="{{ page.permalink | prepend: SourceUrl | remove_first:'/' }}" class="btn btn-check btn-block text-uppercase ft-500 font-md card-btn">View This Villa</a>
                     </div>
                 </div>
             </div>
