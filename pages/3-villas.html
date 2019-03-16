@@ -11,9 +11,10 @@ permalink: /paphos-3-bedroom-villas
         {% for page in site.pages %}
             {% if page.bedrooms == 3 %}	
             {% if page.title %}
+            {% assign img = page.image | remove_first:'/' %}
             <div class="col-lg-3 col-md-6">
                 <div class="villa-card">
-                    <img src="{{ page.image | prepend: SourceUrl }}" class="card-img-top" alt="elite-villa.jpg">
+                    <img src="{{ img | prepend: SourceUrl }}" class="card-img-top" alt="">
                     <div class="villa-card-body">
                         <h5 class="villa-card-title">{{ page.title }}</h5>
                         <p class="villa-card-text font-sm">{{ page.description | truncatewords: 20 }}</p>
