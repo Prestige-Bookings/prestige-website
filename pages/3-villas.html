@@ -20,7 +20,7 @@ permalink: /paphos-3-bedroom-villas
                         <p class="villa-card-text font-sm">{{ page.description | truncatewords: 20 }}</p>
                     </div>
                     <div class="villa-card-footer text-center">
-                        <a href="{{ page.permalink | prepend: SourceUrl }}" class="btn btn-check btn-block text-uppercase ft-500 font-md card-btn">View This Villa</a>
+                        <a href="{{ page.permalink | prepend: SourceUrl | remove_first:'/' }}" class="btn btn-check btn-block text-uppercase ft-500 font-md card-btn">View This Villa</a>
                     </div>
                 </div>
             </div>
