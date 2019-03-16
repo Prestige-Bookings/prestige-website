@@ -22,7 +22,7 @@ description: ""
         <div class="row justify-content-center">
             <div class="col">
                 <form>
-                    <div class="form-row">
+                    <div class="form-row home-booking-form">
                         <div class="col-md">
                             <input type="text" class="form-control" placeholder="Check In">
                         </div>
@@ -75,49 +75,56 @@ description: ""
 </div>
 <!-- End Intro Text-->
 <!--Card Header-->
-<div class="card-header">
-    <div class="container">
-        <div class="card-deck">
-            <div class="card">
-                <img src="assets/gallery/thea/01-w1920.jpg" class="card-img-top" alt="3-bedroom-villa.jpg">
-                <div class="card-body">
-                    <h5 class="card-title">Villa Thea</h5>
-                    <p class="card-text font-sm">Quiet and private, this stunning villa offers you the chance to simply laze away your days around your private pool.</p>
+<div class="container section">
+    <div class="row sm-gutters">
+        <div class="col-lg-3 col-md-6">
+            <div class="villa-card">
+                <img src="{{ '/assets/gallery/thea/01-w1920.jpg' | prepend: SourceUrl }}" class="card-img-top" alt="">
+                <div class="villa-card-body">
+                    <h5 class="villa-card-title">Villa Thea</h5>
+                    <p class="villa-card-text font-sm">Quiet and private, this stunning villa offers you the chance to simply laze away your days around your private pool.</p>
                 </div>
-                <div class="card-footer prestige-card-footer-cta text-center">
-                    <span class="ft-500 font-md">VIEW 3 BEDROOM VILLAS</span>
+                <div class="villa-card-footer text-center">
+                    <a href="{{ '/paphos-3-bedroom-villas' | prepend: SourceUrl }}" class="btn btn-check btn-block text-uppercase ft-500 font-md card-btn">VIEW 3 BEDROOM VILLAS</a>
                 </div>
             </div>
-            <div class="card">
-                <img src="assets/gallery/castle-rock/02-w1920.jpg" class="card-img-top" alt="4-bedroom-villa">
-                <div class="card-body">
-                    <h5 class="card-title">Villa Castle Rock</h5>
-                    <p class="card-text font-sm">An amazing 4 bedroom villa is the perfect place to spend long evenings in the sheltered gardens.</p>
+        </div>
 
+        <div class="col-lg-3 col-md-6">
+            <div class="villa-card">
+                <img src="{{ '/assets/gallery/castle-rock/02-w1920.jpg' | prepend: SourceUrl }}" class="card-img-top" alt="">
+                <div class="villa-card-body">
+                    <h5 class="villa-card-title">Villa Castle Rock</h5>
+                    <p class="villa-card-text font-sm">An amazing 4 bedroom villa is the perfect place to spend long evenings in the sheltered gardens.</p>
                 </div>
-                <div class="card-footer prestige-card-footer-cta text-center">
-                    <span class="ft-500 font-md">VIEW 4 BEDROOM VILLAS</span>
-                </div>
-            </div>
-            <div class="card">
-                <img src="assets/gallery/luxor/01-w1920.jpg" class="card-img-top" alt="5-bedroom-villa">
-                <div class="card-body">
-                    <h5 class="card-title">Villa Luxor</h5>
-                    <p class="card-text font-sm">Charming 5-bedroom villa is an oasis of tranquility and privacy, yet it is only a short drive from a bustling resort of Coral Bay.</p>
-                </div>
-                <div class="card-footer prestige-card-footer-cta text-center">
-                    <span class="ft-500 font-md">VIEW 5 BEDROOM VILLAS</span>
+                <div class="villa-card-footer text-center">
+                    <a href="{{ '/paphos-4-bedroom-villas' | prepend: SourceUrl }}" class="btn btn-check btn-block text-uppercase ft-500 font-md card-btn">VIEW 4 BEDROOM VILLAS</a>
                 </div>
             </div>
-            <div class="card">
-                <img src="assets/gallery/mia/02-w1920.jpg" class="card-img-top" alt="6-bedroom-villa">
-                <div class="card-body">
-                    <h5 class="card-title">Villa Mia</h5>
-                    <p class="card-text font-sm">This stunning Deluxe 6 bedroom villa sits directly above the Mediterranean sea surrounded by manicured gardens.</p>
+        </div>
 
+        <div class="col-lg-3 col-md-6">
+            <div class="villa-card">
+                <img src="{{ '/assets/gallery/luxor/01-w1920.jpg' | prepend: SourceUrl }}" class="card-img-top" alt="">
+                <div class="villa-card-body">
+                    <h5 class="villa-card-title">Villa Luxor</h5>
+                    <p class="villa-card-text font-sm">Charming 5-bedroom villa is an oasis of tranquility and privacy, yet it is only a short drive from a bustling resort of Coral Bay.</p>
                 </div>
-                <div class="card-footer prestige-card-footer-cta text-center">
-                    <span class="ft-500 font-md">VIEW 6 BEDROOM VILLAS</span>
+                <div class="villa-card-footer text-center">
+                    <a href="{{ '/paphos-5-bedroom-villas' | prepend: SourceUrl }}" class="btn btn-check btn-block text-uppercase ft-500 font-md card-btn">VIEW 5 BEDROOM VILLAS</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+            <div class="villa-card">
+                <img src="{{ '/assets/gallery/mia/02-w1920.jpg' | prepend: SourceUrl }}" class="card-img-top" alt="">
+                <div class="villa-card-body">
+                    <h5 class="villa-card-title">Villa Mia</h5>
+                    <p class="villa-card-text font-sm">This stunning Deluxe 6 bedroom villa sits directly above the Mediterranean sea surrounded by manicured gardens.</p>
+                </div>
+                <div class="villa-card-footer text-center">
+                    <a href="{{ '/paphos-6-bedroom-villas' | prepend: SourceUrl }}" class="btn btn-check btn-block text-uppercase ft-500 font-md card-btn">VIEW 6 BEDROOM VILLAS</a>
                 </div>
             </div>
         </div>

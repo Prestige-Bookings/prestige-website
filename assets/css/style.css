@@ -578,3 +578,9 @@ button, button:active {
     display: none;
   }
 }
+
+@media screen and (max-width: 980px){
+  .home-booking-form div {
+    margin: 10px 0;
+  }
+}
