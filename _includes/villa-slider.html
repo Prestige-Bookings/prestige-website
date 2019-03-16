@@ -1,0 +1,26 @@
+<script>
+    $('.carousel-large').owlCarousel({
+        items: 1,
+        loop: true,
+        center: true,
+        margin: 5,
+        nav: false,
+        callbacks: true,
+        URLhashListener: true,
+        autoplayHoverPause: true,
+        startPosition: 'URLHash',
+        lazyLoad: true,
+        animateOut: 'fadeOut'
+        });
+        $('.carousel-thumbs').owlCarousel({
+        loop:true,
+        items: 10,
+        margin:5,
+        nav: true,
+        navText: ['<span class="carousel-nav carousel-nav-left"></span>', '<span class="carousel-nav carousel-nav-right"></span>'],
+    })
+    $('.owl-carousel').find('.owl-nav').removeClass('disabled');
+    $('.owl-carousel').on('changed.owl.carousel', function(event) {
+        $(this).find('.owl-nav').removeClass('disabled');
+    });
+    </script>

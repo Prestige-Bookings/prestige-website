@@ -286,28 +286,4 @@ permalink: /villa-luxor-coral-bay-paphos-cyprus
     <iframe src="https://maps.google.ie/maps?q=34.87972,32.33787&amp;num=1&amp;t=h&amp;hl=en&amp;ie=UTF8&amp;z=14&amp;output=embed" width="100%" height="550" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
 </div>
 <!-- ./section map --> 
-
-<script>
-    $('.carousel-large').owlCarousel({
-        items: 1,
-        loop: true,
-        center: true,
-        margin: 5,
-        nav: false,
-        callbacks: true,
-        URLhashListener: true,
-        autoplayHoverPause: true,
-        startPosition: 'URLHash'
-        });
-        $('.carousel-thumbs').owlCarousel({
-        loop:true,
-        items: 10,
-        margin:5,
-        nav: true,
-        navText: ['<span class="carousel-nav carousel-nav-left"></span>', '<span class="carousel-nav carousel-nav-right"></span>'],
-    })
-    $('.owl-carousel').find('.owl-nav').removeClass('disabled');
-    $('.owl-carousel').on('changed.owl.carousel', function(event) {
-        $(this).find('.owl-nav').removeClass('disabled');
-    });
-    </script>
+{% include villa-slider.html %}

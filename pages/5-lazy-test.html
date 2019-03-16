@@ -3,10 +3,10 @@ layout: default
 type: villa
 bedrooms: 3
 language: en
-title: Agios Ilias 2
-description: "hese stunningly luxurious villas are ideal for families, groups, and couples. Located on a quiet street a short drive from the beach."
-image: /assets/gallery/agios-ilias-2/01-w1920.jpg
-permalink: /villa-agios-ilias-2-coral-bay-paphos-cyprus
+title: Loading
+description: "This super 3 bedroom villa offers everything required for a quality time holiday with family and friends..."
+image: /assets/gallery/elite/10-w1920.jpg
+permalink: /lazy
 ---
 <!-- section -->
 <div class="section gray-bg-color">
@@ -14,7 +14,7 @@ permalink: /villa-agios-ilias-2-coral-bay-paphos-cyprus
         <div class="villa-title">
             <div class="row align-items-end">
                 <div class="col-md-9">
-                    <h1 class="">Villa Agios Ilias 2</h1>
+                    <h1 class="">Villa Elite</h1>
                     <h4 class="ft-300 ">Coral Bay, 3 Bedrooms, 2 Bathrooms</h4>
                 </div>
                 <div class="col-md-3 text-center">
@@ -29,11 +29,11 @@ permalink: /villa-agios-ilias-2-coral-bay-paphos-cyprus
                     <div class="col">
                         <div class="owl-carousel carousel-large">
                             {% for image in site.static_files %}
-                                {% if image.path contains 'gallery/agios-ilias-2' %}
+                                {% if image.path contains 'gallery/elite' %}
                                 {% assign myhash = image.path | remove_first:'/assets/gallery/' %}
                                 {% assign img = image.path | remove_first:'/' %}
                                 <div class="item" data-hash="{{ myhash }}">
-                                    <div class="villa-slide" style="background-image: url('{{ img | prepend: SourceUrl }}');"></div>
+                                    <img class="owl-lazy" data-src="{{ img | prepend: SourceUrl }}">
                                 </div>
                                 {% endif %}
                             {% endfor %}
@@ -45,7 +45,7 @@ permalink: /villa-agios-ilias-2-coral-bay-paphos-cyprus
                         <div class="villa-thumbs-container">
                             <div class="owl-carousel carousel-thumbs">
                                 {% for thumb in site.static_files %}
-                                    {% if thumb.path contains 'thumbs/agios-ilias-2' %}
+                                    {% if thumb.path contains 'thumbs/elite' %}
                                     {% assign tt = thumb.path | remove_first:'/assets/thumbs/' %}
                                     {% assign tmb = thumb.path | remove_first:'/' %}
                                     <div class="item">
@@ -63,7 +63,7 @@ permalink: /villa-agios-ilias-2-coral-bay-paphos-cyprus
                 <!-- short description -->
                 <div class="row">
                     <div class="col">
-                        <p>These stunningly luxurious villas are ideal for families, groups, and couples. Located on a quiet street a short drive from the beach, Coral bay resort centre, and an array of restaurants, bars and shops, Agios ILias villas ensure you can spend a quality time holiday with family & friends. Standing in their own large and private gardens, and not overlooked by any other villas, Agios ILias villas are fitted out to the highest of standards, each with its own designer pool and stunning sea views. For larger families and groups, we can also offer our sister villa Agios ILias 1, which is situated directly next door and connected by a shared driveway. <a href="#villa-description">Read more...</a></p>
+                        <p>Elite villa is ideally located for those who want to be close to everything. The villa is located a mere 150m from the main street of Coral Bay, yet is very private allowing you to get away from it all. This super 3 bedroom villa offers everything required for a quality time holiday with family and friends. <a href="#villa-description">Read more...</a></p>
                         <div class="divider-md"></div>
                     </div>
                 </div>
@@ -84,9 +84,9 @@ permalink: /villa-agios-ilias-2-coral-bay-paphos-cyprus
                                 <div class="row">
                                     <div class="col-md-3">
                                         <ul class="feature-list">
-                                            <li>Cooker</li>
-                                            <li>Fridge</li>
-                                            <li>Freezer</li>
+                                            <li>Electric Oven</li>
+                                            <li>Electric Hob</li>
+                                            <li>Fridge/Freezer</li>
                                             <li>Microwave</li>
                                             <li>Toaster</li>
                                             <li>Kettle</li>
@@ -95,7 +95,7 @@ permalink: /villa-agios-ilias-2-coral-bay-paphos-cyprus
                                     <div class="col-md-4">
                                         <ul class="feature-list">
                                             <li>Washing machine</li>
-                                            <li>Dishwasher</li>
+                                            <li>Iron</li>
                                             <li>Free Internet TV</li>
                                             <li>DVD player</li>
                                             <li>Free Wifi</li>
@@ -105,9 +105,8 @@ permalink: /villa-agios-ilias-2-coral-bay-paphos-cyprus
                                     <div class="col-md-5">
                                         <ul class="feature-list">
                                             <li>Free Infant Cot (if required)</li>
-                                            <li>Hair dryer, Iron</li>
+                                            <li>Hair dryer</li>
                                             <li>Safe</li>
-                                            <li>Central Heating (charged extra)</li>
                                             <li>Air conditioning (charged extra)</li>
                                             <li>Linen provided</li>
                                             <li>Towels provided</li>
@@ -119,7 +118,7 @@ permalink: /villa-agios-ilias-2-coral-bay-paphos-cyprus
                                 <div class="row">
                                     <div class="col-md-6">
                                         <ul class="feature-list">
-                                            <li>Private outdoor pool 10 x 6 (unheated)</li>
+                                            <li>Private outdoor pool 8 x 4 (unheated)</li>
                                             <li>Private Garden</li>
                                             <li>BBQ area</li>
                                             <li>Balcony or terrace</li>
@@ -138,10 +137,10 @@ permalink: /villa-agios-ilias-2-coral-bay-paphos-cyprus
                                 <div class="row">
                                     <div class="col">
                                         <ul class="feature-list">
-                                            <li>Beach: 2Km</li>
-                                            <li>Resort Centre: 2.4km</li>
-                                            <li>Restaurants: 1km</li>
-                                            <li>Car Hire: Essential</li>
+                                            <li>Beach: 900m</li>
+                                            <li>Supermarket: 400m</li>
+                                            <li>Restaurants: 150m</li>
+                                            <li>Car Hire: Not Required</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -154,13 +153,13 @@ permalink: /villa-agios-ilias-2-coral-bay-paphos-cyprus
             <!-- booking Sidebar -->
             <div class="col-lg-3">
                 <div class="sidebar-box white-bg-color">
-                    <h4 class="ft-500">Villa Agios Ilias 2</h4>
+                    <h4 class="ft-500">Villa Elite</h4>
                     <div class="row font-md ft-500">
                         <div class="col-md-6">
                             City: Paphos
                         </div>
                         <div class="col-md-6">
-                            Area: Coral Bay
+                            Area: Peyia
                         </div>
                     </div>
                     <div class="row font-md ft-500">
@@ -179,7 +178,7 @@ permalink: /villa-agios-ilias-2-coral-bay-paphos-cyprus
                             1 Veranda
                         </div>
                     </div>
-                    <p class="font-md ft-500">157 m2 Covered Area</p>
+                    <p class="font-md ft-500">150 m2 Covered Area</p>
                     
                     <form>
                         <div class="form-group">
@@ -227,33 +226,28 @@ permalink: /villa-agios-ilias-2-coral-bay-paphos-cyprus
     </div>
 </div>
 <!-- ./section -->
-<!--  -->
+
 <!-- section full description -->
 <div class="section" id="villa-description">
     <div class="container">
         <div class="row">
             <div class="col">
                 <h3>Ground Floor</h3>
-                <p>On entering the villa you will immediately sense the cool luxurious surrounding provided by the quality fittings, high ceilings, and double glazed doors and windows. Here you will find the open plan living, dining, and kitchen areas, as well as a guest WC. The living area is fitted with quality leather furniture, large flat screen TV, and ceiling fans to keep you cool on those hot summer days. Opening directly onto your private designer pool, you will also find free Wi-Fi and internet TV, allowing you to keep in touch with the modern world, should you so wish. The kitchen area has been fitted out with quality appliances, granite worktops, and all the utensils and crockery required, for up to 6 people. The ground floor also benefits from underfloor central heating, providing warmth and comfort for those rare winter nights.</p>
+                <p>On entering Elite villa you will find a spacious and bright open plan lounge, kitchen and dining area. The lounge is equipped with comfortable seating for 6, a flat screen TV, DVD player and Free WI-FI, as well as Internet TV. The kitchen has lots of storage space and counter surface and is fully equipped with everything needed for a family of 6. Appliances here include a washing Machine and a microwave for you convenience. Also on the ground floor you will find the guest W.C. Access to your private swimming pool and garden is through the patio doors in the sitting room. The beautiful sandy Coral Bay beach is a mere 900m from the villa, and the main street with its selection of bars and restaurants is a mere 150m away.</p>
                 <h3>First Floor</h3>
-                <p>The 1st floor consists of 3 good size air-conditioned bedrooms, as well as a family bathroom with full size bath and overhead shower. The master bedroom is large and spacious with built-in wardrobes, luxurious en-suite, and direct access to a shared balcony overlooking your designer swimming pool. Next door you will find a good sized twin room, with built-in wardrobes and direct access to shared balcony overlooking the pool. Next door again there is another good sized double room with built-in wardrobes, and direct access to a 2nd shared balcony. All balconies offer views over your private pool, and directly to the sea. The 1st floor is completed by a luxurious family bathroom, and underfloor central heating in all rooms if required.</p>
+                <p>Directly at the top of the stairs you will find the 3 bedrooms and family bathroom. Bedroom 1 has 2 twin beds, air-conditioning and a ceiling fan. Bedroom 2 is also a twin room with access to the shared balcony overlooking the garden and private pool. This bedroom also has air-conditioning and a ceiling fan. The master bedroom next door is en-suite with a walk-in shower and also has access to the balcony overlooking the garden and pool. The bedroom also comes equipped with air-conditioning and a ceiling fan. The family bathroom on this floor is equipped with a full sizes bath and overhead shower.</p>
                 <h3>Outside area</h3>
-                <p>The outside area of each villa consists of a stunning designer swimming pool, surrounded by a massive sun terrace and gardens. Here you will find sunbeds for up to 7, an outdoor seating area, and alfresco dining for 6. The area is also equipped with a Cypriot style barbecue, and the surrounding gardens are planted with a variety of citrus fruits, olive trees, pomegranates, and palm trees to name but a few. The whole garden and sun terrace offer stunning views to the sea, as well as the surrounding banana plantations and orange groves.</p>
-                <p>Designed with your comfort and living needs in mind, this exceptional villa of distinction promises to fulfil all of your expectations, and provide you with an exceptional, and unforgettable holiday experience.</p>
-                <h3>Accessibility</h3>
-                <p>The villa is accessible by a number of steps and would be suitable for people with mild mobility difficulties. The doors are normal doors and would not pass a wheelchair.</p>
-                <h3>Coast/Beach</h3>
-                <p>The beautiful beach resort of Coral Bay is often described as the best bay on the west of the island. And it’s no surprise, when you consider the calm turquoise sea, dipping gently into some of the clearest off shore diving space in the Mediterranean, the scattered palm trees, the 600 meters of soft white sand and, in summertime, the almost cloudless blue skies. Coral Bay is a 5 minute drive from the villa.
-                Fishing, water sports, scuba diving, go-karting , cycling and golf (Minthis Hills Golf Course, Tsada Golf Course, Secret Valley Golf Course, Aphrodite Hills Golf Course and Elea Golf Course ).<br>
-                The town of Paphos, just 20 minutes drive away offers modern shopping facilities, waterpark, Paphos Zoo</p>
-                <h3>Golf</h3>
-                <p>4 Championship golf courses within a 45 min drive.</p>
-                <h3>Skiing</h3>
-                <p>Skiing is possible in Troodos during January to March</p>
-                
-                <h3>Akamas National Park</h3>
-                <p>Located in the west of Cyprus the Akamas National Park is possibly the most picturesque corner of the island. Covering approximately 230 square kilometers the Akamas peninsula is where you will find wild landscape, amazing natural beauty, deep gorges, and wide sandy bays. The diversity of wildlife is of outstanding ecological importance for the Mediterranean and the wide variety of fauna is certainly impressive. Here you can find 168 different varieties of birds, 12 different mammals, 20 different reptiles and 16 different species of butterfly.<br>
-                The importance of the Akamas Peninsula is recognized far beyond the shores of Cyprus. The European Council has included the Akamas Peninsula within its Mediterranean protection programme and within Cyprus; Friends of the Earth and Greenpeace are campaigning hard for the Akamas Peninsula to be declared a National Park.</p>
+                <p>Surrounding Elite villa you will find the landscaped private garden, 8X4 swimming pool, Cypriot barbeque, and alfresco dining area.</p>
+                <p>Designed with your comfort and living needs in mind, this exceptional villa promises to fulfil all of your expectations, and provide you with an exceptional, and unforgettable holiday experience.</p>
+                <h3>Location – Paphos, Coral Bay</h3>
+                <p>This family oriented area has become a lively resort with plenty to offer in terms of amenities and activities. The centre of the resort which features a wide selection of restaurants offering both Cypriot and International Cuisines, cafes, bars, shops, a choice of supermarkets, several banks, a chemist and a laundry within 1km of the villa.</p>
+                <p>The resort boasts two sandy beaches, the busier of the two being the popular Coral Bay Beach, a sandy horseshoe shaped bay honoured with a Blue Flag of the European Union. Sunbeds and umbrellas are available for hire, watersports are on offer and there are two beach cafés providing refreshments.</p>
+                <p>A little further along the coast you reach the natural rock caves of the area known locally as Sea Caves, an area which provides ideal snorkelling territory and is popular with local scuba diving schools.</p>
+                <p>For a taste of the more traditional head to the tiny fishing hamlet of St Georges from where you can enjoy some of the islands most memorable sunset views and dine at one of the small collection of family run tavernas. For nature lovers the start of the protected Akamas Peninsula is just to the north of the village. Or you can head to the hillside village of Peyia, located just a few kilometres inland from Coral Bay to sample a traditional Cypriot meze meal at one of its small selection of long established tavernas and village coffee shops.</p>
+                <p>Paphos Town approximately 20 kilometres away, was once the capital of the island is now included in the official UNESCO list of cultural and natural treasures of the world’s heritage. The remains of villas, palaces, theatres, fortresses and tombs mean that the town is of exceptional architectural and historic value. The well preserved mosaics and the Tombs of the Kings are probably the biggest cultural draw with further archaeological discoveries continually being made. Ano Pafos on the cliff is the main administrative centre and residential district while Kato Pafos, by the sea, is the main tourist area built around the harbour and medieval port.</p>
+                <p>Mini golf, watersports and go-karting are all activities available in the immediate Coral Bay area. The Paphos Zoo and the Horse Riding Stables which cater for all ages are both within a 10 minute drive of the villa.</p>
+                <p>Extend your exploring to encompass the town of Paphos and the list of available activities expands to include a bowling alley, waterpark, several Heritage sites, attractive harbour area and modern shopping facilities.</p>
+                <p>There are 4 golf courses; Tsada Golf Course, Secret Valley Golf Course, Aphrodite Hills Golf Course and Elea Golf Course all within approximately a 30 minute drive.</p>
             </div>
         </div>
     </div>
@@ -270,7 +264,33 @@ permalink: /villa-agios-ilias-2-coral-bay-paphos-cyprus
             </div>
         </div>
     </div>
-    <iframe src="https://maps.google.ie/maps?q=34.87189,32.36297&amp;num=1&amp;t=h&amp;hl=en&amp;ie=UTF8&amp;z=14&amp;output=embed" width="100%" height="550" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+    <iframe src="https://maps.google.ie/maps?q=34.851612,32.380277&amp;num=1&amp;t=h&amp;hl=en&amp;ie=UTF8&amp;z=14&amp;output=embed" width="100%" height="550" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
 </div>
 <!-- ./section map --> 
-{% include villa-slider.html %}
+
+<script>
+    $('.carousel-large').owlCarousel({
+        items: 1,
+        loop: true,
+        center: true,
+        margin: 5,
+        nav: false,
+        callbacks: true,
+        URLhashListener: true,
+        autoplayHoverPause: true,
+        startPosition: 'URLHash',
+        lazyLoad: true,
+        animateOut: 'fadeOut'
+        });
+        $('.carousel-thumbs').owlCarousel({
+        loop:true,
+        items: 10,
+        margin:5,
+        nav: true,
+        navText: ['<span class="carousel-nav carousel-nav-left"></span>', '<span class="carousel-nav carousel-nav-right"></span>'],
+    })
+    $('.owl-carousel').find('.owl-nav').removeClass('disabled');
+    $('.owl-carousel').on('changed.owl.carousel', function(event) {
+        $(this).find('.owl-nav').removeClass('disabled');
+    });
+    </script>
