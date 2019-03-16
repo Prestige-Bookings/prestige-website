@@ -113,7 +113,7 @@
 						<a class="nav-link text-uppercase white-color font-md ft-500" href="{{ '/' | prepend: SourceUrl }}">Home</a>
 					</li>
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle text-uppercase white-color font-md ft-500" href="" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">3 Bedroom</a>
+						<a class="nav-link dropdown-toggle text-uppercase white-color font-md ft-500" href="{{ 'paphos-3-bedroom-villas' | prepend: SourceUrl }}" id="navbarDropdownMenuLink" role="button" aria-haspopup="true" aria-expanded="false">3 Bedroom</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 							{% for page in site.pages %}
 								{% if page.bedrooms == 3 %}	
@@ -125,7 +125,7 @@
 						</div>
 					</li>
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle text-uppercase white-color font-md ft-500" href="" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">4 Bedroom</a>
+						<a class="nav-link dropdown-toggle text-uppercase white-color font-md ft-500" href="{{ 'paphos-4-bedroom-villas' | prepend: SourceUrl }}" id="navbarDropdownMenuLink" role="button" aria-haspopup="true" aria-expanded="false">4 Bedroom</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 							{% for page in site.pages | where: "type", "villa" %}
 								{% if page.bedrooms == 4 %}	
@@ -137,7 +137,7 @@
 						</div>
 					</li>
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle text-uppercase white-color font-md ft-500" href="" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">5 Bedroom</a>
+						<a class="nav-link dropdown-toggle text-uppercase white-color font-md ft-500" href="{{ 'paphos-5-bedroom-villas' | prepend: SourceUrl }}" id="navbarDropdownMenuLink" role="button" aria-haspopup="true" aria-expanded="false">5 Bedroom</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 							{% for page in site.pages | where: "type", "villa" %}
 								{% if page.bedrooms == 5 %}	
@@ -149,7 +149,7 @@
 						</div>
 					</li>
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle text-uppercase white-color font-md ft-500" href="" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">6 Bedroom</a>
+						<a class="nav-link dropdown-toggle text-uppercase white-color font-md ft-500" href="{{ 'paphos-6-bedroom-villas' | prepend: SourceUrl }}" id="navbarDropdownMenuLink" role="button" aria-haspopup="true" aria-expanded="false">6 Bedroom</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 							{% for page in site.pages | where: "type", "villa" %}
 								{% if page.bedrooms == 6 %}	
@@ -161,10 +161,10 @@
 						</div>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link text-uppercase white-color font-md ft-500" href="">Book Online</a>
+						<a class="nav-link text-uppercase white-color font-md ft-500" href="https://www.thebookingbutton.co.uk/properties/prestigebookdirect">Book Online</a>
 					</li>
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle text-uppercase white-color font-md ft-500" href="" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<a class="nav-link dropdown-toggle text-uppercase white-color font-md ft-500" href="{{ 'paphos-activities' | prepend: SourceUrl }}" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						About Cyprus
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
