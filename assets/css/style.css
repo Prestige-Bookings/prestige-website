@@ -104,6 +104,11 @@ img {
   padding: 9px;
 }
 
+.btn-wide {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
 .btn-nav {
   color: #ffffff; }
 
@@ -583,4 +588,8 @@ button, button:active {
   .home-booking-form div {
     margin: 10px 0;
   }
+}
+
+.villa-features-box .col-6, .villa-features-box .col  {
+  margin: 5px 0px;
 }

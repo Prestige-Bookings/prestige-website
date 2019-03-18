@@ -1,0 +1,53 @@
+<div id="booking_widget">
+    <form class="formtastic" target="_blank" action="https://app.thebookingbutton.com/properties/prestigebookdirect?locale=en"  data-region="emea" data-channelcode="prestigebookdirect"
+    accept-charset="UTF-8" method="get">
+        <input name="utf8" type="hidden" value="✓">
+        <input type="hidden" name="locale" id="locale" value="en">
+        <input type="hidden" name="from_widget" id="from_widget" value="true">
+        <fieldset class="inputs">
+        <ol>
+        <li class="string">
+        <label>Check In Date</label>
+        <input type="text" name="check_in_date_view" id="check_in_date_view" class="calendar hasDatepicker" data-init-val="null"><img class="ui-datepicker-trigger" src="https://d3ltdu8ywan39g.cloudfront.net/assets/cal_button-69b7212289b240a8a12f2f091659f7f5.png" alt="Select a date" title="Select a date"><input type="hidden" name="check_in_date" id="check_in_date">
+        </li>
+        <li class="string">
+        <label>Check Out Date</label>
+        <input type="text" name="check_out_date_view" id="check_out_date_view" class="calendar hasDatepicker" data-init-val="null"><img class="ui-datepicker-trigger" src="https://d3ltdu8ywan39g.cloudfront.net/assets/cal_button-69b7212289b240a8a12f2f091659f7f5.png" alt="Select a date" title="Select a date"><input type="hidden" name="check_out_date" id="check_out_date">
+        </li>
+        <li class="select_occupancies">
+        <label>Adults</label>
+        <select name="number_adults" id="number_adults"><option value="0">0</option>
+        <option selected="selected" value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option></select>
+        </li>
+        <li class="select_occupancies">
+        <label>Children</label>
+        <select name="number_children" id="number_children"><option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option></select>
+        </li>
+        </ol>
+        </fieldset>
+        <fieldset class="actions">
+            <ol>
+            <li><input type="submit" name="commit" value=" Check Availability" class="check_availability"></li>
+            </ol>
+        </fieldset>
+    </form>
+</div>
