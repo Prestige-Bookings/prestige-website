@@ -21,39 +21,41 @@ description: ""
     <div class="header-booking-form shadow">
         <div class="row justify-content-center">
             <div class="col">
-                <form>
+                <form action="https://app.thebookingbutton.com/" class="ibe" data-region="emea" data-channelcode="prestigebookdirect" target="_blank">
                     <div class="form-row home-booking-form">
                         <div class="col-md">
-                            <input type="text" class="form-control" placeholder="Check In">
+                                <label for="inputEmail4">Check In</label>
+                                <input name="check_in_date" type="date" class="form-control" id="exampleInputEmail1" aria-describedby="chackin" placeholder="Check In" required>
                         </div>
                         <div class="col-md">
-                            <input type="text" class="form-control" placeholder="Check Out">
+                                <label for="inputEmail4">Check Out</label>
+                                <input name="check_out_date" type="date" class="form-control" id="exampleInputEmail1" aria-describedby="chackin" placeholder="Check In" required>
+                        </div>
+                        <div class="col">
+                                <label for="inputEmail4">Adults</label>
+                                <select name="number_adults" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                </select>
+                        </div>
+                        <div class="col">
+                                <label for="inputEmail4">Children</label>
+                                <select name="number_children" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                </select>
                         </div>
                         <div class="col-md">
-                            <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                                <option selected>Adults</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                            </select>
-                        </div>
-                        <div class="col-md">
-                            <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                                <option selected>Children</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                            </select>
-                        </div>
-                        <div class="col-md">
+                                <label class="md-hide white-color" for="inputEmail4">-</label>
                             <button type="submit" class="btn-sm btn-check btn-block text-uppercase ft-500 font-md">Check Availability</button>
                         </div>
                     </div>

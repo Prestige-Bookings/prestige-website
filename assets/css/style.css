@@ -61,6 +61,7 @@ img {
   display: flex;
   min-height: 70vh;
   padding: 20px;
+  margin-top: 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -370,6 +371,9 @@ button, button:active {
 .gray-bg-color {
   background-color: #f2f2f2; }
 
+.white-color {
+  color: #ffffff; }
+
 .white-bg-color {
   background-color: #ffffff; }
 
@@ -611,3 +615,4 @@ button, button:active {
   font-size: 14px;
   font-weight: 500;
 }
+
