@@ -29,9 +29,9 @@
     {% endfor %}
 {% endif %}
 {% else %}
-    {% assign seotitle = page.subtitle %}
+    {% assign seotitle = page.seotitle %}
     {% assign seoimage = page.image %}
-    {% assign seodescription = page.summary %}
+    {% assign seodescription = page.description %}
 {% endif %}
 <title>PrestigeBookings.com - {{ seotitle | truncatewords: 30 }}</title>
 <meta name="description" content="{{ seodescription | truncatewords: 30 }}">

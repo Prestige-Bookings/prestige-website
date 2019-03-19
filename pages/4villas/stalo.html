@@ -4,6 +4,7 @@ type: villa
 bedrooms: 4
 language: en
 title: Stalo
+seotitle: Villa Stalo, Peyia, 4 Bedrooms, 3 Bathrooms
 description: "Situated on a vast plot of 2000sqm, Villa Stalo is a majestic villa with amazing sea views all around. Exactly half way..."
 image: /assets/gallery/stalo/01-w1920.jpg
 permalink: /villa-stalo-coral-bay-paphos-cyprus
@@ -18,7 +19,7 @@ permalink: /villa-stalo-coral-bay-paphos-cyprus
                     <h4 class="ft-300 ">Peyia, 4 Bedrooms, 3 Bathrooms</h4>
                 </div>
                 <div class="col-md-3 text-center">
-                    <img class="img-sm" src="assets/images/exclusive.png">
+                    <img class="img-sm" src="assets/images/exclusive.png" alt="Exclusive Paphos Holiday Villa">
                 </div>
             </div>
         </div>
@@ -193,51 +194,7 @@ permalink: /villa-stalo-coral-bay-paphos-cyprus
                     </div>
                     <form action="https://app.thebookingbutton.com/" class="ibe" data-region="emea" data-channelcode="prestigebookdirect" target="_blank">
                         <input type="hidden" name="room_type" value="21769" >
-                        <div class="form-row">
-                            <div class="col">
-                                <label for="inputEmail4">Check In</label>
-                                <input name="check_in_date" type="date" class="form-control" id="exampleInputEmail1" aria-describedby="chackin" placeholder="Check In">
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col">
-                                <label for="inputEmail4">Check Out</label>
-                                <input name="check_out_date" type="date" class="form-control" id="exampleInputEmail1" aria-describedby="chackin" placeholder="Check In">
-                            </div>
-                        </div>
-
-                        <div class="form-row">
-                            <div class="col">
-                                <label for="inputEmail4">Adults</label>
-                                <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                </select>
-                            </div>
-                            <div class="col">
-                                <label for="inputEmail4">Children</label>
-                                <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                                    <option value="0">0</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col">
-                                <button type="submit" class="btn btn-check btn-block text-uppercase ft-500 font-md">Check Availability</button>
-                            </div>
-                        </div>
+                        {% include bookingform.html %}
                     </form>
                     <div class="row font-md ft-500">
                         <div class="col">
