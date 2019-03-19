@@ -95,7 +95,7 @@ img {
   height: 500px;
   max-height: 100%; }
 .villa-thumbs-container {
-    margin-top: 25px; 
+    margin-top: 0; 
   }  
 
 .villa-thumbs-container img {
@@ -218,7 +218,7 @@ ul.blank {
 
 /* carousel */
 .owl-carousel {
-  margin-bottom: -20px !important;
+  margin-bottom: 5px;
   padding-bottom: 0 !important;
 }
 .owl-carousel div {
