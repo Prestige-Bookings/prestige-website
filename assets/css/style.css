@@ -217,7 +217,12 @@ ul.blank {
   text-align: center; }
 
 /* carousel */
+
 .owl-carousel {
+  background-image: url("../images/loading.gif");
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  background-position: center;
   margin-bottom: 5px;
   padding-bottom: 0 !important;
 }
