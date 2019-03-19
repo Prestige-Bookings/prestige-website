@@ -616,3 +616,6 @@ button, button:active {
   font-weight: 500;
 }
 
+.owl-dots {
+  display: none !important;
+}
