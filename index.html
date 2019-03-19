@@ -24,16 +24,16 @@ description: ""
                 <form action="https://app.thebookingbutton.com/" class="ibe" data-region="emea" data-channelcode="prestigebookdirect" target="_blank">
                     <div class="form-row home-booking-form">
                         <div class="col-md">
-                                <label for="inputEmail4">Check In</label>
-                                <input name="check_in_date" type="date" class="form-control" id="exampleInputEmail1" aria-describedby="chackin" placeholder="Check In" required>
+                                <label for="checkin">Check In</label>
+                                <input name="check_in_date" type="date" class="form-control" id="checkin" required>
                         </div>
                         <div class="col-md">
-                                <label for="inputEmail4">Check Out</label>
-                                <input name="check_out_date" type="date" class="form-control" id="exampleInputEmail1" aria-describedby="chackin" placeholder="Check In" required>
+                                <label for="checkout">Check Out</label>
+                                <input name="check_out_date" type="date" class="form-control" id="checkout" required>
                         </div>
                         <div class="col">
-                                <label for="inputEmail4">Adults</label>
-                                <select name="number_adults" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                <label for="adults">Adults</label>
+                                <select name="number_adults" class="custom-select mr-sm-2" id="adults">
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
@@ -43,8 +43,8 @@ description: ""
                                 </select>
                         </div>
                         <div class="col">
-                                <label for="inputEmail4">Children</label>
-                                <select name="number_children" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                <label for="children">Children</label>
+                                <select name="number_children" class="custom-select mr-sm-2" id="children">
                                     <option value="0">0</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -81,7 +81,7 @@ description: ""
     <div class="row sm-gutters">
         <div class="col-lg-3 col-md-6">
             <div class="villa-card">
-                <img src="{{ 'assets/gallery/thea/01-w1920.jpg' | prepend: SourceUrl }}" class="card-img-top" alt="">
+                <img src="{{ 'assets/images/home/thea.jpg' | prepend: SourceUrl }}" class="card-img-top" alt="">
                 <div class="villa-card-body">
                     <h5 class="villa-card-title">Villa Thea</h5>
                     <p class="villa-card-text font-sm">Quiet and private, this stunning villa offers you the chance to simply laze away your days around your private pool.</p>
@@ -94,7 +94,7 @@ description: ""
 
         <div class="col-lg-3 col-md-6">
             <div class="villa-card">
-                <img src="{{ 'assets/gallery/castle-rock/02-w1920.jpg' | prepend: SourceUrl }}" class="card-img-top" alt="">
+                <img src="{{ 'assets/images/home/castle-rock.jpg' | prepend: SourceUrl }}" class="card-img-top" alt="">
                 <div class="villa-card-body">
                     <h5 class="villa-card-title">Villa Castle Rock</h5>
                     <p class="villa-card-text font-sm">An amazing 4 bedroom villa is the perfect place to spend long evenings in the sheltered gardens.</p>
@@ -107,7 +107,7 @@ description: ""
 
         <div class="col-lg-3 col-md-6">
             <div class="villa-card">
-                <img src="{{ 'assets/gallery/luxor/01-w1920.jpg' | prepend: SourceUrl }}" class="card-img-top" alt="">
+                <img src="{{ 'assets/images/home/luxor.jpg' | prepend: SourceUrl }}" class="card-img-top" alt="">
                 <div class="villa-card-body">
                     <h5 class="villa-card-title">Villa Luxor</h5>
                     <p class="villa-card-text font-sm">Charming 5-bedroom villa is an oasis of tranquility and privacy, yet it is only a short drive from Coral Bay.</p>
@@ -120,7 +120,7 @@ description: ""
 
         <div class="col-lg-3 col-md-6">
             <div class="villa-card">
-                <img src="{{ 'assets/gallery/mia/02-w1920.jpg' | prepend: SourceUrl }}" class="card-img-top" alt="">
+                <img src="{{ 'assets/images/home/mia.jpg' | prepend: SourceUrl }}" class="card-img-top" alt="">
                 <div class="villa-card-body">
                     <h5 class="villa-card-title">Villa Mia</h5>
                     <p class="villa-card-text font-sm">This stunning Deluxe 6 bedroom villa sits directly above the Mediterranean sea surrounded by manicured gardens.</p>
