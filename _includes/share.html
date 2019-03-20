@@ -1,4 +1,4 @@
-{% assign shareurl = page.url | prepend: SourceUrl  %}
+{% assign shareurl = page.url | replace:'index.html' | prepend: SourceUrl  %}
 <div class="Share">
     <h6 class="text-center">Share</h6>
     <ul>
