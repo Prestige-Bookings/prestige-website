@@ -72,7 +72,8 @@
 			<li class="pushy-link"><a href="{{ '/cyprus-car-hire' | prepend: SourceUrl }}">Car Hire</a></li>
 			<li class="pushy-link"><a href="{{ '/cyprus-travel-insurance' | prepend: SourceUrl }}">Travel Insurance</a></li>
 			<li class="pushy-link"><a href="{{ '/contact-us' | prepend: SourceUrl }}">Contact us</a></li>
-        </ul>
+		</ul>
+		{% include social.html %}
     </div>
 </nav>
 <!-- Site Overlay -->
@@ -82,7 +83,15 @@
 	<div class="container margin-top-bottom-10">
 		<div class="row align-items-center">
 			<div class="col-md-5">
-					<span class="font-sm right-m-20">We're always here to help +357 26 621 862</span> <a class="font-sm" href="contact-us">Email Us</a>
+				<div class="social">
+					<ul>
+						<li><a href="https://www.youtube.com/user/prestigebookings" target="_blank" rel="noopener noreferrer"><img src="{{ '/assets/svg/youtube.svg' | prepend: SourceUrl }}" alt="Youtube"></a></li>
+						<li><a href="https://www.facebook.com/prestigebookings" target="_blank" rel="noopener noreferrer"><img src="{{ '/assets/svg/facebook-letter-logo-black.svg' | prepend: SourceUrl }}" alt="Facebook"></a></li>
+						<li><a href="https://twitter.com/PrestigeBookins" target="_blank" rel="noopener noreferrer"><img src="{{ '/assets/svg/twitter-black.svg' | prepend: SourceUrl }}" alt="Twitter"></a></li>
+						<li><a href="http://prestigebookings.tumblr.com/" target="_blank" rel="noopener noreferrer"><img src="{{ '/assets/svg/tumblr-letter-logo.svg' | prepend: SourceUrl }}" alt="Tumblr"></a></li>
+					</ul>
+				</div>
+				<span class="font-sm right-m-20">We're always here to help +357 26 621 862</span> <a class="font-sm" href="contact-us">Email Us</a>
 			</div>
 			<div class="col-md-2 text-center">
 					<img class="logo" src="{{ '/assets/images/gerry-logo-HD-web-sm.png' | prepend: SourceUrl }}" alt="Prestige Bookings">

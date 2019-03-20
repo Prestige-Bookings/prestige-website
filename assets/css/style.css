@@ -522,34 +522,49 @@ button, button:active {
   text-align: left;
 }
 
+.social {
+  display: block;
+  margin: 0;
+  margin-bottom: 10px;
+  text-align: left;
+}
 
-.Share ul {
+.Share ul, .social ul {
   margin: 0;
   padding: 0;
   display: block;
   text-align: left;
 }
 
-.Share ul li {
+.Share ul li, .social ul li {
   display: inline-block;
   margin: 0;
   padding: 0 3px;
 }
 
-.Share img {
+.Share img, .social img {
   width: 20px;
   height: 20px;
 }
 
+.social img {
+  width: 13px;
+  height: 13px;
+}
+
 @media screen and (max-width: 576px){
-  .Share ul li {
+  .Share ul li, .social ul li {
       display: inline-block;
       margin: 0;
       padding: 2px 6px;
   }
-  .Share img {
+  .Share img, .social img {
       width: 18px;
       height: 18px;
+  }
+  .social img {
+      width: 17px;
+      height: 17px;
   }
 }
 
