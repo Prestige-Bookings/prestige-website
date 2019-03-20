@@ -38,19 +38,19 @@
 <meta property="og:title" content="PrestigeBookings.com - {{ seotitle }}" />
 <meta property="og:type" content="website" />
 <meta property="og:description" content="{{ seodescription | truncatewords: 30 }}" />
-<meta property="og:url" content="{{ page.url | replace:'index.html' | prepend: site.url }}" />
-<meta property="og:image" content="{{ seoimage | prepend: site.url }}" />
+<meta property="og:url" content="{{ page.url | replace:'index.html' | prepend: SourceUrl }}" />
+<meta property="og:image" content="{{ seoimage | prepend: SourceUrl }}" />
 <script type="application/ld+json">
     {
     "@context": "http://schema.org",
     "@type": "NewsArticle",
     "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "{{ page.url | replace:'index.html' | prepend: site.url }}"
+    "@id": "{{ page.url | replace:'index.html' | prepend: SourceUrl }}"
     },
     "headline": "PrestigeBookings.com - {{ seotitle }}",
     "image": [
-        "{{ page.image | prepend: site.url  }}"
+        "{{ page.image | prepend: SourceUrl  }}"
     ],
     "datePublished": "{{ site.time | date_to_xmlschema }}",
     "dateModified": "{{ site.time | date_to_xmlschema }}",
