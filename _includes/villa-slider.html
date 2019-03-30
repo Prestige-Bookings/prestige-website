@@ -1,11 +1,12 @@
 <script>
     $('.carousel-large').owlCarousel({
         items: 1,
-        loop:false,
+        loop:true,
         autoplay:false,
         center: true,
         margin: 5,
-        nav: false,
+        nav: true,
+        navText: ['<span class="carousel-nav carousel-nav-left"></span>', '<span class="carousel-nav carousel-nav-right"></span>'],
         callbacks: true,
         URLhashListener: true,
         autoplayHoverPause: true,
@@ -25,4 +26,7 @@
     $('.owl-carousel').on('changed.owl.carousel', function(event) {
         $(this).find('.owl-nav').removeClass('disabled');
     });
+    $().fancybox({
+        hash: false
+});
 </script>  

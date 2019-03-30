@@ -218,7 +218,7 @@ ul.blank {
 
 /* carousel */
 
-.owl-carousel {
+.carousel-large {
   background-image: url("../images/loading.gif");
   background-repeat: no-repeat;
   background-size: 24px 24px;
@@ -229,8 +229,35 @@ ul.blank {
 .owl-carousel div {
   z-index: -1; }
 .carousel-large .owl-nav {
-  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
 }
+.carousel-large .carousel-nav {
+  display: block;
+  height: 50px;
+  width: 50px;
+  margin: 20px;
+  z-index: 999 !important;
+  text-align: center;
+  border-radius: 1px;
+}
+
+.carousel-large .carousel-nav-left {
+  background-image: url("../svg/left-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  outline: none; }
+
+.carousel-large .carousel-nav-right {
+  background-image: url("../svg/right-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center; }
+
 .owl-nav {
   z-index: 9999 !important;
   margin-left: auto;
