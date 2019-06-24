@@ -6,7 +6,7 @@ language: en
 title: Elite
 seotitle: Villa Elite, Coral Bay, 3 Bedrooms, 2 Bathrooms
 description: "This super 3 bedroom villa offers everything required for a quality time holiday with family and friends..."
-image: /assets/gallery/elite/10-w1920.jpg
+image: /assets/gallery/elite/10.jpg
 permalink: /villa-elite-coral-bay-paphos-cyprus
 ---
 <!-- section -->
@@ -34,7 +34,7 @@ permalink: /villa-elite-coral-bay-paphos-cyprus
                                 {% assign myhash = image.path | remove_first:'/assets/gallery/' %}
                                 {% assign img = image.path | remove_first:'/' %}
                                 <div class="item" data-hash="{{ myhash }}">
-                                    <a data-fancybox href="{{ img | prepend: SourceUrl }}" title="{{ page.seotitle }}"><div class="villa-slide" data-src="{{ img | prepend: SourceUrl }}"></div></a>
+                                    <div class="villa-slide" data-src="{{ img | prepend: SourceUrl }}"></div>
                                 </div>
                                 {% endif %}
                             {% endfor %}
