@@ -1,0 +1,252 @@
+---
+layout: default
+type: villa
+bedrooms: 4
+language: en
+title: Stalo
+seotitle: Villa Stalo, Peyia, 4 Bedrooms, 3 Bathrooms
+description: "Situated on a vast plot of 2000sqm, Villa Stalo is a majestic villa with amazing sea views all around. Exactly half way..."
+image: /assets/gallery/stalo/01-w1920.jpg
+permalink: /villa-stalo-coral-bay-paphos-cyprus
+---
+<!-- section -->
+<div class="section gray-bg-color">
+    <div class="container">
+        <div class="villa-title">
+            <div class="row align-items-end">
+                <div class="col-md-9">
+                    <h1 class="">Villa Stalo</h1>
+                    <h4 class="ft-300 ">Peyia, 4 Bedrooms, 3 Bathrooms</h4>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img class="img-sm" src="assets/images/exclusive.png" alt="Exclusive Paphos Holiday Villa">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-9">
+                <!-- slider -->
+                <div class="row">
+                    <div class="col">
+                        <div class="owl-carousel carousel-large">
+                            {% for image in site.static_files %}
+                                {% if image.path contains 'gallery/stalo' %}
+                                {% assign myhash = image.path | remove_first:'/assets/gallery/' %}
+                                {% assign img = image.path | remove_first:'/' %}
+                                <div class="item" data-hash="{{ myhash }}">
+                                    <div class="villa-slide" data-src="{{ img | prepend: SourceUrl }}"></div>
+                                </div>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="villa-thumbs-container">
+                            <div class="owl-carousel carousel-thumbs">
+                                {% for thumb in site.static_files %}
+                                    {% if thumb.path contains 'thumbs/stalo' %}
+                                    {% assign tt = thumb.path | remove_first:'/assets/thumbs/' %}
+                                    {% assign tmb = thumb.path | remove_first:'/' %}
+                                    <div class="item">
+                                        <a class="button secondary url" href="#{{ tt }}" title="thumb nav">
+                                            <div class="villa-thumb" style="background-image: url('{{ tmb | prepend: SourceUrl }}');"></div>
+                                        </a>
+                                    </div>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./slider -->
+                <!-- short description -->
+                <div class="row">
+                    <div class="col">
+                        <p>Situated on a vast plot of 2000sqm, Villa Stalo is a majestic villa with amazing sea views all around. Exactly half way between Coral Bay and Pegia village and just 1 km from the Mediterranean sea, villa Stalo offers everything you could possible desire for a luxury vacation. Pulling up to the villa, your initial reaction will be wow!! And this feeling will continue right through the property.<a href="#villa-description">Read more...</a></p>
+                    </div>
+                </div>
+                <!-- ./short description -->
+                <!-- tabs -->
+                <div class="row">
+                    <div class="col">
+                        <div class="divider-md"></div>
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active" id="nav-inside-tab" data-toggle="tab" href="#nav-inside" role="tab" aria-controls="nav-inside" aria-selected="true">Inside</a>
+                                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Outside</a>
+                                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Distances</a>
+                            </div>
+                        </nav>
+                        <div class="tab-content white-bg-color" id="nav-tabContent"> 
+                            <div class="tab-pane fade show active" id="nav-inside" role="tabpanel" aria-labelledby="nav-inside-tab">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <ul class="feature-list">
+                                            <li>Cooker</li>
+                                            <li>Fridge</li>
+                                            <li>Freezer</li>
+                                            <li>Microwave</li>
+                                            <li>Toaster</li>
+                                            <li>Kettle</li>
+                                            <li>Washing machine</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <ul class="feature-list">
+                                            <li>Dishwasher</li>
+                                            <li>Iron</li>
+                                            <li>Satellite TV</li>
+                                            <li>DVD player</li>
+                                            <li>Free Wifi</li>
+                                            <li>Free High chair</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <ul class="feature-list">
+                                            <li>Free Infant Cot</li>
+                                            <li>Hair dryer</li>
+                                            <li>Safe</li>
+                                            <li>Air conditioning</li>
+                                            <li>Linen provided</li>
+                                            <li>Towels provided</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul class="feature-list">
+                                            <li>Private outdoor pool (unheated)</li>
+                                            <li>Private Garden</li>
+                                            <li>Solarium or roof terrace</li>
+                                            <li>BBQ area</li>
+                                            <li>Balcony or terrace</li>
+                                            <li>Sea View</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul class="feature-list">
+                                            <li>Boat Hire available</li>
+                                            <li>Bicycle Hire available</li>
+                                            <li>Secure parking</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                <div class="row">
+                                    <div class="col">
+                                        <ul class="feature-list">
+                                            <li>Beach: 1.5km</li>
+                                            <li>Restaurants: 150m</li>
+                                            <li>Shops: 1.5km</li>
+                                            <li>Car Hire: Recommended</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- tabs -->
+            </div>
+            <!-- booking Sidebar -->
+            <div class="col-lg-3">
+                <div class="sidebar-box villa-features-box white-bg-color">
+                    <h4 class="ft-500">Villa Stalo</h4>
+                    <div class="row font-md ft-500">
+                        <div class="col-6">
+                            City: Paphos
+                        </div>
+                        <div class="col-6">
+                            Area: Peyia
+                        </div>
+                    </div>
+                    <div class="row font-md ft-500">
+                        <div class="col-6">
+                            4 Bedrooms
+                        </div>
+                        <div class="col-6">
+                            3 Bathrooms
+                        </div>
+                    </div>
+                    <div class="row font-md ft-500">
+                        <div class="col-6">
+                            1 EnSuite Bathrooms
+                        </div>
+                        <div class="col-6">
+                            3 Verandas
+                        </div>
+                    </div>
+                    <div class="row font-md ft-500">
+                        <div class="col">
+                            300 m2 Covered Area
+                        </div>
+                    </div>
+                    
+                    <div class="row justify-content-center font-md ft-500">
+                        <div class="col">
+                            <iframe title="availabality" src="https://www.availabilitycalendar.com/embed/QpA3mZG6TwqzOdWXUVTxafJq3r7qo_lO2rRmjMq8P-c/en-0-1-1-1-0-0-0-0-0-0-0-1-0/" height="380" width="100%" frameborder="0" allowtransparency="true"></iframe>
+                        </div>
+                    </div>
+                    <form action="https://app.thebookingbutton.com/" class="ibe" data-region="emea" data-channelcode="prestigebookdirect" target="_blank">
+                        <input type="hidden" name="room_type" value="21769" >
+                        {% include bookingform.html %}
+                    </form>
+                    <div class="row font-md ft-500">
+                        <div class="col">
+                            <p class="t-m-20">Please note that a minimum stay of 4 nights is required</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-box white-bg-color">
+                    <div class="row">
+                        <div class="col">
+                            <img src="{{ 'assets/images/stalo-rating.png' | prepend: SourceUrl }}" alt="Booking.com Award" title="Booking.com Award">
+                        </div>
+                        <div class="col">
+                            <a href="https://www.tripadvisor.co.uk/VacationRentalReview-g190384-d8009305-Villa_Stalo_a_lavish_villa_in_magnificent_setting-Paphos_Paphos_District.html#REVIEWS" target="_blank" rel="noopener noreferrer"><img src="{{ 'assets/images/tripadvisor.jpeg' | prepend: SourceUrl }}" alt="Read Reviews" title="Read Reviews"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./booking -->
+        </div>
+    </div>
+</div>
+<!-- ./section -->
+
+<!-- section full description -->
+<div class="section" id="villa-description">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>Ground Floor</h3>
+                <p>On entering through the large double doors, the 1st thing to strike you will be the elegant winging stairway, along with the polished marble floors. To your right hand side you will find the vast spacious lounge, equipped with leather sofas, flat screen TV, satellite TV, DVD player and free Wi-Fi. To your left you will find the elegant dining area, vast fully equipped kitchen and a small utility room. The kitchen opens out onto a large balcony looking straight to the sea. From the kitchen area you will also access the amazing private barbeque verandah with traditional Cypriot barbeque, outdoor dining table, plumbed water and electricity to satisfy even the most discerning chefs. Enjoy the amazing sea view or sunsets whilst dining alfresco cool drinks in hand. Down a number of steps you will access the private garage with direct access to the house. The ground floor also has a twin bedroom and a full bathroom next to it.</p>
+                <h3>First Floor</h3>
+                <p>On ascending the winding staircase you enter a bright and airy landing with amazing sea view through the full length glass wall. Here you will find the master bedroom with walk in wardrobes, en-suite, king size bed and massive private balcony. The 2nd bedroom is a twin room again with a massive private balcony with sea view. The 3rd bedroom is a double bedroom with a small private balcony with mountain views. Both the 2nd & 3rd bedroom share a full bathroom. There is also a mini kitchen on the upper floor with sink, 2 ring hob and a mini fridge.</p>
+                <h3>Outside area</h3>
+                <p>Outside you will find your private swimming pool surrounded by manicured gardens. The gardens have been planted with orange and lemon trees, as well as roses and tropical plants. All in all, Villa Stalo is sure to delight even the most discerning of holiday makers.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ./section full description -->  
+
+<!-- section map -->
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>Location</h3>
+                <div class="divider-md"></div>
+            </div>
+        </div>
+    </div>
+    <iframe title="google map" src="https://maps.google.com/maps/ms?msid=208225322349459068264.0004df5813d2cf1c3ec2d&amp;msa=0&amp;ie=UTF8&amp;t=h&amp;z=17&amp;output=embed" height="550" width="100%" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+</div>
+<!-- ./section map --> 
+{% include villa-slider.html %}

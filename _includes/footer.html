@@ -1,0 +1,46 @@
+<!--Footer-->
+<div class="container">
+    <div class="row">
+        <div class="col">
+            {% include share.html %}
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-12">
+            <div class="text-center page-top-box margin-tb-20">
+                <a class="secondary-text-color font-xs" href="#page-top"><span class="footer-arrow"><img src="assets/svg/up-arrow.svg" alt="Back to top"></span>Back to top</a>
+            </div>
+            <div>
+                <ul class="nav justify-content-center font-sm text-uppercase">
+                {% for page in site.pages %}														
+                    {% if page.nav == "footer" %}	
+                        {% if page.title %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ page.permalink | prepend: SourceUrl }}">{{ page.title }}</a>
+                        </li>	
+                        {% endif %}
+                    {% endif %}				
+                {% endfor %}
+                </ul>
+            </div>
+            <p class="text-center font-xs secondary-text-color">Copyright © 2019 Prestige Bookings - By Draxs
+        </div>
+    </div>
+</div>
+
+<script src="{{ '/assets/js/bootstrap.js' | prepend: SourceUrl  }}"></script>
+<script src="{{ '/assets/js/pushy.min.js' | prepend: SourceUrl  }}"></script>
+<!--End Footer-->
+<script>
+    window.onscroll = function() {myFunction()};
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        function myFunction() {
+        if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+        } else {
+        navbar.classList.remove("sticky");
+        }
+    }
+</script>
+<script src="https://widget.siteminder.com/ibe.min.js"></script>

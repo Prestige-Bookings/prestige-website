@@ -1,0 +1,267 @@
+---
+layout: default
+type: villa
+bedrooms: 5
+language: en
+title: Dionysos
+seotitle: Villa Dionysos, Coral Bay, Sea Caves, 5 Bedrooms, 3 Bathrooms
+description: "This stunning Deluxe villa is located on a quiet exclusive street yet just a short drive away from the beaches, shops and..."
+image: /assets/gallery/dionysos/20-w1920.jpg
+permalink: /villa-dionysos-coral-bay-paphos-cyprus
+---
+<!-- section -->
+<div class="section gray-bg-color">
+    <div class="container">
+        <div class="villa-title">
+            <div class="row align-items-end">
+                <div class="col-md-9">
+                    <h1 class="">Villa Dionysos</h1>
+                    <h4 class="ft-300 ">Coral Bay, Sea Caves, 5 Bedrooms, 3 Bathrooms</h4>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img class="img-sm" src="assets/images/exclusive.png" alt="Exclusive Paphos Holiday Villa">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-9">
+                <!-- slider -->
+                <div class="row">
+                    <div class="col">
+                        <div class="owl-carousel carousel-large">
+                            {% for image in site.static_files %}
+                                {% if image.path contains 'gallery/dionysos' %}
+                                {% assign myhash = image.path | remove_first:'/assets/gallery/' %}
+                                {% assign img = image.path | remove_first:'/' %}
+                                <div class="item" data-hash="{{ myhash }}">
+                                    <div class="villa-slide" data-src="{{ img | prepend: SourceUrl }}"></div>
+                                </div>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="villa-thumbs-container">
+                            <div class="owl-carousel carousel-thumbs">
+                                {% for thumb in site.static_files %}
+                                    {% if thumb.path contains 'thumbs/dionysos' %}
+                                    {% assign tt = thumb.path | remove_first:'/assets/thumbs/' %}
+                                    {% assign tmb = thumb.path | remove_first:'/' %}
+                                    <div class="item">
+                                        <a class="button secondary url" href="#{{ tt }}" title="thumb nav">
+                                            <div class="villa-thumb" style="background-image: url('{{ tmb | prepend: SourceUrl }}');"></div>
+                                        </a>
+                                    </div>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./slider -->
+                <!-- short description -->
+                <div class="row">
+                    <div class="col">
+                        <p>This stunning Deluxe villa is located on a quiet exclusive street yet just a short drive away from the beaches, shops and restaurants that Coral Bay has to offer. With magnificent uninterrupted panoramic views of the Mediterranean, the villa also comes with a brand new infinity swimming pool as well as its very own wine bar and cellar. Brand new to the rental market, this large and spacious villa has everything you could want to ensure a quality time holiday is spent with family and friends.<a href="#villa-description">Read more...</a></p>
+                    </div>
+                </div>
+                <!-- ./short description -->
+                <!-- tabs -->
+                <div class="row">
+                    <div class="col">
+                        <div class="divider-md"></div>
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active" id="nav-inside-tab" data-toggle="tab" href="#nav-inside" role="tab" aria-controls="nav-inside" aria-selected="true">Inside</a>
+                                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Outside</a>
+                                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Distances</a>
+                            </div>
+                        </nav>
+                        <div class="tab-content white-bg-color" id="nav-tabContent"> 
+                            <div class="tab-pane fade show active" id="nav-inside" role="tabpanel" aria-labelledby="nav-inside-tab">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <ul class="feature-list">
+                                            <li>Cooker</li>
+                                            <li>Fridge</li>
+                                            <li>Freezer</li>
+                                            <li>Microwave</li>
+                                            <li>Toaster</li>
+                                            <li>Kettle</li>
+                                            <li>Dishwasher</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <ul class="feature-list">
+                                            <li>Washing machine</li>
+                                            <li>Iron, Hair dryer</li>
+                                            <li>Free Internet TV</li>
+                                            <li>DVD player</li>
+                                            <li>Free Wifi</li>
+                                            <li>Free High chair (if required)</li>
+                                            <li>Free Infant Cot (if required)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <ul class="feature-list">
+                                            <li>Safe</li>
+                                            <li>Air conditioning (charged extra)</li>
+                                            <li>Linen provided</li>
+                                            <li>Towels provided</li>
+                                            <li>Professional Pool Table</li>
+                                            <li>Table Football</li>
+                                            <li>Darts</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul class="feature-list">
+                                            <li>Private outdoor pool 10 x 5 (unheated)</li>
+                                            <li>Private Garden</li>
+                                            <li>BBQ area</li>
+                                            <li>Balcony and terrace</li>
+                                            <li>Boat Hire available</li>
+                                            <li>Bicycle Hire available</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul class="feature-list">
+                                            <li>Secure parking</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                <div class="row">
+                                    <div class="col">
+                                        <ul class="feature-list">
+                                            <li>Nearest Beach: 4.5Km</li>
+                                            <li>Nearest Restaurant: 500m</li>
+                                            <li>Resort Centre: 4.9km</li>
+                                            <li>Mini-market: 1Km</li>
+                                            <li>Supermarket: 4.5Km</li>
+                                            <li>Car Hire: Essential</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- tabs -->
+            </div>
+            <!-- booking Sidebar -->
+            <div class="col-lg-3">
+                <div class="sidebar-box villa-features-box white-bg-color">
+                    <h4 class="ft-500">Villa Dionysos</h4>
+                    <div class="row font-md ft-500">
+                        <div class="col-6">
+                            City: Paphos
+                        </div>
+                        <div class="col-6">
+                            Area: Sea Caves
+                        </div>
+                    </div>
+                    <div class="row font-md ft-500">
+                        <div class="col-6">
+                            5 Bedrooms
+                        </div>
+                        <div class="col-6">
+                            3 Bathrooms
+                        </div>
+                        <div class="col-6">
+                            1 Guest WC
+                        </div>
+                        <div class="col-6">
+                            2 Verandas
+                        </div>
+                    </div>
+                    <div class="row font-md ft-500">
+                        <div class="col-6">
+                            1250 m2 plot
+                        </div> 
+                    </div>
+                    <div class="row font-md ft-500">
+                        <div class="col">
+                            250 m2 Covered Area
+                        </div>
+                    </div>
+                    
+                    <div class="row justify-content-center font-md ft-500">
+                        <div class="col">
+                            <iframe title="availabality" src="https://www.availabilitycalendar.com/embed/5ZpigcS3-p9jf3wAt1N1NV_y-mzD2pGGM1Dv1uJRA1Q/en-0-1-1-1-0-0-0-0-0-0-0-1-0/" height="380" width="100%" frameborder="0" allowtransparency="true"></iframe>
+                        </div>
+                    </div>
+                    <form action="https://app.thebookingbutton.com/" class="ibe" data-region="emea" data-channelcode="prestigebookdirect" target="_blank">
+                        <input type="hidden" name="room_type" value="77718" >
+                        {% include bookingform.html %}
+                    </form>
+                    <div class="row font-md ft-500">
+                        <div class="col">
+                            <p class="t-m-20">Please note that a minimum stay of 4 nights is required</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-box white-bg-color">
+                    <div class="row">
+                        <div class="col text-center">
+                            <a href="https://www.tripadvisor.co.uk/VacationRentalReview-g776028-d12447783-Villa_Dionysos-Peyia_Paphos_District.html#REVIEWS" target="_blank" rel="noopener noreferrer"><img src="{{ 'assets/images/tripadvisor.jpeg' | prepend: SourceUrl }}" width="140" alt="Read Reviews" title="Read Reviews" ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /booking -->
+        </div>
+    </div>
+</div>
+<!-- ./section -->
+
+<!-- section full description -->
+<div class="section" id="villa-description">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>Ground Floor</h3>
+                <p>On entering the villa you will immediately sense the cool luxurious surrounding provided by the quality fittings, high ceilings, and double glazed doors and windows. Here you will find the open plan living, dining, and kitchen areas, as well as a guest WC. The living area is fitted with quality furniture, large flat screen TV, and opens onto a large shaded veranda to keep you cool on those hot summer days. The outside area is complete with your brand new private infinity pool, as well as alfresco dining area with Cypriot style barbecue, and gardens planted with a selection of citrus and fruit trees, The stunning uninterrupted views of the Mediterranean will mezmorise you whilst yo soak up the sun whiling the days away. In the villa you will also find free Wi-Fi and internet TV, allowing you to keep in touch with the modern world, should you so wish. The kitchen area has been fitted out with quality appliances, and all the utensils and crockery required, for up to 10 people. Also on this floor you will find 4 bedrooms (1 en-suite), a family bathroom and a guest WC.</p>
+                <h3>Lower Floor</h3>
+                <p>The lower floor consists of a very large games room with table tennis, table football, darts and more and also opens up directly onto the sun terrace and swimming pool. Next to the games room is a separate living area consisting of a bedroom, bathroom, sitting area and a second kitchen. This living area also opens up directly onto the sun terrace and swimming pool.</p>
+                <h3>Outside area</h3>
+                <p>The outside area consists of a stunning infinity swimming pool, surrounded by a massive sun terrace and gardens. Here you will find sunbeds for up to 10, a large sun terrace surrounding the pool, and uninterrupted views of the stunning Mediterranean sea. Just off the pool you will find your very own wine bar and cellar. Next to the kitchen you will find a separate alfresco dining area with Cypriot style barbecue, a sink with running water and a small grass area with again stunning views. The surrounding gardens are planted with a variety of citrus fruits, olive trees, pomegranates, and more. The whole garden and sun terrace offer stunning views to the sea, as well as the surrounding areas.</p>
+                <h3>Accessibility</h3>
+                <p>The villa is accessible by a number of steps and would be suitable for people with mild mobility difficulties, except the lower accommodation area which can be accessed via the wide patio doors leading to the pool. The doors are sliding patio doors and would pass a wheelchair.</p>
+                <h3>Coast/Beach</h3>
+                <p>The beautiful beach resort of Coral Bay is often described as the best bay on the west of the island. And it’s no surprise, when you consider the calm turquoise sea, dipping gently into some of the clearest off shore diving space in the Mediterranean, the scattered palm trees, the 600 meters of soft white sand and, in summertime, the almost cloudless blue skies. Coral Bay centre is approx. 5km from the villa.</p>
+                <h3>Location Description</h3>
+                <p>TCoral Bay is the well known award winning beach resort for the Paphos district.This family oriented area has become a lively resort with plenty to offer in terms of amenities and activities. The centre of the resort which features a wide selection of restaurants offering both Cypriot and International Cuisines, cafes, bars, shops, a choice of supermarkets, several banks, a chemist and a laundry within 5km of the villa.
+                A regular bus service is located within a few minutes walk of the villa operating to Coral Bay centre, Paphos town and Kato Paphos harbor.The resort boasts two sandy beaches, the busier of the two being the popular Coral Bay Beach, a sandy horseshoe shaped bay honored with a Blue Flag of the European Union. Sunbeds and umbrellas are available for hire, water-sports are on offer and there are two beach cafes providing refreshments.</p>
+                <p>FA little further along the coast you reach the natural rock caves of the area known locally as Sea Caves, an area which provides ideal snorkeling territory and is popular with local scuba diving schools.
+                For a taste of the more traditional head to the tiny fishing hamlet of St Georges from where you can enjoy some of the islands most memorable sunset views and dine at one of the small collection of family run tavernas. For nature lovers the start of the protected Akamas Peninsula is just to the north of the village. Or you can head to the hillside village of Peyia, located just a few kilometres inland from Coral Bay to sample a traditional Cypriot meze meal at one of its small selection of long established tavernas and village coffee shops.</p>
+                <p>Paphos Town approximately 20 kilometers away, was once the capital of the island is now included in the official UNESCO list of cultural and natural treasures of the world’s heritage. The remains of villas, palaces, theaters, fortresses and tombs mean that the town is of exceptional architectural and historic value. The well preserved mosaics and the Tombs of the Kings are probably the biggest cultural draw with further archaeological discoveries continually being made. Pano Pafos on the cliff is the main administrative centre and residential district while Kato Pafos, by the sea, is the main tourist area built around the harbor and medieval port.</p>
+                <p>Mini golf, water-sports and go-karting are all activities available in the immediate Coral Bay area. The Paphos Zoo and the Horse Riding Stables which cater for all ages are both within a 3 minute drive of the villa.
+                Extend your exploring to encompass the town of Paphos and the list of available activities expands to include a bowling alley, water-park, several Heritage sites, attractive harbor area and modern shopping facilities.
+                There are 4 golf courses; Tsada Golf Course, Secret Valley Golf Course, Aphrodite Hills Golf Course and Elea Golf Course all within approximately a 30 minute drive.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ./section full description -->  
+
+<!-- section map -->
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>Location</h3>
+                <div class="divider-md"></div>
+            </div>
+        </div>
+    </div>
+    <iframe title="google map" src="https://maps.google.ie/maps?q=34.88186,32.34559&amp;num=1&amp;t=h&amp;hl=en&amp;ie=UTF8&amp;z=14&amp;output=embed" width="100%" height="550" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+</div>
+<!-- ./section map --> 
+{% include villa-slider.html %}

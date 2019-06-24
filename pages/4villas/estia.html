@@ -1,0 +1,260 @@
+---
+layout: default
+type: villa
+bedrooms: 4
+language: en
+title: Estia
+seotitle: Villa Estia, Coral Bay, 4 Bedrooms, 3 Bathrooms
+description: "This stunning 4 bedroom luxury villa in the heart of Coral Bay, is a place for friends and family to gather, relax and enjoy..."
+image: /assets/gallery/estia/11-w1920.jpg
+permalink: /villa-estia-coral-bay-paphos-cyprus
+---
+<!-- section -->
+<div class="section gray-bg-color">
+    <div class="container">
+        <div class="villa-title">
+            <div class="row align-items-end">
+                <div class="col-md-9">
+                    <h1 class="">Villa Estia</h1>
+                    <h4 class="ft-300 ">Coral Bay, 4 Bedrooms, 3 Bathrooms</h4>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img class="img-sm" src="assets/images/exclusive.png" alt="Exclusive Paphos Holiday Villa">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-9">
+                <!-- slider -->
+                <div class="row">
+                    <div class="col">
+                        <div class="owl-carousel carousel-large">
+                            {% for image in site.static_files %}
+                                {% if image.path contains 'gallery/estia' %}
+                                {% assign myhash = image.path | remove_first:'/assets/gallery/' %}
+                                {% assign img = image.path | remove_first:'/' %}
+                                <div class="item" data-hash="{{ myhash }}">
+                                    <div class="villa-slide" data-src="{{ img | prepend: SourceUrl }}"></div>
+                                </div>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="villa-thumbs-container">
+                            <div class="owl-carousel carousel-thumbs">
+                                {% for thumb in site.static_files %}
+                                    {% if thumb.path contains 'thumbs/estia' %}
+                                    {% assign tt = thumb.path | remove_first:'/assets/thumbs/' %}
+                                    {% assign tmb = thumb.path | remove_first:'/' %}
+                                    <div class="item">
+                                        <a class="button secondary url" href="#{{ tt }}" title="thumb nav">
+                                            <div class="villa-thumb" style="background-image: url('{{ tmb | prepend: SourceUrl }}');"></div>
+                                        </a>
+                                    </div>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./slider -->
+                <!-- short description -->
+                <div class="row">
+                    <div class="col">
+                        <p>Estia, (Hestia in some dialect’s) is the goddess of the hearth and hospitality. She symbolized the household fire,the flame burning in the hearth. The hearth in each home was the central place around which family members gathered. This stunning 4 bedroom luxury villa in the heart of Coral Bay, is a place for friends and family to gather, relax and enjoy the quality time spent with each other, along with the legendary Cypriot hospitality renowned all over the world. Located just 500m from Corailia sandy beach, 100m from the nearest bars, restaurants and supermarket, and a 15 min walk to the center of Coral Bay resort, villa Estia is an ideal location for friends and family to have an unforgettable holiday. A regular bus service stops just 100m from the villas, and this will take you into the tourist area of Paphos where you can explore the harbor, visit the Roman mosaics, or simply unwind in one of the tavernas overlooking the sea. Alternatively why not visit Paphos Water Park, try out the Go Karts, or play a game of Crazy Golf. You can also explore the old town, where you will find an excellent traditional market as well as many quality shops. The bus service also stops directly outside the new Paphos Mall, where you will find an array of shops, a multiples cinema, and a food court with something to please everyone. <a href="#villa-description">Read more...</a></p>
+                    </div>
+                </div>
+                <!-- ./short description -->
+                <!-- tabs -->
+                <div class="row">
+                    <div class="col">
+                        <div class="divider-md"></div>
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active" id="nav-inside-tab" data-toggle="tab" href="#nav-inside" role="tab" aria-controls="nav-inside" aria-selected="true">Inside</a>
+                                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Outside</a>
+                                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Distances</a>
+                            </div>
+                        </nav>
+                        <div class="tab-content white-bg-color" id="nav-tabContent"> 
+                            <div class="tab-pane fade show active" id="nav-inside" role="tabpanel" aria-labelledby="nav-inside-tab">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <ul class="feature-list">
+                                            <li>Cooker</li>
+                                            <li>Fridge</li>
+                                            <li>Freezer</li>
+                                            <li>Microwave</li>
+                                            <li>Toaster</li>
+                                            <li>Kettle</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <ul class="feature-list">
+                                            <li>Washing machine</li>
+                                            <li>Iron</li>
+                                            <li>Free Internet TV</li>
+                                            <li>DVD player</li>
+                                            <li>Free Wifi</li>
+                                            <li>Free High chair (if required)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <ul class="feature-list">
+                                            <li>Free Infant Cot (if required)</li>
+                                            <li>Hair dryer</li>
+                                            <li>Safe</li>
+                                            <li>Air conditioning (charged extra)</li>
+                                            <li>Linen provided</li>
+                                            <li>Towels provided</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul class="feature-list">
+                                            <li>Private outdoor pool (unheated)</li>
+                                            <li>Large Private Garden</li>
+                                            <li>BBQ area</li>
+                                            <li>Balcony or terrace</li>
+                                            <li>Boat Hire available</li>
+                                            <li>Bicycle Hire available</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul class="feature-list">
+                                            <li>Secure parking</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                <div class="row">
+                                    <div class="col">
+                                        <ul class="feature-list">
+                                            <li>Beach: 500m</li>
+                                            <li>Restaurants: 100m</li>
+                                            <li>Shops: 100m</li>
+                                            <li>Local bus service 100m</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- tabs -->
+            </div>
+            <!-- booking Sidebar -->
+            <div class="col-lg-3">
+                <div class="sidebar-box villa-features-box white-bg-color">
+                    <h4 class="ft-500">Villa Estia</h4>
+                    <div class="row font-md ft-500">
+                        <div class="col-6">
+                            City: Paphos
+                        </div>
+                        <div class="col-6">
+                            Area: Coral Bay
+                        </div>
+                    </div>
+                    <div class="row font-md ft-500">
+                        <div class="col-6">
+                            4 Bedrooms
+                        </div>
+                        <div class="col-6">
+                            3 Bathrooms
+                        </div>
+                    </div>
+                    <div class="row font-md ft-500">
+                        <div class="col-6">
+                            4 Verandas
+                        </div>
+                    </div>
+                    <div class="row font-md ft-500">
+                        <div class="col">
+                            150 m2 Covered Area
+                        </div>
+                    </div>
+                    <div class="row justify-content-center font-md ft-500">
+                        <div class="col">
+                            <iframe title="availabality" src="https://www.availabilitycalendar.com/embed/x-EQm1wc9rkM7_cGT3FJbiWsW1sNt6vmuZ7eTydCUIc/en-0-1-1-1-0-0-0-0-0-0-0-1-0/" height="380" width="100%" frameborder="0" allowtransparency="true"></iframe>
+                        </div>
+                    </div>
+                    <form action="https://app.thebookingbutton.com/" class="ibe" data-region="emea" data-channelcode="prestigebookdirect" target="_blank">
+                        <input type="hidden" name="room_type" value="37355" >
+                        {% include bookingform.html %}
+                    </form>
+                    <div class="row font-md ft-500">
+                        <div class="col">
+                            <p class="t-m-20">Please note that a minimum stay of 4 nights is required</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-box white-bg-color">
+                    <div class="row">
+                        <div class="col">
+                            <img src="{{ 'assets/images/estia-rating.png' | prepend: SourceUrl }}" alt="Booking.com Award" title="Booking.com Award">
+                        </div>
+                        <div class="col">
+                            <a href="https://www.tripadvisor.co.uk/VacationRentalReview-g776028-d11926545-Villa_Estia-Peyia_Paphos_District.html#REVIEWS" target="_blank" rel="noopener noreferrer"><img src="{{ 'assets/images/tripadvisor.jpeg' | prepend: SourceUrl }}" alt="Read Reviews" title="Read Reviews"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./booking -->
+        </div>
+    </div>
+</div>
+<!-- ./section -->
+
+<!-- section full description -->
+<div class="section" id="villa-description">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>Ground Floor</h3>
+                <p>The living area is spacious and open plan with the kitchen area. It consists of a leather suite,TV with internet channels, and a DVD . A large patio window opens out onto a private patio and offers views of the pool and garden. The kitchen is equipped with an electric Oven, microwave, washing machine, fridge /freezer and all necessary cutlery, utensils and crockery. It is also consists of a table and accommodates 8. Also on the ground floor there is a wc as well as a double bedroom with en-suite shower.</p>
+                <h3>First Floor</h3>
+                <p>There are three bedrooms on the first floor. The master bedroom has a double sized bed, wardrobe and patio doors, leading on to the balcony with sea views, and is en-suite. The second & third bedroom have 2 single sized beds and fitted wardrobes. Both twin rooms have access to the family bathroom with a full size bath. All rooms are fully air-conditioned.</p>
+                <h3>Outside area</h3>
+                <p>Outside, there is a large terrace to the front ideal for an evening barbeque or watching the sun go down. The private swimming pool is surrounded by a sunbathing terrace furnished with sun beds and umbrellas.</p>
+                <p>The sandy Corailia Beach is a mere 500m from the villa. Just 100m from the villa you will find a selection of bars, restaurants, and a supermarket, The public bus service terminus is a mere 500m. Although not necessary, we highly recommend the hiring of a car which will greatly enhance the options available on your holiday. Should you wish to opt for airport transfers, we can sort this for you also.</p>
+                <p>Designed with your comfort and living needs in mind, these fully equipped villas promise to fulfil all of your expectations, and provide you with an exceptional, and unforgettable holiday experience.
+                With all these amenities located within walking distance of the villa, you will soon find that our holiday villa, is located in one of the best spots in Coral Bay.</p>
+                <h3>Accessibility</h3>
+                <p>The villas are accessible by a couple of steps and maybe suitable for people with mobility difficulties. The doors are normal doors and would not pass a wheelchair. There is also the ground floor en-suite bedroom.</p>
+                <h3>Coast/Beach</h3>
+                <p>The beautiful beach resort of Coral Bay is often described as the best bay on the west of the island. And it’s no surprise, when you consider the calm turquoise sea, dipping gently into some of the clearest off shore diving space in the Mediterranean, the scattered palm trees, the 600 meters of soft white sand and, in summertime, the almost cloudless blue skies. Coral Bay is a 5 minute walk from the villa.
+                <h3>Golf</h3>
+                <p>4 Championship golf courses within a 30 min drive.</p>
+                <h3>Skiing</h3>
+                <p>Skiing is possible in Troodos during January to March</p>
+                
+                <h3>Akamas National Park</h3>
+                <p>Located in the west of Cyprus the Akamas National Park is possibly the most picturesque corner of the island. Covering approximately 230 square kilometers the Akamas peninsula is where you will find wild landscape, amazing natural beauty, deep gorges, and wide sandy bays. The diversity of wildlife is of outstanding ecological importance for the Mediterranean and the wide variety of fauna is certainly impressive. Here you can find 168 different varieties of birds, 12 different mammals, 20 different reptiles and 16 different species of butterfly.<br>
+                The importance of the Akamas Peninsula is recognized far beyond the shores of Cyprus. The European Council has included the Akamas Peninsula within its Mediterranean protection programme and within Cyprus; Friends of the Earth and Greenpeace are campaigning hard for the Akamas Peninsula to be declared a National Park.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ./section full description -->  
+
+<!-- section map -->
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>Location</h3>
+                <div class="divider-md"></div>
+            </div>
+        </div>
+    </div>
+    <iframe title="google map" src="https://maps.google.ie/maps?q=34.85932,32.36669&amp;num=1&amp;t=h&amp;hl=en&amp;ie=UTF8&amp;z=14&amp;output=embed" height="550" width="100%" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+</div>
+<!-- ./section map --> 
+{% include villa-slider.html %}

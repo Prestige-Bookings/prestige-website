@@ -1,0 +1,265 @@
+---
+layout: default
+type: villa
+bedrooms: 5
+language: en
+title: Nicholas
+seotitle: Villa Nicholas, Coral Bay, 5 Bedrooms, 3 Bathrooms
+description: "Villa Nichalos is a superb luxurious property, offering an abundance of space and privacy. Surrounded by massive private..."
+image: /assets/gallery/nicholas/15-w1920.jpg
+permalink: /villa-nicholas-coral-bay-paphos-cyprus
+---
+<!-- section -->
+<div class="section gray-bg-color">
+    <div class="container">
+        <div class="villa-title">
+            <div class="row align-items-end">
+                <div class="col-md-9">
+                    <h1 class="">Villa Nicholas</h1>
+                    <h4 class="ft-300 ">Coral Bay, 5 Bedrooms, 3 Bathrooms</h4>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img class="img-sm" src="assets/images/exclusive.png" alt="Exclusive Paphos Holiday Villa">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-9">
+                <!-- slider -->
+                <div class="row">
+                    <div class="col">
+                        <div class="owl-carousel carousel-large">
+                            {% for image in site.static_files %}
+                                {% if image.path contains 'gallery/nicholas' %}
+                                {% assign myhash = image.path | remove_first:'/assets/gallery/' %}
+                                {% assign img = image.path | remove_first:'/' %}
+                                <div class="item" data-hash="{{ myhash }}">
+                                    <div class="villa-slide" data-src="{{ img | prepend: SourceUrl }}"></div>
+                                </div>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="villa-thumbs-container">
+                            <div class="owl-carousel carousel-thumbs">
+                                {% for thumb in site.static_files %}
+                                    {% if thumb.path contains 'thumbs/nicholas' %}
+                                    {% assign tt = thumb.path | remove_first:'/assets/thumbs/' %}
+                                    {% assign tmb = thumb.path | remove_first:'/' %}
+                                    <div class="item">
+                                        <a class="button secondary url" href="#{{ tt }}" title="thumb nav">
+                                            <div class="villa-thumb" style="background-image: url('{{ tmb | prepend: SourceUrl }}');"></div>
+                                        </a>
+                                    </div>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./slider -->
+                <!-- short description -->
+                <div class="row">
+                    <div class="col">
+                        <p>Villa Nichalos is a superb luxurious property, offering an abundance of space and privacy. Surrounded by massive private manicured gardens, and planted with a variety of palm, citrus, fruit and native trees and plants, you can while away the sunny days relaxing by your private pool. The property is just 2.4 km away from both Coral Bay with its beautiful beaches on the west coast of Cyprus, Peyia village for stunning panoramic views of the area, and approximately 20km away from Paphos center. Paphos International Airport is 30 minutes’ drive by car. Villa Nichalos is fully equipped and furnished to an extremely high standard, offering an amazing opportunity to escape from daily life for a week or two.<a href="#villa-description">Read more...</a></p>
+                    </div>
+                </div>
+                <!-- ./short description -->
+                <!-- tabs -->
+                <div class="row">
+                    <div class="col">
+                        <div class="divider-md"></div>
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active" id="nav-inside-tab" data-toggle="tab" href="#nav-inside" role="tab" aria-controls="nav-inside" aria-selected="true">Inside</a>
+                                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Outside</a>
+                                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Distances</a>
+                            </div>
+                        </nav>
+                        <div class="tab-content white-bg-color" id="nav-tabContent"> 
+                            <div class="tab-pane fade show active" id="nav-inside" role="tabpanel" aria-labelledby="nav-inside-tab">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <ul class="feature-list">
+                                            <li>Cooker</li>
+                                            <li>Fridge</li>
+                                            <li>Freezer</li>
+                                            <li>Microwave</li>
+                                            <li>Toaster</li>
+                                            <li>Kettle</li>
+                                            <li>Dishwasher</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <ul class="feature-list">
+                                            <li>Washing machine</li>
+                                            <li>Iron</li>
+                                            <li>Free Internet TV</li>
+                                            <li>DVD player</li>
+                                            <li>Free Wifi</li>
+                                            <li>Table Football</li>
+                                            <li>Free High chair (if required)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <ul class="feature-list">
+                                            <li>Free Infant Cot (if required)</li>
+                                            <li>Hair dryer</li>
+                                            <li>Safe</li>
+                                            <li>Air conditioning (charged extra)</li>
+                                            <li>Linen provided</li>
+                                            <li>Towels provided</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul class="feature-list">
+                                            <li>Private outdoor pool (unheated)</li>
+                                            <li>Huge maincured Private Garden</li>
+                                            <li>BBQ area</li>
+                                            <li>Balcony or terrace</li>
+                                            <li>Boat Hire available</li>
+                                            <li>Bicycle Hire available</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul class="feature-list">
+                                            <li>Table Tennis</li>
+                                            <li>Secure parking</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                <div class="row">
+                                    <div class="col">
+                                        <ul class="feature-list">
+                                            <li>Beach: 2.5km</li>
+                                            <li>Restaurants: 200m</li>
+                                            <li>Shops: 2km</li>
+                                            <li>Car Hire: Recommended</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- tabs -->
+            </div>
+            <!-- booking Sidebar -->
+            <div class="col-lg-3">
+                <div class="sidebar-box villa-features-box white-bg-color">
+                    <h4 class="ft-500">Villa Nicholas</h4>
+                    <div class="row font-md ft-500">
+                        <div class="col-6">
+                            City: Paphos
+                        </div>
+                        <div class="col-6">
+                            Area: Coral Bay
+                        </div>
+                    </div>
+                    <div class="row font-md ft-500">
+                        <div class="col-6">
+                            4 Bedrooms
+                        </div>
+                        <div class="col-6">
+                            3 Bathrooms
+                        </div>
+                    </div>
+                    <div class="row font-md ft-500">
+                        <div class="col-6">
+                            1 Verandas
+                        </div>
+                        <div class="col-6">
+                            Family Games Room
+                        </div>
+                    </div>
+                    <div class="row font-md ft-500">
+                        <div class="col">
+                            300 m2 Covered Area
+                        </div>
+                    </div>
+                    
+                    <div class="row justify-content-center font-md ft-500">
+                        <div class="col">
+                            <iframe title="availabality" src="https://www.availabilitycalendar.com/embed/0m1HqBHcfDav97Wvh8T_bUgbvlKkOknERCsDz7lWVug/en-0-1-1-1-0-0-0-0-0-0-0-1-0/" height="380" width="100%" frameborder="0" allowtransparency="true"></iframe>
+                        </div>
+                    </div>
+                    <form action="https://app.thebookingbutton.com/" class="ibe" data-region="emea" data-channelcode="prestigebookdirect" target="_blank">
+                        <input type="hidden" name="room_type" value="30782" >
+                        {% include bookingform.html %}
+                    </form>
+                    <div class="row font-md ft-500">
+                        <div class="col">
+                            <p class="t-m-20">Please note that a minimum stay of 4 nights is required</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-box white-bg-color">
+                    <div class="row">
+                        <div class="col">
+                            <img src="{{ 'assets/images/nicholas-rating.png' | prepend: SourceUrl }}" alt="Booking.com Award" title="Booking.com Award">
+                        </div>
+                        <div class="col">
+                            <a href="https://www.tripadvisor.co.uk/VacationRentalReview-g776028-d11966586-Villa_Nikolas-Peyia_Paphos_District.html#REVIEWS" target="_blank" rel="noopener noreferrer"><img src="{{ 'assets/images/tripadvisor.jpeg' | prepend: SourceUrl }}" alt="Read Reviews" title="Read Reviews"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /booking -->
+        </div>
+    </div>
+</div>
+<!-- ./section -->
+
+<!-- section full description -->
+<div class="section" id="villa-description">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>Ground Floor</h3>
+                <p>On entering the villa you will find yourself in a spacious hallway with high ceilings, immediately feeling the luxury, space and coolness of the villa. The ground floor is completely open plan, leading to a fully equipped kitchen / dining area on your right, and a large lounge area on your left, for relaxing in the evenings. From the kitchen you have direct access to your private swimming pool, balcony area for barbeques and watching the sunsets after a hard day by your pool, and also the stunning manicured gardens. The ground floor also offers a family WC as well as a small stairway to the upper and lower floors.</p>
+                <h3>Uper Floor</h3>
+                <p>There are three bedrooms on the upper floor, as well as a balcony overlooking the ground floor, and a family bathroom with full bath. The master bedroom has a double sized bed, walk-in wardrobe and is en-suite, with a walk-in shower. The French patio doors lead directly onto your private balcony, with stunning panoramic mountain and sea views. The second bedroom has 2 single sized beds and fitted wardrobes as well as a shared balcony with views. The third bedroom has a double bed and shared balcony and views. The family bathroom with full bath is situated between bedroom 2 & 3. All bedrooms are fully air-conditioned and fitted with an environmental friendly system.</p>
+                <h3>Lower Floor</h3>
+                <p>There are two bedrooms on the lower floor, as well as a bathroom with walk-in shower, and a family games room. Both bedrooms have 2 single size beds and wardrobes. All bedrooms are fully air-conditioned and fitted with an environmental friendly system. The family games room has been equipped with table tennis and table football games for your enjoyment.<br>
+                Designed with your comfort and living needs in mind, Villa Nickalos is fully equipped and promises to fulfil all of your expectations, and provide you with an exceptional, and unforgettable holiday experience.</p>
+                <h3>Accessibility</h3>
+                <p>There are a couple of steps for entry to the villa, but all bedrooms and bathrooms are accessed by a very small stairwell. Villa Nichalos is suitable for people with mild mobility difficulties. The doors are normal doors and would not pass a wheelchair.</p>
+                <h3>Coast/Beach</h3>
+                <p>The famous blue flag award Coral Bay Beach, is found just 2.5km distance from the villa. Just 200m from the villa  you will find Paliomonastirio bar & restaurant, with its childern’s playground and botanical gardens.  Although not necessary, (the bus stop is directly outside the villa) we highly recommend the hiring of a car, which will greatly enhance the options available on your holiday. Should you wish to opt for airport transfers, we can sort this for you also.</p>
+                <p>The beautiful beach resort of Coral Bay is often described as the best bay on the west of the island. And it’s no surprise, when you consider the calm turquoise sea, dipping gently into some of the clearest off shore diving space in the Mediterranean, the scattered palm trees, the 600 meters of soft white sand and, in summertime, the almost cloudless blue skies. Coral Bay is a 5 minute walk from the villa.
+                <h3>Golf</h3>
+                <p>4 Championship golf courses within a 30 min drive.</p>
+                <h3>Skiing</h3>
+                <p>Skiing is possible in Troodos during January to March</p>
+                <h3>Akamas National Park</h3>
+                <p>Located in the west of Cyprus the Akamas National Park is possibly the most picturesque corner of the island. Covering approximately 230 square kilometers the Akamas peninsula is where you will find wild landscape, amazing natural beauty, deep gorges, and wide sandy bays. The diversity of wildlife is of outstanding ecological importance for the Mediterranean and the wide variety of fauna is certainly impressive. Here you can find 168 different varieties of birds, 12 different mammals, 20 different reptiles and 16 different species of butterfly.<br>
+                The importance of the Akamas Peninsula is recognized far beyond the shores of Cyprus. The European Council has included the Akamas Peninsula within its Mediterranean protection programme and within Cyprus; Friends of the Earth and Greenpeace are campaigning hard for the Akamas Peninsula to be declared a National Park.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ./section full description -->  
+
+<!-- section map -->
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>Location</h3>
+                <div class="divider-md"></div>
+            </div>
+        </div>
+    </div>
+    <iframe title="google map" src="https://maps.google.com/maps/ms?msid=208225322349459068264.0004df5813d2cf1c3ec2d&amp;msa=0&amp;ie=UTF8&amp;t=h&amp;z=17&amp;output=embed" width="100%" height="550" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+</div>
+<!-- ./section map --> 
+{% include villa-slider.html %}

@@ -1,0 +1,275 @@
+---
+layout: default
+type: villa
+bedrooms: 6
+language: en
+title: Waters Edge
+seotitle: Villa Waters Edge, Coral Bay, 6 Bedrooms, 6 Bathrooms
+description: "This truly spectacular and individual villa is located on top of the award winning blue flag beach of Coral Bay, Paphos..."
+image: /assets/gallery/waters-edge/02-w1920.jpg
+permalink: /villa-waters-edge-bay-paphos-cyprus
+---
+<!-- section -->
+<div class="section gray-bg-color">
+    <div class="container">
+        <div class="villa-title">
+            <div class="row align-items-end">
+                <div class="col-md-9">
+                    <h1 class="">Villa Waters Edge</h1>
+                    <h4 class="ft-300 ">Coral Bay, 6 Bedrooms, 6 Bathrooms</h4>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img class="img-sm" src="assets/images/exclusive.png" alt="Exclusive Paphos Holiday Villa">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-9">
+                <!-- slider -->
+                <div class="row">
+                    <div class="col">
+                        <div class="owl-carousel carousel-large">
+                            {% for image in site.static_files %}
+                                {% if image.path contains 'gallery/waters-edge' %}
+                                {% assign myhash = image.path | remove_first:'/assets/gallery/' %}
+                                {% assign img = image.path | remove_first:'/' %}
+                                <div class="item" data-hash="{{ myhash }}">
+                                    <div class="villa-slide" data-src="{{ img | prepend: SourceUrl }}"></div>
+                                </div>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="villa-thumbs-container">
+                            <div class="owl-carousel carousel-thumbs">
+                                {% for thumb in site.static_files %}
+                                    {% if thumb.path contains 'thumbs/waters-edge' %}
+                                    {% assign tt = thumb.path | remove_first:'/assets/thumbs/' %}
+                                    {% assign tmb = thumb.path | remove_first:'/' %}
+                                    <div class="item">
+                                        <a class="button secondary url" href="#{{ tt }}" title="thumb nav">
+                                            <div class="villa-thumb" style="background-image: url('{{ tmb | prepend: SourceUrl }}');"></div>
+                                        </a>
+                                    </div>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./slider -->
+                <!-- short description -->
+                <div class="row">
+                    <div class="col">
+                        <p>This truly spectacular and individual villa is located on top of the award winning blue flag beach of Coral Bay, Paphos, Cyprus and has private access directly onto the beach. This amazing state-of-the art villa was built in 2013 by the owner, and offers stunning panoramic view over Coral Bay and the Mediterranean sea.
+                         Spread over three spacious floors plus roof terrace, Waters Edge is an elegant and fashionable villa with superlative finishes throughout its modern ergonomic style. The overall aesthetic of the ultra-modern villa, results from the use of floor to ceiling triple glazed windows, ensuring you always feel at one with panoramic views of the Med. The Interior design is dominated by ceramic, glass, contemporary wood flooring and other minimalist elements that gives the villa its distinct contemporary signature. Complete with an Otis lift to all floors, and you private 12 seat cinema, Waters Edge villa is guaranteed to spoil even the most discerning of clients.<a href="#villa-description">Read more...</a></p>
+                    </div>
+                </div>
+                <!-- ./short description -->
+                <!-- tabs -->
+                <div class="row">
+                    <div class="col">
+                        <div class="divider-md"></div>
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active" id="nav-inside-tab" data-toggle="tab" href="#nav-inside" role="tab" aria-controls="nav-inside" aria-selected="true">Inside</a>
+                                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Outside</a>
+                                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Distances</a>
+                            </div>
+                        </nav>
+                        <div class="tab-content white-bg-color" id="nav-tabContent"> 
+                            <div class="tab-pane fade show active" id="nav-inside" role="tabpanel" aria-labelledby="nav-inside-tab">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <ul class="feature-list">
+                                            <li>Cooker</li>
+                                            <li>Fridge</li>
+                                            <li>Freezer</li>
+                                            <li>Microwave</li>
+                                            <li>Toaster</li>
+                                            <li>Kettle</li>
+                                            <li>Dishwasher</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <ul class="feature-list">
+                                            <li>Washing machine</li>
+                                            <li>Iron</li>
+                                            <li>Free Internet TV</li>
+                                            <li>DVD player</li>
+                                            <li>Free Wifi</li>
+                                            <li>Free High chair (if required)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <ul class="feature-list">
+                                            <li>Free Infant Cot (if required)</li>
+                                            <li>Hair dryer</li>
+                                            <li>Safe</li>
+                                            <li>Central Heating (charged extra)</li>
+                                            <li>Air conditioning</li>
+                                            <li>Linen provided</li>
+                                            <li>Towels provided</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul class="feature-list">
+                                            <li>Private outdoor pool 10 x 5 (unheated)</li>
+                                            <li>Private Garden</li>
+                                            <li>BBQ area</li>
+                                            <li>Balcony or terrace</li>
+                                            <li>Private steps to Coral Bay beach</li>
+                                            <li>Roof Terrace with Jacuzzi & bar</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul class="feature-list">
+                                            <li>Secure parking</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                <div class="row">
+                                    <div class="col">
+                                        <ul class="feature-list">
+                                            <li>Beach: Private Access</li>
+                                            <li>Resort Centre: 600m</li>
+                                            <li>Restaurants: 100m</li>
+                                            <li>Car Hire: Not Required</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- tabs -->
+            </div>
+            <!-- booking Sidebar -->
+            <div class="col-lg-3">
+                <div class="sidebar-box villa-features-box white-bg-color">
+                    <h4 class="ft-500">Waters Edge</h4>
+                    <div class="row font-md ft-500">
+                        <div class="col-6">
+                            City: Paphos
+                        </div>
+                        <div class="col-6">
+                            Area: Coral Bay
+                        </div>
+                    </div>
+                    <div class="row font-md ft-500">
+                        <div class="col-6">
+                            6 Bedrooms
+                        </div>
+                        <div class="col-6">
+                            6 Bathrooms
+                        </div>
+                    </div>
+                    <div class="row font-md ft-500">
+                        <div class="col-6">
+                            Numerous terraces
+                        </div>
+                        <div class="col-6">
+                            60 m2 Outdoor living areas
+                        </div>
+                    </div>
+                    <div class="row font-md ft-500">
+                        <div class="col">
+                            <p class="font-md ft-500">400 m2 Covered Area</p>
+                        </div>
+                    </div>
+                    
+                    <div class="row justify-content-center font-md ft-500">
+                        <div class="col">
+                            <iframe title="availabality" src="https://www.availabilitycalendar.com/embed/U-WyCBCd7DqGCtjoKDDrNNBBkDoh0o_dKbE7QRmoCjI/en-0-1-1-1-0-0-0-0-0-0-0-1-0/" height="380" width="100%" frameborder="0" allowtransparency="true"></iframe>
+                        </div>
+                    </div>
+                    <form action="https://app.thebookingbutton.com/" class="ibe" data-region="emea" data-channelcode="prestigebookdirect" target="_blank">
+                        <input type="hidden" name="room_type" value="31631" >
+                        {% include bookingform.html %}
+                    </form>
+                    <div class="row font-md ft-500">
+                        <div class="col">
+                            <p class="t-m-20">Please note that a minimum stay of 4 nights is required</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-box white-bg-color">
+                    <div class="row">
+                        <div class="col text-center">
+                            <a href="https://www.tripadvisor.co.uk/VacationRentalReview-g776028-d9719173-Water_s_Edge_Villa-Peyia_Paphos_District.html#REVIEWS" target="_blank" rel="noopener noreferrer"><img src="{{ 'assets/images/tripadvisor.jpeg' | prepend: SourceUrl }}" width="140" alt="Read Reviews" title="Read Reviews" ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /booking -->
+        </div>
+    </div>
+</div>
+<!-- ./section -->
+
+<!-- section full description -->
+<div class="section" id="villa-description">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>About Villa</h3>
+                <p>With private access leading to Coral Bay Beach, this superb 6 bedroom villa offers ultimate luxury for an unforgettable holiday in Cyprus with facilities including a cinema, sauna, steam room, roof terrace with hot tub and entertainment area. To complete the luxurious style of this villa there is a lift to access each floor.<br>
+                This superb villa is ideal for a wedding ceremony and reception with its magnificent unobstructed views of the Mediterranean Sea (see rental rates). Located opposite this villa is Villa Chronas, these 2 villas are the perfect combination for larger groups or wedding parties.</p>
+                <p>CCTV, Alarm, Electronic Gate, Intercom entrance system on all floors.<br>
+                Klafs steam room with starry lighting system. Klafs sauna with safety heating system</p>
+                <h3>Ground Floor</h3>
+                <p>As you enter you will immediately be bowled over by the view of the Mediterranean Sea through the glass doors within the dining area. The hallway with its Swarovski crystal chandelier and internal water feature leads you to the dining area and adjacent living area where you will find comfortable sofas, Smart glass cinema screen with Apple TV, satellite and local channels. The TV and sound system offer indoor and outdoor speakers.<br>
+                The fully equipped modern kitchen features Blum fittings and Gaggenau appliances. Patio doors from the dining and living area lead to a furnished terrace where al fresco dining can be enjoyed whilst admiring the mesmerising views of the Mediterranean Sea.<br>
+                A twin bedroom and guest cloakroom are located on this floor.</p>
+                <h3>First Floor</h3>
+                <p>When reaching the first floor via the stairs or the lift there are 4 bedrooms. A master bedroom with double bed, en-suite with double sinks and a wet room, walk-in wardrobe and a private balcony offering amazing views of the Mediterranean Sea. Completing the bedrooms on this floor are a further 3 double bedrooms all with en-suite shower rooms. Two of the double bedrooms share a balcony facing the sea. One of the double bedrooms has a private balcony with views of the surrounding area.<br>
+                From the first floor via the stairs or lift you can access the roof terrace where a hot tub, bar area and marbled seating allows for you to relax and socialise whilst enjoying the spectacular views.</p>
+                <h3>Lower Ground</h3>
+                <p>The lower ground level is where you will find the 12 seat cinema with 500 movies available, Apple TV (own account required) and local channels to be watched in the comfort of luxurious Cinematic leather reclining chairs. The cinema is carpeted throughout and has optical cabled ceiling lights, air conditioning, underfloor heating, a freezer and a drinks cabinet. For those guests wishing to relax after a long day, the sauna and steam room located on this level are ideal to relax and unwind (see rental rates).<br>
+                The final bedroom is located on the lower ground floor; a twin bedroom with en suite shower room.<br>
+                A separate wet room and utility room are also located on the lower ground floor.</p>
+                <h3>Outdoor</h3>
+                <p>The outside area can be accessed from the lower ground floor where you will find the spacious terrace area furnished with sunbeds and the 10m x 5m private swimming pool with gold plated mosaic tiles. The swimming pool can be heated during the cooler months or chilled during the extremely hot weather (see rental rates). The barbecue area with bar and fridge is a perfect area for you to truly enjoy al fresco dining.<br>
+                To complete this superb villa, private gated steps from the terrace area lead you down on to Coral Bay Beach.<br>
+                The villa offers private parking which is accessed through the electric gated entrance.</p>
+                <p>This unique, luxury villa is situated directly above the golden sandy beach of Coral Bay.</p>
+                <h3>Accessibility</h3>
+                <p>The villa is accessible by an Otis lift to all floors.</p>
+                <h3>Local Area</h3>
+                <p>This family oriented area has become a lively resort with plenty to offer in terms of amenities and activities. The centre of the resort which features a wide selection of restaurants offering both Cypriot and International Cuisines, cafes, bars, shops, a choice of supermarkets, several banks, a chemist and a laundry within 1km of the villa.</p>
+                <p>The resort boasts two sandy beaches, the busier of the two being the popular Coral Bay Beach, a sandy horseshoe shaped bay honoured with a Blue Flag of the European Union. Sunbeds and umbrellas are available for hire, watersports are on offer and there are two beach cafés providing refreshments.<br>
+                A little further along the coast you reach the natural rock caves of the area known locally as Sea Caves, an area which provides ideal snorkelling territory and is popular with local scuba diving schools.</p>
+                <p>For a taste of the more traditional head to the tiny fishing hamlet of St Georges from where you can enjoy some of the islands most memorable sunset views and dine at one of the small collection of family run tavernas. For nature lovers the start of the protected Akamas Peninsula is just to the north of the village. Or you can head to the hillside village of Peyia, located just a few kilometres inland from Coral Bay to sample a traditional Cypriot meze meal at one of its small selection of long established tavernas and village coffee shops.</p>
+                <p>Paphos Town approximately 20 kilometres away, was once the capital of the island is now included in the official UNESCO list of cultural and natural treasures of the world’s heritage. The remains of villas, palaces, theatres, fortresses and tombs mean that the town is of exceptional architectural and historic value. The well preserved mosaics and the Tombs of the Kings are probably the biggest cultural draw with further archaeological discoveries continually being made. Ano Pafos on the cliff is the main administrative centre and residential district while Kato Pafos, by the sea, is the main tourist area built around the harbour and medieval port.</p>
+                <p>Mini golf, watersports and go-karting are all activities available in the immediate Coral Bay area. The Paphos Zoo and the Horse Riding Stables which cater for all ages are both within a 10 minute drive of the villa.<br>
+                Extend your exploring to encompass the town of Paphos and the list of available activities expands to include a bowling alley, waterpark, several Heritage sites, attractive harbour area and modern shopping facilities.<br>
+                There are 4 golf courses; Tsada Golf Course, Secret Valley Golf Course, Aphrodite Hills Golf Course and Elea Golf Course all within approximately a 30 minute drive.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ./section full description -->  
+
+<!-- section map -->
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>Location</h3>
+                <div class="divider-md"></div>
+            </div>
+        </div>
+    </div>
+    <iframe title="google map" src="https://maps.google.ie/maps?q=34.855453,32.367740&amp;num=1&amp;t=h&amp;hl=en&amp;ie=UTF8&amp;z=14&amp;output=embed" width="100%" height="550" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+</div>
+<!-- ./section map --> 
+{% include villa-slider.html %}

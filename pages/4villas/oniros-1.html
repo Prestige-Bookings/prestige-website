@@ -1,0 +1,257 @@
+---
+layout: default
+type: villa
+bedrooms: 4
+language: en
+title: Oniros 1
+seotitle: Villa Oniros 1, Sea Caves, Coral Bay, 4 Bedrooms, 3 Bathrooms
+description: "Oniros villa is situated in the prestigious and exclusive area of Sea Caves, this modern 4 bedroom villa is ideal for families..."
+image: /assets/gallery/oniros-1/17-w1920.jpg
+permalink: /villa-oniros-1-coral-bay-paphos-cyprus
+---
+<!-- section -->
+<div class="section gray-bg-color">
+    <div class="container">
+        <div class="villa-title">
+            <div class="row align-items-end">
+                <div class="col-md-9">
+                    <h1 class="">Villa Oniros 1</h1>
+                    <h4 class="ft-300 ">Sea Caves, Coral Bay, 4 Bedrooms, 3 Bathrooms</h4>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img class="img-sm" src="assets/images/exclusive.png" alt="Exclusive Paphos Holiday Villa">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-9">
+                <!-- slider -->
+                <div class="row">
+                    <div class="col">
+                        <div class="owl-carousel carousel-large">
+                            {% for image in site.static_files %}
+                                {% if image.path contains 'gallery/oniros-1' %}
+                                {% assign myhash = image.path | remove_first:'/assets/gallery/' %}
+                                {% assign img = image.path | remove_first:'/' %}
+                                <div class="item" data-hash="{{ myhash }}">
+                                    <div class="villa-slide" data-src="{{ img | prepend: SourceUrl }}"></div>
+                                </div>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="villa-thumbs-container">
+                            <div class="owl-carousel carousel-thumbs">
+                                {% for thumb in site.static_files %}
+                                    {% if thumb.path contains 'thumbs/oniros-1' %}
+                                    {% assign tt = thumb.path | remove_first:'/assets/thumbs/' %}
+                                    {% assign tmb = thumb.path | remove_first:'/' %}
+                                    <div class="item">
+                                        <a class="button secondary url" href="#{{ tt }}" title="thumb nav">
+                                            <div class="villa-thumb" style="background-image: url('{{ tmb | prepend: SourceUrl }}');"></div>
+                                        </a>
+                                    </div>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./slider -->
+                <!-- short description -->
+                <div class="row">
+                    <div class="col">
+                        <p>Oniros villa is situated in the prestigious and exclusive area of Sea Caves, this modern 4 bedroom villa is ideal for families wishing to be located close by to the popular resort of Coral Bay. Coral Bay is a 5 minute drive from the villa. The villa is within a short walk of a popular modern café / bar offering stunning views of the sea caves. During the summer months you can enjoy a lunchtime drink or sundowner.<a href="#villa-description">Read more...</a></p>
+                    </div>
+                </div>
+                <!-- ./short description -->
+                <!-- tabs -->
+                <div class="row">
+                    <div class="col">
+                        <div class="divider-md"></div>
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active" id="nav-inside-tab" data-toggle="tab" href="#nav-inside" role="tab" aria-controls="nav-inside" aria-selected="true">Inside</a>
+                                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Outside</a>
+                                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Distances</a>
+                            </div>
+                        </nav>
+                        <div class="tab-content white-bg-color" id="nav-tabContent"> 
+                            <div class="tab-pane fade show active" id="nav-inside" role="tabpanel" aria-labelledby="nav-inside-tab">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <ul class="feature-list">
+                                            <li>Cooker</li>
+                                            <li>Fridge</li>
+                                            <li>Freezer</li>
+                                            <li>Microwave</li>
+                                            <li>Toaster</li>
+                                            <li>Kettle</li>
+                                            <li>USB charging points in all bedrooms</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <ul class="feature-list">
+                                            <li>Washing machine</li>
+                                            <li>Dishwasher</li>
+                                            <li>Iron</li>
+                                            <li>Free Internet TV</li>
+                                            <li>DVD player</li>
+                                            <li>Free Wifi</li>
+                                            <li>Free High chair (if required)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <ul class="feature-list">
+                                            <li>Free Infant Cot (if required)</li>
+                                            <li>Hair dryer</li>
+                                            <li>Safe</li>
+                                            <li>Air conditioning (charged extra)</li>
+                                            <li>Linen provided</li>
+                                            <li>Towels provided</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul class="feature-list">
+                                            <li>Private outdoor pool 10 x 5 (unheated)</li>
+                                            <li>Private Garden</li>
+                                            <li>BBQ area</li>
+                                            <li>Balcony or terrace</li>
+                                            <li>Boat Hire available</li>
+                                            <li>Bicycle Hire available</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul class="feature-list">
+                                            <li>Secure parking</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                <div class="row">
+                                    <div class="col">
+                                        <ul class="feature-list">
+                                            <li>Beach: 2km</li>
+                                            <li>Restaurants: 350m</li>
+                                            <li>Resort Centre: 2.4km</li>
+                                            <li>Car Hire: Essential</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- tabs -->
+            </div>
+            <!-- booking Sidebar -->
+            <div class="col-lg-3">
+                <div class="sidebar-box villa-features-box white-bg-color">
+                    <h4 class="ft-500">Villa Oniros 1</h4>
+                    <div class="row font-md ft-500">
+                        <div class="col-6">
+                            City: Paphos
+                        </div>
+                        <div class="col-6">
+                            Area: Sea Caves,Coral Bay
+                        </div>
+                    </div>
+                    <div class="row font-md ft-500">
+                        <div class="col-6">
+                            4 Bedrooms
+                        </div>
+                        <div class="col-6">
+                            3 Bathrooms
+                        </div>
+                    </div>
+                    <div class="row font-md ft-500">
+                        <div class="col-6">
+                            1 Verandas
+                        </div>
+                        <div class="col-6">
+                            1 Guest WC
+                        </div>
+                    </div>
+                    <div class="row font-md ft-500">
+                        <div class="col">
+                            <p class="font-md ft-500">180 m2 Covered Area</p>
+                        </div>
+                    </div>
+                    
+                    <div class="row justify-content-center font-md ft-500">
+                        <div class="col">
+                            <iframe title="availabality" src="https://www.availabilitycalendar.com/embed/3A9ECR0F2-qouwHeOhxORNdsDW4Ch9XpvsdUe6d_m3U/en-0-1-1-1-0-0-0-0-0-0-0-1-0/" height="380" width="100%" frameborder="0" allowtransparency="true"></iframe>
+                        </div>
+                    </div>
+                    <form action="https://app.thebookingbutton.com/" class="ibe" data-region="emea" data-channelcode="prestigebookdirect" target="_blank">
+                        <input type="hidden" name="room_type" value="78512" >
+                        {% include bookingform.html %}
+                    </form>
+                    <div class="row font-md ft-500">
+                        <div class="col">
+                            <p class="t-m-20">Please note that a minimum stay of 4 nights is required</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-box white-bg-color">
+                    <div class="row">
+                        <div class="col text-center">
+                            <a href="https://www.tripadvisor.co.uk/VacationRentalReview-g776028-d12448266-Oniros_Villa_Deluxe-Peyia_Paphos_District.html#REVIEWS" target="_blank" rel="noopener noreferrer"><img src="{{ 'assets/images/tripadvisor.jpeg' | prepend: SourceUrl }}" width="140" alt="Read Reviews" title="Read Reviews" ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./booking -->
+        </div>
+    </div>
+</div>
+<!-- ./section -->
+
+<!-- section full description -->
+<div class="section" id="villa-description">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>Villa Description</h3>
+                <p>As you enter the villa you will find the living area with plenty of comfortable seating and for entertainment you have internet TV, DVD player and wireless internet connection. Two of the villa’s bedrooms are located on this level; a double bedroom with en-suite bathroom and private balcony with views of the Mediterranean Sea and surrounding area. A twin bedroom with en-suite shower room. A kitchenette is located on this floor with fridge, 2 ring hob and a sink.</p>
+                <p>The fully equipped kitchen with Neff appliances is located on the lower ground level together with a dining area with table and chairs for 8 guests. A door from this area leads you out to the terrace area.</p>
+                <p>The final two bedrooms for the villa are located on the lower ground floor; a double bedroom and twin bedroom both sharing the adjacent family bathroom. One of the bedrooms has patio doors leading you to the outside area.</p>
+                <p>Air conditioning is available in all bedrooms</p>
+                <p>The private 10m x 5m infinity swimming pool surrounded by plenty of sunbeds allows for you to relax and enjoy the Cyprus sunshine. The barbecue together with outside dining furniture makes this area ideal for you to enjoy al-fresco dining.</p>
+                <p>For the energetic members of the group there is table tennis available to be enjoyed.</p>
+                <p>The villa offers plenty of off-street parking.</p>
+                <h3>Location Description</h3>
+                <p>The Sea Caves area is situated in a peaceful location between the popular resort of Coral Bay and the tiny fishing hamlet of St Georges. The coastline in this area is full of natural rock caves making it ideal snorkelling territory.<br>
+                The area has a handful of tavernas within a few minutes drive of the villa where traditional cypriot cuisine is available. A popular modern café / bar offering stunning views of the sea caves is located within walking distance of the villa and is where one can relax and enjoy a snack and a drink whilst admiring the views and beautiful sunset.</p>
+                <p>Coral Bay is within a 5 minute drive from the villa and this area is the well known beach resort for the Paphos district and has become a lively resort with plenty to offer in terms of amenities and activities. The centre of the resort features a wide selection of restaurants offering both Cypriot and International Cuisines, cafes, bars, shops, a choice of supermarkets, several banks, a chemist and a laundry. The resort boasts two sandy beaches, the closest one to the villa being Corallia Bay, the quieter of the two. A little further along the coast is the popular and busy Coral Bay Beach, a sandy horseshoe shaped bay honoured with a Blue Flag of the European Union. Sunbeds and umbrellas are available for hire, watersports are on offer and there are two beach cafés providing refreshments.</p>
+                <p>For a taste of the more traditional, the Church at St George overlooks the modest fishing harbour from where you can enjoy some of the islands most memorable sunset views and enjoy a traditional Cypriot meze meal at one of the small selection of family run tavernas. For nature lovers the start of the protected Akamas Peninsula is just to the north of the village.</p>
+                <p>The Paphos Zoo and the Horse Riding Stables which cater for all ages are both within the Sea Caves area and only a few minutes’ drive away. Mini golf, watersports and go-karting are all activities available in the resort of Coral Bay and if you extend your exploring to encompass the town of Paphos, approximately 25 minutes away, the list of available activities expands to include a snooker hall, bowling alley, waterpark, several Heritage sites, attractive harbour area and modern shopping facilities.<br>
+                There are 4 golf courses; Tsada Golf Course, Secret Valley Golf Course, Aphrodite Hills Golf Course and Elea Golf Course all within approximately a 45 minute drive.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ./section full description -->  
+
+<!-- section map -->
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>Location</h3>
+                <div class="divider-md"></div>
+            </div>
+        </div>
+    </div>
+    <iframe title="google map" src="https://maps.google.ie/maps?q=34.87561,32.34713&amp;num=1&amp;t=h&amp;hl=en&amp;ie=UTF8&amp;z=14&amp;output=embed" width="100%" height="550" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+</div>
+<!-- ./section map --> 
+{% include villa-slider.html %}

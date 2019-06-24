@@ -1,0 +1,260 @@
+---
+layout: default
+type: villa
+bedrooms: 6
+language: en
+title: Mia
+seotitle: Villa Mia, Coral Bay, 6 Bedrooms, 6 Bathrooms
+description: "This stunning Deluxe 6 bedroom villa sits directly above the Mediterranean sea, yet is a mere 800m from the centre..."
+image: /assets/gallery/mia/22-w1920.jpg
+permalink: /villa-mia-coral-bay-paphos-cyprus
+---
+<!-- section -->
+<div class="section gray-bg-color">
+    <div class="container">
+        <div class="villa-title">
+            <div class="row align-items-end">
+                <div class="col-md-9">
+                    <h1 class="">Villa Mia</h1>
+                    <h4 class="ft-300 ">Coral Bay, 6 Bedrooms, 6 Bathrooms</h4>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img class="img-sm" src="assets/images/exclusive.png" alt="Exclusive Paphos Holiday Villa">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-9">
+                <!-- slider -->
+                <div class="row">
+                    <div class="col">
+                        <div class="owl-carousel carousel-large">
+                            {% for image in site.static_files %}
+                                {% if image.path contains 'gallery/mia' %}
+                                {% assign myhash = image.path | remove_first:'/assets/gallery/' %}
+                                {% assign img = image.path | remove_first:'/' %}
+                                <div class="item" data-hash="{{ myhash }}">
+                                    <div class="villa-slide" data-src="{{ img | prepend: SourceUrl }}"></div>
+                                </div>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="villa-thumbs-container">
+                            <div class="owl-carousel carousel-thumbs">
+                                {% for thumb in site.static_files %}
+                                    {% if thumb.path contains 'thumbs/mia' %}
+                                    {% assign tt = thumb.path | remove_first:'/assets/thumbs/' %}
+                                    {% assign tmb = thumb.path | remove_first:'/' %}
+                                    <div class="item">
+                                        <a class="button secondary url" href="#{{ tt }}" title="thumb nav">
+                                            <div class="villa-thumb" style="background-image: url('{{ tmb | prepend: SourceUrl }}');"></div>
+                                        </a>
+                                    </div>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./slider -->
+                <!-- short description -->
+                <div class="row">
+                    <div class="col">
+                        <p>This stunning Deluxe 6 bedroom villa sits directly above the Mediterranean sea, yet is a mere 800m from the centre of Coral Bay resort. Surrounded by manicured gardens that lead directly to your sun garden on-top of the sea. this stunningly beautiful villa will ensure a quality time holiday spent with family & friends.<a href="#villa-description">Read more...</a></p>
+                    </div>
+                </div>
+                <!-- ./short description -->
+                <!-- tabs -->
+                <div class="row">
+                    <div class="col">
+                        <div class="divider-md"></div>
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active" id="nav-inside-tab" data-toggle="tab" href="#nav-inside" role="tab" aria-controls="nav-inside" aria-selected="true">Inside</a>
+                                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Outside</a>
+                                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Distances</a>
+                            </div>
+                        </nav>
+                        <div class="tab-content white-bg-color" id="nav-tabContent"> 
+                            <div class="tab-pane fade show active" id="nav-inside" role="tabpanel" aria-labelledby="nav-inside-tab">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <ul class="feature-list">
+                                            <li>Cooker</li>
+                                            <li>Fridge</li>
+                                            <li>Freezer</li>
+                                            <li>Microwave</li>
+                                            <li>Toaster</li>
+                                            <li>Kettle</li>
+                                            <li>Dishwasher</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <ul class="feature-list">
+                                            <li>Washing machine</li>
+                                            <li>Iron</li>
+                                            <li>Free Internet TV</li>
+                                            <li>DVD player</li>
+                                            <li>Free Wifi</li>
+                                            <li>Free High chair (if required)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <ul class="feature-list">
+                                            <li>Free Infant Cot (if required)</li>
+                                            <li>Hair dryer</li>
+                                            <li>Safe</li>
+                                            <li>Air conditioning (charged extra)</li>
+                                            <li>Linen provided</li>
+                                            <li>Towels provided</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul class="feature-list">
+                                            <li>Private outdoor pool (unheated)</li>
+                                            <li>Private Garden</li>
+                                            <li>BBQ area</li>
+                                            <li>Balcony or terrace</li>
+                                            <li>Boat Hire available</li>
+                                            <li>Bicycle Hire available</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul class="feature-list">
+                                            <li>Secure parking</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                <div class="row">
+                                    <div class="col">
+                                        <ul class="feature-list">
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- tabs -->
+            </div>
+            <!-- booking Sidebar -->
+            <div class="col-lg-3">
+                <div class="sidebar-box villa-features-box white-bg-color">
+                    <h4 class="ft-500">Villa Mia</h4>
+                    <div class="row font-md ft-500">
+                        <div class="col-6">
+                            City: Paphos
+                        </div>
+                        <div class="col-6">
+                            Area: Coral Bay
+                        </div>
+                    </div>
+                    <div class="row font-md ft-500">
+                        <div class="col-6">
+                            6 Bedrooms
+                        </div>
+                        <div class="col-6">
+                            6 Bathrooms
+                        </div>
+                    </div>
+                    <div class="row font-md ft-500">
+                        <div class="col-6">
+                            1 Verandas
+                        </div>
+                    </div>
+                    <div class="row font-md ft-500">
+                        <div class="col">
+                            <p class="font-md ft-500">410 m2 Covered Area</p>
+                        </div>
+                    </div>
+                    
+                    <div class="row justify-content-center font-md ft-500">
+                        <div class="col">
+                            <iframe title="availabality" src="https://www.availabilitycalendar.com/embed/2QTrMKVt9ryBvemnog_AxzubS9KfSNnBSH3vYat1sds/en-0-1-1-1-0-0-0-0-0-0-0-1-0/" height="380" width="100%" frameborder="0" allowtransparency="true"></iframe>
+                        </div>
+                    </div>
+                    <form action="https://app.thebookingbutton.com/" class="ibe" data-region="emea" data-channelcode="prestigebookdirect" target="_blank">
+                        <input type="hidden" name="room_type" value="80884" >
+                        {% include bookingform.html %}
+                    </form>
+                    <div class="row font-md ft-500">
+                        <div class="col">
+                            <p class="t-m-20">Please note that a minimum stay of 4 nights is required</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-box white-bg-color">
+                    <div class="row">
+                        <div class="col text-center">
+                            <a href="https://www.tripadvisor.co.uk/VacationRentalReview-g776028-d12328461-Villa_Mia_Sea_Front_Villa-Peyia_Paphos_District.html#REVIEWS" target="_blank" rel="noopener noreferrer"><img src="{{ 'assets/images/tripadvisor.jpeg' | prepend: SourceUrl }}" width="140" alt="Read Reviews" title="Read Reviews" ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /booking -->
+        </div>
+    </div>
+</div>
+<!-- ./section -->
+
+<!-- section full description -->
+<div class="section" id="villa-description">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>About Villa</h3>
+                <p>On entering villa Mia you will be immediately captivated by the stunning views of the manicured gardens, and the turquoise blue waters of the Mediterranean sea, located directly below this magnificent villa. At 410 square meters, villa Mia is larger than most and offers ample space for a quality time holiday spent with family and friends. The ground floor of the villa consists of 2 sitting areas with super views over your private infinity pool, manicured gardens and the Mediterranean sea. One of these areas is designed for TV and relaxation, and looks down on the 2nd sitting area, which leads directly onto the outdoor terrace and private infinity pool. Just off to the left you enter the dining area and fully equipped kitchen, which leads directly out to the outdoor kitchen and barbecue area, overlooking the gardens and sea. The kitchen if fully equipped with quality appliances, and has the added benefit of a small 2nd kitchen / utility room as well. Your outdoor kitchen comes complete with a Cypriot style barbecue, running water, electric points, and small cooking stove.</p>
+                <p>The jewels in the crown of villa Mia are your private infinity pool, stunning manicured gardens, and the amazing sun terrace located directly on-top of the sea. These 3 areas will ensure that everybody in your party can simply chill, and soak up the rays of the Mediterranean sun, whilst having the space and diversity to cover everyone’s needs. The stunningly beautiful villa Mia is guaranteed to create lasting memories of a holiday of a lifetime.
+                Proceeding up the marble staircase to the 1st floor, here you will find 4 en-suite bedrooms fitted out to the very highest standards.</p>
+                <h3>Bedrooms</h3>
+                <p>Bedroom 1: Double en-suite (walk-in shower), direct access to the balcony and magnificent views of gardens and sea.<br>
+                Bedroom 2: Twin en-suite (full bath)<br>
+                Bedroom 3: Double en-suite (walk-in shower), direct access to the balcony and magnificent views of gardens and sea.<br>
+                Master Bedroom: Double en-suite (walk-in shower & full bath), with direct access to the balcony and magnificent views of the gardens and sea.</p>
+                <p>Proceeding again up the marble staircase you will find a private sun terrace with views to die for. Relax with a good book, simply soak up the sun, or check your emails whilst taking in the beauty of the sea, and mountains all around you. Chilling out you are sure to feel on-top of the world, whilst escaping the rush and stresses of the modern world.<br>
+                Proceeding down the marble staircase to the lower ground floor, you will find a guest W.C. and 2 further en-suite bedrooms.</p>
+                <p>Bedroom 5: Double en-suite (walk-in shower)<br>
+                Bedroom 6: Double en-suite (walk-in shower)</p>
+                <h3>Outdoor</h3>
+                <p>Finishing off this magnificent villa you will find private off road parking for 2 vehicles, as well as a full security alarm for peace of mind.</p>
+                <h3>Location – Paphos, Coral Bay</h3>
+                <p>This unique, luxury villa is situated directly above the sea and a mere 500m from award winning blue flag beach of Coral Bay.</p>
+                <p>This family oriented area has become a lively resort with plenty to offer in terms of amenities and activities. The centre of the resort which features a wide selection of restaurants offering both Cypriot and International Cuisines, cafes, bars, shops, a choice of supermarkets, several banks, a chemist and a laundry within 1km of the villa.</p>
+                <p>The resort boasts two sandy beaches, the busier of the two being the popular Coral Bay Beach, a sandy horseshoe shaped bay honoured with a Blue Flag of the European Union. Sunbeds and umbrellas are available for hire, watersports are on offer and there are two beach cafés providing refreshments.<br>
+                A little further along the coast you reach the natural rock caves of the area known locally as Sea Caves, an area which provides ideal snorkelling territory and is popular with local scuba diving schools.</p>
+                <p>For a taste of the more traditional head to the tiny fishing hamlet of St Georges from where you can enjoy some of the islands most memorable sunset views and dine at one of the small collection of family run tavernas. For nature lovers the start of the protected Akamas Peninsula is just to the north of the village. Or you can head to the hillside village of Peyia, located just a few kilometres inland from Coral Bay to sample a traditional Cypriot meze meal at one of its small selection of long established tavernas and village coffee shops.</p>
+                <p>Paphos Town approximately 20 kilometres away, was once the capital of the island is now included in the official UNESCO list of cultural and natural treasures of the world’s heritage. The remains of villas, palaces, theatres, fortresses and tombs mean that the town is of exceptional architectural and historic value. The well preserved mosaics and the Tombs of the Kings are probably the biggest cultural draw with further archaeological discoveries continually being made. Ano Pafos on the cliff is the main administrative centre and residential district while Kato Pafos, by the sea, is the main tourist area built around the harbour and medieval port.</p>
+                <p>Mini golf, watersports and go-karting are all activities available in the immediate Coral Bay area. The Paphos Zoo and the Horse Riding Stables which cater for all ages are both within a 10 minute drive of the villa.<br>
+                Extend your exploring to encompass the town of Paphos and the list of available activities expands to include a bowling alley, waterpark, several Heritage sites, attractive harbour area and modern shopping facilities.<br>
+                There are 4 golf courses; Tsada Golf Course, Secret Valley Golf Course, Aphrodite Hills Golf Course and Elea Golf Course all within approximately a 30 minute drive.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ./section full description -->  
+
+<!-- section map -->
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>Location</h3>
+                <div class="divider-md"></div>
+            </div>
+        </div>
+    </div>
+    <iframe title="google map" src="https://maps.google.ie/maps?q=34.84808,32.37015&amp;num=1&amp;t=h&amp;hl=en&amp;ie=UTF8&amp;z=14&amp;output=embed" width="100%" height="550" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+</div>
+<!-- ./section map --> 
+{% include villa-slider.html %}
