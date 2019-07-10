@@ -215,6 +215,20 @@ ul.blank {
 
 .center-list li {
   text-align: center; }
+ 
+.videoWrapper {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
 
 /* carousel */
 
