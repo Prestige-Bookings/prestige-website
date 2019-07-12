@@ -230,6 +230,18 @@ ul.blank {
   width: 100%;
 }
 
+.vr-link {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  color: #ff9800;
+}
+
+.vr-link:hover {
+  text-decoration: none;
+  color: #32a1b4;
+}
+
 /* carousel */
 
 .carousel-large {
