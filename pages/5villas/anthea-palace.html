@@ -1,0 +1,246 @@
+---
+layout: default
+type: villa
+bedrooms: 5
+language: en
+title: Anthea Palace
+seotitle: Anthea Palace, Coral Bay, 5 Bedrooms, 5 Bathrooms
+description: "Set back from the road along it own private drive, Anthea Palace offers tons of space both inside and out. Surrounded by massive verandah’s..."
+image: /assets/gallery/anthea-palace/01-w1920.jpg
+permalink: /anthea-palace-coral-bay-paphos-cyprus
+---
+<!-- section -->
+<div class="section gray-bg-color">
+    <div class="container">
+        <div class="villa-title">
+            <div class="row align-items-end">
+                <div class="col-md-9">
+                    <h1 class=""><img class="" src="assets/images/exclusive.png" alt="Exclusive Paphos Holiday Villa" width="80"> Anthea Palace</h1>
+                    <h4 class="ft-300 ">Coral Bay, 5 Bedrooms, 5 Bathrooms</h4>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img class="img-sm" src="assets/images/exclusive.png" alt="Exclusive Paphos Holiday Villa">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-9">
+                <!-- slider -->
+                <div class="row">
+                    <div class="col">
+                        <div class="owl-carousel carousel-large">
+                            {% for image in site.static_files %}
+                                {% if image.path contains 'gallery/anthea-palace' %}
+                                {% assign myhash = image.path | remove_first:'/assets/gallery/' %}
+                                {% assign img = image.path | remove_first:'/' %}
+                                <div class="item" data-hash="{{ myhash }}">
+                                    <div class="villa-slide" data-src="{{ img | prepend: SourceUrl }}"></div>
+                                </div>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="villa-thumbs-container">
+                            <div class="owl-carousel carousel-thumbs">
+                                {% for thumb in site.static_files %}
+                                    {% if thumb.path contains 'thumbs/anthea-palace' %}
+                                    {% assign tt = thumb.path | remove_first:'/assets/thumbs/' %}
+                                    {% assign tmb = thumb.path | remove_first:'/' %}
+                                    <div class="item">
+                                        <a class="button secondary url" href="#{{ tt }}" title="thumb nav">
+                                            <div class="villa-thumb" style="background-image: url('{{ tmb | prepend: SourceUrl }}');"></div>
+                                        </a>
+                                    </div>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./slider -->
+                <!-- short description -->
+                <div class="row">
+                    <div class="col">
+                        <p>Set back from the road along it own private drive, Anthea Palace offers tons of space both inside and out. Surrounded by massive verandah’s and balconies, this stunning villa is very palatial in look and style. With in excess of 350m of covered space and 150m of surrounding terraces and balconies, Anthea Palace offers amazing sea views and a super location for the beach and resort centre...</a></p>
+                    </div>
+                </div>
+                <!-- ./short description -->
+
+                <!-- tabs -->
+                <div class="row">
+                    <div class="col">
+                        <div class="divider-md"></div>
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active" id="nav-inside-tab" data-toggle="tab" href="#nav-inside" role="tab" aria-controls="nav-inside" aria-selected="true">Inside</a>
+                                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Outside</a>
+                                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Distances</a>
+                            </div>
+                        </nav>
+                        <div class="tab-content white-bg-color" id="nav-tabContent"> 
+                            <div class="tab-pane fade show active" id="nav-inside" role="tabpanel" aria-labelledby="nav-inside-tab">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <ul class="feature-list">
+                                            <li>Cooker</li>
+                                            <li>Fridge</li>
+                                            <li>Freezer</li>
+                                            <li>Microwave</li>
+                                            <li>Toaster</li>
+                                            <li>Kettle</li>
+                                            <li>Dishwasher</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <ul class="feature-list">
+                                            <li>Washing machine</li>
+                                            <li>Iron, Hair dryer</li>
+                                            <li>Free Internet TV</li>
+                                            <li>Private cinema</li>
+                                            <li>Free Wifi</li>
+                                            <li>Free High chair (if required)</li>
+                                            <li>Free Infant Cot (if required)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <ul class="feature-list">
+                                            <li>Safe</li>
+                                            <li>Air conditioning (charged extra)</li>
+                                            <li>Linen provided</li>
+                                            <li>Towels provided</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul class="feature-list">
+                                            <li>Private outdoor pool</li>
+                                            <li>Numerous terraces</li>
+                                            <li>Boat Hire available</li>
+                                            <li>Bicycle Hire available</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                <div class="row">
+                                    <div class="col">
+                                        <ul class="feature-list">
+                                            <li>Nearest Beach: 1.6Km</li>
+                                            <li>Nearest Restaurant: 850m</li>
+                                            <li>Resort Centre: 1.7km</li>
+                                            <li>Supermarket: 1.3Km</li>
+                                            <li>Car Hire: Recommended</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- tabs -->
+            </div>
+            <!-- booking Sidebar -->
+            <div class="col-lg-3">
+                <div class="sidebar-box villa-features-box white-bg-color">
+                    <h4 class="ft-500">Anthea Palace</h4>
+                    <div class="row font-md ft-500">
+                        <div class="col-6">
+                            City: Paphos
+                        </div>
+                        <div class="col-6">
+                            Area: Coral Bay
+                        </div>
+                    </div>
+                    <div class="row font-md ft-500">
+                        <div class="col-6">
+                            5 Bedrooms
+                        </div>
+                        <div class="col-6">
+                            5 Bathrooms
+                        </div>
+                        <div class="col-6">
+                            Numerous terraces
+                        </div>
+                    </div>
+                    <div class="row font-md ft-500">
+                        <div class="col-6">
+                            Total Covered 350Sqm
+                        </div> 
+                    </div>
+                    
+                    <div class="row justify-content-center font-md ft-500">
+                        <div class="col">
+                            <iframe title="availabality" src="https://www.availabilitycalendar.com/embed/NViKvxfJUVUKH24AI7iH/en-1-1-1-1-0-2-0-0-0-0-0-1-0/" height="380" width="100%" frameborder="0" allowtransparency="true"></iframe>
+                        </div>
+                    </div>
+                    <form action="https://app.thebookingbutton.com/" class="ibe" data-region="emea" data-channelcode="prestigebookdirect" target="_blank">
+                        <input type="hidden" name="room_type" value="77718" >
+                        {% include bookingform.html %}
+                    </form>
+                    <div class="row font-md ft-500">
+                        <div class="col">
+                            <p class="t-m-20">Please note that a minimum stay of 4 nights is required</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /booking -->
+        </div>
+    </div>
+</div>
+<!-- ./section -->
+
+<!-- section full description -->
+<div class="section" id="villa-description">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>About Villa</h3>
+                <p>On the ground floor you will find a huge open plan sitting room, a large separate dining area, kitchen, utility room as well as 2 bedrooms and bathrooms. Leading off the landing are 3 large bedrooms, a Jacuzzi bathroom and a massive surrounding balcony with stunning sea views. Anthea Palace offers amazing space so you are not on top of each other as well a feeling of luxury and grandeur to satisfy even the most discerning of clients.</p>
+                <h3>Outside area</h3>
+                <p>Outside the villas large 12*6 swimming pool is surrounded with a massive terrace, covered dining area, Cypriot barbeque and plenty of sun loungers to soak up the rays.
+                Heading up the winding marble staircase you will enter a large landing with pool table to wind away some hours</p>
+                <h3>Coast/Beach</h3>
+                <p>The beautiful beach resort of Coral Bay is often described as the best bay on the west of the island. And it’s no surprise, when you consider the calm turquoise sea, dipping gently into some of the clearest off shore diving space in the Mediterranean, the scattered palm trees, the 600 meters of soft white sand and, in summertime, the almost cloudless blue skies. Coral Bay is a 10 minute walk from the villa</p>
+                <h3>Location Description</h3>
+                <p>The Sea Caves area is situated in a peaceful location between the popular resort of Coral Bay and the tiny fishing hamlet of St Georges. The coastline in this area is full of natural rock caves making it ideal snorkelling territory, however if you prefer an organised beach then the family oriented resort of Coral Bay is less than 10 minutes drive away.</p>
+                <p>Coral Bay is the well known beach resort for the Paphos district and has become a lively resort with plenty to offer in terms of amenities and activities. The centre of the resort features a wide selection of restaurants offering both Cypriot and International Cuisines, cafes, bars, shops, a choice of supermarkets, several banks, a chemist and a laundry.</p>
+                <p>The resort boasts two sandy beaches, the closest one to the villa being Corallia Bay, the quieter of the two. A little further along the coast is the, the popular and busy Coral Bay Beach, a sandy horseshoe shaped bay honoured with a Blue Flag of the European Union. Sunbeds and umbrellas are available for hire, watersports are on offer and there are two beach cafés providing refreshments. For a taste of the more traditional, the Church at St George overlooks the modest fishing harbour from where you can enjoy some of the islands most memorable sunset views and enjoy a traditional Cypriot meze meal at one of the small selection of family run tavernas.</p>
+                <p>For nature lovers the start of the protected Akamas Peninsula is just to the north of the village. Paphos Town approximately 13 kilometres away, was once the capital of the island is now included in the official UNESCO list of cultural and natural treasures of the world’s heritage. The remains of villas, palaces, theatres, fortresses and tombs mean that the town is of exceptional architectural and historic value. The well preserved mosaics and the Tombs of the Kings are probably the biggest cultural draw with further archeological discoveries continually being made. Ano Pafos on the cliff is the main administrative centre and residential district while Kato Pafos, by the sea, is the main tourist area built around the harbour and medieval port.
+                The Paphos Zoo and the Horse Riding Stables which cater for all ages are both within the Sea Caves area and only a few minutes drive away.</p>
+                <p>Mini golf, watersports and go-karting are all activities available in the resort of Coral Bay and if you extend your exploring to encompass the town of Paphos, the list of available activities expands to include a bowling alley, waterpark, several Heritage sites, attractive harbour area and modern shopping facilities. For the golf enthusiasts, there are 4 golf courses; Tsada Golf Course, Secret Valley Golf Course, Aphrodite Hills Golf Course and Elea Golf Course all within approximately a 30 minute drive.</p>
+                <h3>Coast/Beach</h3>
+                <p>The beautiful beach resort of Coral Bay is often described as the best bay on the west of the island. And it’s no surprise, when you consider the calm turquoise sea, dipping gently into some of the clearest off shore diving space in the Mediterranean, the scattered palm trees, the 600 meters of soft white sand and, in summertime, the almost cloudless blue skies. Coral Bay is a 10 minute walk from the villa.</p>
+                <h3>Golf</h3>
+                <p>4 Championship golf courses within a 30 min drive.</p>
+                <h3>Skiing</h3>
+                <p>Skiing is possible in Troodos during January to March</p>
+                <h3>Akamas National Park</h3>
+                <p>Located in the west of Cyprus the Akamas National Park is possibly the most picturesque corner of the island. Covering approximately 230 square kilometers the Akamas peninsula is where you will find wild landscape, amazing natural beauty, deep gorges, and wide sandy bays. The diversity of wildlife is of outstanding ecological importance for the Mediterranean and the wide variety of fauna is certainly impressive. Here you can find 168 different varieties of birds, 12 different mammals, 20 different reptiles and 16 different species of butterfly.</p>
+                <p>The importance of the Akamas Peninsula is recognized far beyond the shores of Cyprus. The European Council has included the Akamas Peninsula within its Mediterranean protection programme and within Cyprus; Friends of the Earth and Greenpeace are campaigning hard for the Akamas Peninsula to be declared a National Park.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ./section full description -->  
+
+<!-- section map -->
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>Location</h3>
+                <div class="divider-md"></div>
+            </div>
+        </div>
+    </div>
+    <iframe title="google map" src="https://maps.google.ie/maps?q=34.866546,32.368704&amp;num=1&amp;t=h&amp;hl=en&amp;ie=UTF8&amp;z=14&amp;output=embed" width="100%" height="550" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+</div>
+<!-- ./section map --> 
+{% include villa-slider.html %}
