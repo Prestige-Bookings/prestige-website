@@ -695,3 +695,13 @@ button, button:active {
 .owl-dots {
   display: none !important;
 }
+
+.hero-note {
+  margin: 30px;
+}
+
+@media screen and (max-width: 990px) {
+  .hero-note {
+    margin-top: 90px;
+  }
+}
