@@ -52,5 +52,6 @@ _site
 /.idea
 secrets.json
 .jekyll-metadata
+.jekyll-cache
 .ruby-version
 CNAME
