@@ -731,3 +731,8 @@ button, button:active {
   gap: 30px;
   justify-items: center;
 }
+@media screen and (max-width: 728px) {
+  #popup {
+    margin-top: 90px;
+  }
+}
