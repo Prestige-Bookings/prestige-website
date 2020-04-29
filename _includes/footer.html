@@ -30,6 +30,17 @@
 
 <script src="{{ '/assets/js/bootstrap.js' | prepend: SourceUrl  }}"></script>
 <script src="{{ '/assets/js/pushy.min.js' | prepend: SourceUrl  }}"></script>
+<script type="text/javascript">
+    function PopUp(hideOrshow) {
+        if (hideOrshow == 'hide') document.getElementById('ac-wrapper').style.display = "none";
+        else document.getElementById('ac-wrapper').removeAttribute('style');
+    }
+    window.onload = function () {
+        setTimeout(function () {
+            PopUp('show');
+        }, 2000);
+    }
+    </script>
 <!--End Footer-->
 <script>
     window.onscroll = function() {myFunction()};
