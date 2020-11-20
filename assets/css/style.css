@@ -59,7 +59,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 70vh;
+  min-height: 100vh;
   padding: 20px;
   margin-top: 0;
   -webkit-box-pack: center;
@@ -68,9 +68,10 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url("../images/hero-1.jpg");
+  background-image: url("../images/beach.png");
   background-size: cover;
   background-position: center; }
+  
 
 .hero-villa {
   display: -webkit-box;
@@ -455,6 +456,9 @@ button, button:active {
 .font-md {
   font-size: 0.9rem; }
 
+  .font-lg {
+    font-size: 1.2rem; }
+
 /* spacing */
 .top-m-10 {
   margin-top: 10px; }
@@ -735,4 +739,44 @@ button, button:active {
   #popup {
     margin-top: 90px;
   }
+}
+
+.pb-countdown {
+  display: inline-block;
+  padding: 30px;
+  position: relative;
+  -webkit-user-select: none;
+  text-align: center;
+}
+
+.countdown:nth-child(odd) {
+  display: block;
+}
+
+.ce-days, .ce-hours, .ce-minutes {
+  display: inline-block;
+  color: #000000;
+  padding: 10px;
+  font-size: 6rem;
+  font-weight:900;
+}
+
+.ce-days-label, .ce-hours-label, .ce-hours-label {
+}
+
+.bf-heading {
+  font-weight: 900;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.bf-subheading {
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+
+.bftc p {
+  margin: 0;
+  text-align: center;
 }
