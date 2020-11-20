@@ -753,7 +753,7 @@ button, button:active {
   display: block;
 }
 
-.ce-days, .ce-hours, .ce-minutes {
+.ce-days, .ce-hours, .ce-minutes, .ce-seconds {
   display: inline-block;
   color: #000000;
   padding: 10px;
