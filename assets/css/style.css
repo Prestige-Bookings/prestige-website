@@ -55,6 +55,48 @@ img {
 .sticky + .content {
   padding-top: 60px; }
 
+  .bf-banner {
+    width: 100%;
+    display: grid;
+    background-color: #000000;
+    margin-bottom: 10px;
+  }
+
+  .bf-left {
+    background-color: #ffc801;
+  }
+
+  .bf-banner img {
+    max-width: 100%;
+  }
+
+  .bftc-title {
+    margin-top: 15px;
+  }
+
+  .bftc-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 420px;
+    color: #cccccc;
+  }
+
+  @media screen and (max-width: 992px) {
+    .bf-banner {
+      margin-top: 25px;
+    }
+    .bf-banner img {
+      display: block;
+      margin: 0 auto;
+      vertical-align: middle;
+    }
+  }
+
+  .bftc-container ol {
+    text-align: left;
+  }
+
 .hero-home {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -70,8 +112,8 @@ img {
           align-items: center;
   background-image: url("../images/hero-1.jpg");
   background-size: cover;
-  background-position: center; }
-  
+  background-position: center;
+ }
 
 .hero-villa {
   display: -webkit-box;
@@ -324,6 +366,8 @@ button, button:active {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
+
+  
 
 @media screen and (min-width: 980px) {
     .villa-slide {
@@ -780,3 +824,4 @@ button, button:active {
   margin: 0;
   text-align: center;
 }
+
