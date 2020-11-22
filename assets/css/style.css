@@ -774,7 +774,7 @@ button, button:active {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   box-shadow: #64686e 0px 16px 16px 0px;
-  padding: 40px;
+  padding: 25px;
   display: grid;
   gap: 30px;
   justify-items: center;
