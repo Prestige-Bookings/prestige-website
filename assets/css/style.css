@@ -586,6 +586,10 @@ button, button:active {
   margin: 0; }
 
 /* dividers */
+.divider-xs {
+  display: block;
+  height: 10px; }
+
 .divider-sm {
   display: block;
   height: 20px; }
@@ -597,6 +601,10 @@ button, button:active {
 .divider-lg {
   display: block;
   height: 50px; }
+
+  .divider-lg-1 {
+    display: block;
+    height: 100px; }
 
 /* Bootsrap */
 .tab-pane {
