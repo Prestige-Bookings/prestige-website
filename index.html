@@ -16,6 +16,57 @@ description: "Explore our range of luxury holiday villas with private pools &amp
 <div class="divider-xs"></div>
 
 <!-- Start Hero Home-->
+<div id="ac-wrapper1">
+    <div id="popup1">
+        <div class="popup-photo">
+            <div class="img-counter">
+                <p id="demo-counter"></p>
+                <script>
+                    // Set the date we're counting down to
+                    var countDownDate = new Date("Jan 17, 2021 15:37:25").getTime();
+                    
+                    // Update the count down every 1 second
+                    var x = setInterval(function() {
+                    
+                      // Get today's date and time
+                      var now = new Date().getTime();
+                        
+                      // Find the distance between now and the count down date
+                      var distance = countDownDate - now;
+                        
+                      // Time calculations for days, hours, minutes and seconds
+                      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                        
+                      // Output the result in an element with id="demo"
+                      document.getElementById("demo-counter").innerHTML = days + "d " + hours + "h "
+                      + minutes + "m " + seconds + "s ";
+                        
+                      // If the count down is over, write some text 
+                      if (distance < 0) {
+                        clearInterval(x);
+                        document.getElementById("demo-counter").innerHTML = "EXPIRED";
+                      }
+                    }, 1000);
+                    </script>
+            </div>
+            <div class="container">
+            <div class="popup-text">
+                <img src="{{ '/assets/images/gerry-logo-HD-web-sm.png' | prepend: SourceUrl }}" alt="Prestige Bookings" style="margin-bottom: 15px; width: 150px;">
+                <h4 class="ft-700 orange-color">Luxury Holiday Villa Sale</h4>
+                <h3 class="ft-700">25% Discount</h3>
+                <h5>Add Promo Code "JanSale"</h5> 
+                <a class="btn btn-sm btn-check text-uppercase ft-500 font-md" href="https://direct-book.com/properties/prestigebookdirect?checkInDate=2020-12-25&checkOutDate=2020-12-26&locale=en&currency=EUR&items[0][adults]=2&items[0][children]=0&items[0][infants]=0&promocode=jansale" target="_blank" rel="noopener noreferer" name="submit" onClick="PopUp('hide')" style="margin: 10px 0;">Book Now</a>
+                <p><a href="https://prestigebookings.com/t-&-c-sale">Click here for terms & conditions</a></p>
+                <p style="text-align: right;"><input type="submit" class="btn btn-sm text-uppercase" name="submit" value="Close" onClick="PopUp('hide')" /></p>
+            </div> 
+        </div>
+        </div>
+    
+    </div>
+</div>
 
 <div class="hero-home">
     <div class="container">
