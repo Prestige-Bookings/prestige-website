@@ -768,7 +768,7 @@ button, button:active {
 }
 
 @media screen and (max-width: 990px) {
-  .hero-note {
+  .hero-note, .mob-heading {
     margin-top: 90px;
   }
 }
